@@ -76,12 +76,11 @@ def licao_do_dia(lang_code: str) -> dict:
 # ── geração de conteúdo ───────────────────────────────────────────────────────
 
 SYS_PROF = (
-    "Você é um professor de idiomas experiente, simpático e encorajador, especialista no método Cambridge Grammar in Use. "
-    "Seu tom é simples, direto e acolhedor — como um professor particular de confiança. "
-    "Cria conteúdo progressivo e adequado ao nível do aluno, começando sempre pelo mais básico. "
-    "Nunca use palavras ou estruturas além do vocabulário da lição atual. "
-    "Explicações sempre em português claro. Exemplos sempre no idioma-alvo. "
-    "Seja encorajador: o aluno está começando do zero."
+    "Você é um professor de idiomas experiente, especialista no método Cambridge Grammar in Use. "
+    "Tom simples, direto e encorajador. "
+    "REGRA FUNDAMENTAL: histórias e diálogos devem ser escritos EXCLUSIVAMENTE no idioma-alvo (francês, espanhol ou inglês). "
+    "Explicações gramaticais e traduções são sempre em português. "
+    "Nunca misture os idiomas numa mesma seção."
 )
 
 def gerar_gramatica(lang: dict, licao: dict) -> dict:
@@ -187,33 +186,34 @@ def gerar_historia(lang: dict, licao: dict) -> dict:
     tema = random.choice(TEMAS)
     hoje = datetime.date.today().strftime("%d/%m/%Y")
 
+    lingua_nome = {"fr": "FRANCÊS", "es": "ESPANHOL", "en": "INGLÊS"}.get(lang["code"], lang["lingua"].upper())
     raw = groq(SYS_PROF, f"""
-Escreva uma história narrativa envolvente em {lang['lingua']} para um aluno nível {licao['nivel']}.
+ATENÇÃO: a história INTEIRA deve ser escrita em {lingua_nome} — nunca em português.
+Somente a tradução ao final deve estar em português.
 
-Tema sugerido: {tema}
-Vocabulário da lição para incluir naturalmente: {', '.join(licao['vocabulario'])}
+Escreva uma história narrativa em {lang['lingua']} para um aluno nível {licao['nivel']}.
+
+Tema: {tema}
+Vocabulário da lição (inclua naturalmente): {', '.join(licao['vocabulario'])}
 Data: {hoje}
 
-Regras da história:
-- 3 parágrafos com 3-4 frases cada
-- Narrativa real e interessante, com início, meio e fim — não um diálogo de sala de aula
-- Linguagem simples e direta, adequada ao nível {licao['nivel']}
-- Frases curtas, vocabulário acessível para iniciantes
-- Tom jornalístico leve ou narrativo — como uma notícia interessante ou um conto curto
-- Use o vocabulário da lição de forma natural dentro da história
+Regras:
+- 3 parágrafos com 3-4 frases cada, TODO o texto em {lang['lingua']}
+- Narrativa real, com início, meio e fim
+- Linguagem adequada ao nível {licao['nivel']}
 - NÃO inclua título, numeração ou instruções
 
-Após a história, coloque a tradução completa em português separada por: ---TRADUCAO---
+Após a história em {lang['lingua']}, coloque a tradução completa em português separada por: ---TRADUCAO---
 
-Formato de saída:
-<parágrafo 1>
+Formato:
+<parágrafo 1 em {lang['lingua']}>
 
-<parágrafo 2>
+<parágrafo 2 em {lang['lingua']}>
 
-<parágrafo 3>
+<parágrafo 3 em {lang['lingua']}>
 
 ---TRADUCAO---
-<tradução em português>
+<tradução completa em português>
 """, tokens=900)
 
     if "---TRADUCAO---" in raw:
