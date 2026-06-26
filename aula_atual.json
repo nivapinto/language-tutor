@@ -19,56 +19,55 @@
         "nivel": "A0"
       },
       "gramatica": {
-        "titulo": "Pronomes Pessoais Básicos",
-        "explicacao": "Os pronomes pessoais são usados para substituir nomes de pessoas. Em francês, começamos com je, tu e il/elle. Eles têm formas diferentes para usar em frases.",
+        "titulo": "",
+        "explicacao": "Os pronomes pessoais são usados para se referir a alguém ou algo sem precisar repetir o nome. Em francês, começamos com je, tu e il/elle. Je é usado para falar de si mesmo, tu para falar com alguém, e il/elle para falar de outra pessoa.",
         "tabela": [
-          "Pronome | Forma | Exemplo",
-          "je | eu | Je m'appelle",
-          "tu | você | Tu es étudiant",
-          "il | ele | Il est français",
-          "elle | ela | Elle est étudiante"
+          "Je | Eu | Je m'appelle",
+          "Tu | Você | Tu es là",
+          "Il | Ele | Il est ici",
+          "Elle | Ela | Elle est là"
         ],
         "exemplos": [
-          "Bonjour, je m'appelle Pierre.",
-          "Tu es étudiant, n'est-ce pas?",
-          "Il est français, elle est française."
+          "Je dis bonjour.",
+          "Tu es ici, merci.",
+          "Il dit au revoir."
         ],
-        "dica": "Para memorizar, associe cada pronome a uma pessoa: je para si mesmo, tu para alguém conhecido e il/elle para alguém específico."
+        "dica": "Para memorizar, associe cada pronome a uma ação, como je dizendo bonjour."
       },
       "exercicios": [
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: ___ m'appelle Marie. (eu)",
+          "enunciado": "Complete: ___ dis bonjour. (eu)",
           "resposta": "Je"
         },
         {
           "tipo": "multipla_escolha",
-          "enunciado": "Qual é a tradução de \"merci\"?",
+          "enunciado": "Qual é a tradução de \"s'il vous plaît\"?",
           "opcoes": [
-            "A) por favor",
-            "B) obrigado",
-            "C) bom dia"
+            "A) obrigado",
+            "B) por favor",
+            "C) au revoir"
           ],
           "resposta": "B"
         },
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: Il ___ français. (ele)",
-          "resposta": "est"
+          "enunciado": "Complete: ___ dit au revoir. (ele/ela)",
+          "resposta": "Il/Elle"
         },
         {
           "tipo": "verdadeiro_falso",
-          "enunciado": "\"Bonjour\" significa \"boa noite\". Verdadeiro ou Falso?",
-          "resposta": "Falso — \"Bonjour\" significa \"bom dia\""
+          "enunciado": "\"Bonsoir\" significa \"bom dia\". Verdadeiro ou Falso?",
+          "resposta": "Falso — \"Bonsoir\" significa \"boa noite\""
         },
         {
           "tipo": "traducao",
-          "enunciado": "Traduza para francês: \"Thank you, please.\"",
-          "resposta": "Merci, s'il vous plaît."
+          "enunciado": "Traduza para francês: \"Goodbye, thank you.\"",
+          "resposta": "Au revoir, merci."
         }
       ],
       "dialogo": {
-        "titulo": "Saudações Simples",
+        "titulo": "",
         "falas": [
           "Bonjour: Bonjour",
           "Alex: Bonjour",
@@ -99,26 +98,26 @@
         "nivel": "A0"
       },
       "gramatica": {
-        "titulo": "Pronombres Personales",
-        "explicacao": "Os pronomes personais são usados para substituir nomes de pessoas. Em espanhol, existem pronomes pessoais como yo, tú e él/ella. Eles são importantes para comunicar de forma clara e eficaz. A escolha do pronome depende da pessoa que está falando ou sendo referida.",
+        "titulo": "",
+        "explicacao": "Os pronomes personais são usados para se referir a pessoas. Em espanhol, os pronomes \"yo\", \"tú\" e \"él/ella\" são usados para falar sobre si mesmo, sobre a pessoa com quem se está falando e sobre outra pessoa, respectivamente. São fundamentais para comunicações básicas. Vamos aprender a usar esses pronomes.",
         "tabela": [
-          "yo | eu | Yo como una manzana",
-          "tú | você | Tú comes una fruta",
-          "él | ele | Él come una carne",
-          "ella | ela | Ella bebe agua"
+          "Pronome | Forma | Exemplo",
+          "yo | eu | Yo digo hola",
+          "tú | você | Tú dices adiós",
+          "él/ella | ele/ela | Ella dice gracias"
         ],
         "exemplos": [
-          "Hola, yo como una manzana.",
-          "Tú comes una fruta, ¿verdad?",
-          "Él come una carne y ella bebe agua."
+          "Yo digo hola.",
+          "Tú dices por favor.",
+          "Ella dice adiós."
         ],
-        "dica": "Para memorizar os pronomes, tente substituir o seu nome por \"yo\" e o nome de outra pessoa por \"tú\", \"él\" ou \"ella\" em frases simples."
+        "dica": "Para lembrar, associe \"yo\" a \"eu\", \"tú\" a \"você\" e \"él/ella\" a \"ele\" ou \"ela\" para facilitar a compreensão e o uso correto."
       },
       "exercicios": [
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: Hola, ___ soy María.",
-          "resposta": "yo"
+          "enunciado": "Complete: Yo ___ hola.",
+          "resposta": "digo"
         },
         {
           "tipo": "multipla_escolha",
@@ -132,8 +131,8 @@
         },
         {
           "tipo": "lacuna",
-          "enunciado": "___ como una fruta, ¿verdad?",
-          "resposta": "Tú"
+          "enunciado": "Ella ___ adiós.",
+          "resposta": "dice"
         },
         {
           "tipo": "verdadeiro_falso",
@@ -142,12 +141,12 @@
         },
         {
           "tipo": "traducao",
-          "enunciado": "Traduza para espanhol: \"Goodbye, thank you.\"",
-          "resposta": "Adiós, gracias."
+          "enunciado": "Traduza para espanhol: \"Obrigado, por favor.\"",
+          "resposta": "Gracias, por favor."
         }
       ],
       "dialogo": {
-        "titulo": "Saudações",
+        "titulo": "",
         "falas": [
           "Hola: Hola",
           "Alex: Buenos días",
@@ -178,47 +177,47 @@
         "nivel": "A0"
       },
       "gramatica": {
-        "titulo": "",
-        "explicacao": "Os pronomes pessoais são usados para nos referirmos a nós mesmos e às outras pessoas. Eles ajudam a evitar repetir o nome de alguém. Nesta lição, aprenderemos sobre os pronomes \"I\", \"you\" e \"he/she\". São usados para substituir nomes.",
+        "titulo": "Pronomes Pessoais Básicos",
+        "explicacao": "Os pronomes pessoais são palavras que usamos para nos referir a pessoas. Eles nos ajudam a evitar repetir nomes. Vamos aprender os pronomes I, you e he/she. Esses pronomes são importantes para começar a falar em inglês.",
         "tabela": [
           "Pronome | Forma | Exemplo",
-          "I | eu | I am happy",
-          "you | você | you are my friend",
-          "he | ele | he is my brother",
-          "she | ela | she is my sister"
+          "I | Eu | I say hello",
+          "you | Você | You say goodbye",
+          "he | Ele | He says thank you",
+          "she | Ela | She says please"
         ],
         "exemplos": [
-          "Hello, I am happy",
-          "Good morning, you are my friend",
-          "He is my brother, thank you"
+          "I say hello",
+          "You say goodbye",
+          "He says thank you"
         ],
-        "dica": "Tente substituir os nomes pelas palavras \"I\", \"you\", \"he\" e \"she\" para melhorar a fluidez."
+        "dica": "Tente substituir os nomes pelas palavras I, you, he e she em frases simples para praticar o uso desses pronomes."
       },
       "exercicios": [
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: Hello, ___ am happy.",
-          "resposta": "I"
+          "enunciado": "Complete: I ___ hello.",
+          "resposta": "say"
         },
         {
           "tipo": "multipla_escolha",
-          "enunciado": "Qual é a tradução de \"good morning\"?",
+          "enunciado": "Qual é a tradução de \"I say hello\"?",
           "opcoes": [
-            "A) boa noite",
-            "B) bom dia",
-            "C) boa tarde"
+            "A) Eu digo boa noite",
+            "B) Eu digo bom dia",
+            "C) Eu digo olá"
           ],
-          "resposta": "B"
+          "resposta": "C"
         },
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: Good morning, ___ are my friend.",
-          "resposta": "you"
+          "enunciado": "He ___ thank you.",
+          "resposta": "says"
         },
         {
           "tipo": "verdadeiro_falso",
-          "enunciado": "\"He is my brother\" significa \"Ela é minha irmã\". Verdadeiro ou Falso?",
-          "resposta": "Falso — \"He is my brother\" significa \"Ele é meu irmão\""
+          "enunciado": "\"Goodbye\" significa \"bom dia\". Verdadeiro ou Falso?",
+          "resposta": "Falso — \"Goodbye\" significa \"tchau\" ou \"adeus\""
         },
         {
           "tipo": "traducao",
@@ -227,16 +226,16 @@
         }
       ],
       "dialogo": {
-        "titulo": "Saudações Simples",
+        "titulo": "Saudações Básicas",
         "falas": [
-          "Hello: Hello!",
-          "Alex: Good morning!",
-          "Hello: Thank you!",
-          "Alex: Please come!",
-          "Hello: Goodbye!",
-          "Alex: Goodbye!"
+          "Hello: Hello",
+          "Alex: Good morning",
+          "Hello: Thank you",
+          "Alex: Please",
+          "Hello: Goodbye",
+          "Alex: Goodbye"
         ],
-        "traducao": "Olá!\nBom dia!\nObrigado!\nPor favor, venha!\nTchau!\nTchau!"
+        "traducao": "Olá\nBom dia\nObrigado\nPor favor\nTchau\nTchau"
       },
       "audio_file": "en_historia.mp3"
     }

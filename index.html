@@ -75,25 +75,40 @@
   <h3 class="licao-titulo">Bonjour ! Les salutations</h3>
 
   <div class="tabs">
-    <button class="tab active" onclick="tab('fr','gram',this)">📘 Gramática</button>
+    <button class="tab active" onclick="tab('fr','dial',this)">🎧 História</button>
+    <button class="tab" onclick="tab('fr','gram',this)">📘 Gramática</button>
     <button class="tab" onclick="tab('fr','ex',this)">✏️ Exercícios</button>
-    <button class="tab" onclick="tab('fr','dial',this)">🎧 Diálogo</button>
+  </div>
+
+  <!-- HISTÓRIA + ÁUDIO -->
+  <div id="fr-dial" class="panel active">
+    <p class="section-label"></p>
+    <div class="dialogo"><div class="fala fala-a">Bonjour: Bonjour</div><div class="fala fala-b">Alex: Bonjour</div><div class="fala fala-a">Bonjour: Merci</div><div class="fala fala-b">Alex: S'il vous plaît</div><div class="fala fala-a">Bonjour: Au revoir</div><div class="fala fala-b">Alex: Au revoir</div></div>
+    <div class="audio-block">
+      <p class="section-label">Ouça o diálogo</p>
+      <audio controls src="fr_historia.mp3" style="width:100%"></audio>
+    </div>
+    <button class="btn-trad" onclick="toggleEl('trad-fr')">🌐 Ver tradução</button>
+    <div class="trad-box" id="trad-fr" hidden>
+      <p class="section-label">Tradução</p>
+      <p class="trad-text">Olá<br>Olá<br>Obrigado<br>Por favor<br>Tchau<br>Tchau</p>
+    </div>
   </div>
 
   <!-- GRAMÁTICA -->
-  <div id="fr-gram" class="panel active">
+  <div id="fr-gram" class="panel">
     <div class="rule-box">
-      <h4 class="rule-title">Pronomes Pessoais Básicos</h4>
-      <p class="rule-exp">Os pronomes pessoais são usados para substituir nomes de pessoas. Em francês, começamos com je, tu e il/elle. Eles têm formas diferentes para usar em frases.</p>
+      <h4 class="rule-title"></h4>
+      <p class="rule-exp">Os pronomes pessoais são usados para se referir a alguém ou algo sem precisar repetir o nome. Em francês, começamos com je, tu e il/elle. Je é usado para falar de si mesmo, tu para falar com alguém, e il/elle para falar de outra pessoa.</p>
     </div>
     <table class="gram-table">
-      <tbody><tr><td>Pronome</td><td>Forma</td><td>Exemplo</td></tr><tr><td>je</td><td>eu</td><td>Je m'appelle</td></tr><tr><td>tu</td><td>você</td><td>Tu es étudiant</td></tr><tr><td>il</td><td>ele</td><td>Il est français</td></tr><tr><td>elle</td><td>ela</td><td>Elle est étudiante</td></tr></tbody>
+      <tbody><tr><td>Je</td><td>Eu</td><td>Je m'appelle</td></tr><tr><td>Tu</td><td>Você</td><td>Tu es là</td></tr><tr><td>Il</td><td>Ele</td><td>Il est ici</td></tr><tr><td>Elle</td><td>Ela</td><td>Elle est là</td></tr></tbody>
     </table>
     <div class="examples-block">
       <p class="section-label">Exemplos</p>
-      <div class="example"><span class="ex-num">1</span>Bonjour, je m'appelle Pierre.</div><div class="example"><span class="ex-num">2</span>Tu es étudiant, n'est-ce pas?</div><div class="example"><span class="ex-num">3</span>Il est français, elle est française.</div>
+      <div class="example"><span class="ex-num">1</span>Je dis bonjour.</div><div class="example"><span class="ex-num">2</span>Tu es ici, merci.</div><div class="example"><span class="ex-num">3</span>Il dit au revoir.</div>
     </div>
-    <div class="tip-box">💡 Para memorizar, associe cada pronome a uma pessoa: je para si mesmo, tu para alguém conhecido e il/elle para alguém específico.</div>
+    <div class="tip-box">💡 Para memorizar, associe cada pronome a uma ação, como je dizendo bonjour.</div>
   </div>
 
   <!-- EXERCÍCIOS -->
@@ -105,7 +120,7 @@
     <span class="ex-n">1</span>
     <span class="ex-badge">Preencha</span>
   </div>
-  <p class="ex-text">Complete: ___ m'appelle Marie. (eu)</p>
+  <p class="ex-text">Complete: ___ dis bonjour. (eu)</p>
   
   <button class="btn-gabarito" onclick="toggleEl('resp-fr-0')">Ver resposta</button>
   <div class="resposta" id="resp-fr-0" hidden>✅ Je</div>
@@ -115,8 +130,8 @@
     <span class="ex-n">2</span>
     <span class="ex-badge">Escolha</span>
   </div>
-  <p class="ex-text">Qual é a tradução de "merci"?</p>
-  <div class="opcoes"><span class="opcao">A) por favor</span><span class="opcao">B) obrigado</span><span class="opcao">C) bom dia</span></div>
+  <p class="ex-text">Qual é a tradução de "s'il vous plaît"?</p>
+  <div class="opcoes"><span class="opcao">A) obrigado</span><span class="opcao">B) por favor</span><span class="opcao">C) au revoir</span></div>
   <button class="btn-gabarito" onclick="toggleEl('resp-fr-1')">Ver resposta</button>
   <div class="resposta" id="resp-fr-1" hidden>✅ B</div>
 </div>
@@ -125,46 +140,31 @@
     <span class="ex-n">3</span>
     <span class="ex-badge">Preencha</span>
   </div>
-  <p class="ex-text">Complete: Il ___ français. (ele)</p>
+  <p class="ex-text">Complete: ___ dit au revoir. (ele/ela)</p>
   
   <button class="btn-gabarito" onclick="toggleEl('resp-fr-2')">Ver resposta</button>
-  <div class="resposta" id="resp-fr-2" hidden>✅ est</div>
+  <div class="resposta" id="resp-fr-2" hidden>✅ Il/Elle</div>
 </div>
 <div class="exercise">
   <div class="ex-header">
     <span class="ex-n">4</span>
     <span class="ex-badge">V ou F</span>
   </div>
-  <p class="ex-text">"Bonjour" significa "boa noite". Verdadeiro ou Falso?</p>
+  <p class="ex-text">"Bonsoir" significa "bom dia". Verdadeiro ou Falso?</p>
   
   <button class="btn-gabarito" onclick="toggleEl('resp-fr-3')">Ver resposta</button>
-  <div class="resposta" id="resp-fr-3" hidden>✅ Falso — "Bonjour" significa "bom dia"</div>
+  <div class="resposta" id="resp-fr-3" hidden>✅ Falso — "Bonsoir" significa "boa noite"</div>
 </div>
 <div class="exercise">
   <div class="ex-header">
     <span class="ex-n">5</span>
     <span class="ex-badge">Traduza</span>
   </div>
-  <p class="ex-text">Traduza para francês: "Thank you, please."</p>
+  <p class="ex-text">Traduza para francês: "Goodbye, thank you."</p>
   
   <button class="btn-gabarito" onclick="toggleEl('resp-fr-4')">Ver resposta</button>
-  <div class="resposta" id="resp-fr-4" hidden>✅ Merci, s'il vous plaît.</div>
+  <div class="resposta" id="resp-fr-4" hidden>✅ Au revoir, merci.</div>
 </div>
-  </div>
-
-  <!-- DIÁLOGO + ÁUDIO -->
-  <div id="fr-dial" class="panel">
-    <p class="section-label">Saudações Simples</p>
-    <div class="dialogo"><div class="fala fala-a">Bonjour: Bonjour</div><div class="fala fala-b">Alex: Bonjour</div><div class="fala fala-a">Bonjour: Merci</div><div class="fala fala-b">Alex: S'il vous plaît</div><div class="fala fala-a">Bonjour: Au revoir</div><div class="fala fala-b">Alex: Au revoir</div></div>
-    <div class="audio-block">
-      <p class="section-label">Ouça o diálogo</p>
-      <audio controls src="fr_historia.mp3" style="width:100%"></audio>
-    </div>
-    <button class="btn-trad" onclick="toggleEl('trad-fr')">🌐 Ver tradução</button>
-    <div class="trad-box" id="trad-fr" hidden>
-      <p class="section-label">Tradução</p>
-      <p class="trad-text">Olá<br>Olá<br>Obrigado<br>Por favor<br>Tchau<br>Tchau</p>
-    </div>
   </div>
 </div>
 
@@ -179,25 +179,40 @@
   <h3 class="licao-titulo">¡Hola! Los saludos</h3>
 
   <div class="tabs">
-    <button class="tab active" onclick="tab('es','gram',this)">📘 Gramática</button>
+    <button class="tab active" onclick="tab('es','dial',this)">🎧 História</button>
+    <button class="tab" onclick="tab('es','gram',this)">📘 Gramática</button>
     <button class="tab" onclick="tab('es','ex',this)">✏️ Exercícios</button>
-    <button class="tab" onclick="tab('es','dial',this)">🎧 Diálogo</button>
+  </div>
+
+  <!-- HISTÓRIA + ÁUDIO -->
+  <div id="es-dial" class="panel active">
+    <p class="section-label"></p>
+    <div class="dialogo"><div class="fala fala-a">Hola: Hola</div><div class="fala fala-b">Alex: Buenos días</div><div class="fala fala-a">Hola: Gracias</div><div class="fala fala-b">Alex: Por favor</div><div class="fala fala-a">Hola: Adiós</div><div class="fala fala-b">Alex: Adiós</div></div>
+    <div class="audio-block">
+      <p class="section-label">Ouça o diálogo</p>
+      <audio controls src="es_historia.mp3" style="width:100%"></audio>
+    </div>
+    <button class="btn-trad" onclick="toggleEl('trad-es')">🌐 Ver tradução</button>
+    <div class="trad-box" id="trad-es" hidden>
+      <p class="section-label">Tradução</p>
+      <p class="trad-text">Olá<br>Bom dia<br>Obrigado<br>Por favor<br>Tchau<br>Tchau</p>
+    </div>
   </div>
 
   <!-- GRAMÁTICA -->
-  <div id="es-gram" class="panel active">
+  <div id="es-gram" class="panel">
     <div class="rule-box">
-      <h4 class="rule-title">Pronombres Personales</h4>
-      <p class="rule-exp">Os pronomes personais são usados para substituir nomes de pessoas. Em espanhol, existem pronomes pessoais como yo, tú e él/ella. Eles são importantes para comunicar de forma clara e eficaz. A escolha do pronome depende da pessoa que está falando ou sendo referida.</p>
+      <h4 class="rule-title"></h4>
+      <p class="rule-exp">Os pronomes personais são usados para se referir a pessoas. Em espanhol, os pronomes "yo", "tú" e "él/ella" são usados para falar sobre si mesmo, sobre a pessoa com quem se está falando e sobre outra pessoa, respectivamente. São fundamentais para comunicações básicas. Vamos aprender a usar esses pronomes.</p>
     </div>
     <table class="gram-table">
-      <tbody><tr><td>yo</td><td>eu</td><td>Yo como una manzana</td></tr><tr><td>tú</td><td>você</td><td>Tú comes una fruta</td></tr><tr><td>él</td><td>ele</td><td>Él come una carne</td></tr><tr><td>ella</td><td>ela</td><td>Ella bebe agua</td></tr></tbody>
+      <tbody><tr><td>Pronome</td><td>Forma</td><td>Exemplo</td></tr><tr><td>yo</td><td>eu</td><td>Yo digo hola</td></tr><tr><td>tú</td><td>você</td><td>Tú dices adiós</td></tr><tr><td>él/ella</td><td>ele/ela</td><td>Ella dice gracias</td></tr></tbody>
     </table>
     <div class="examples-block">
       <p class="section-label">Exemplos</p>
-      <div class="example"><span class="ex-num">1</span>Hola, yo como una manzana.</div><div class="example"><span class="ex-num">2</span>Tú comes una fruta, ¿verdad?</div><div class="example"><span class="ex-num">3</span>Él come una carne y ella bebe agua.</div>
+      <div class="example"><span class="ex-num">1</span>Yo digo hola.</div><div class="example"><span class="ex-num">2</span>Tú dices por favor.</div><div class="example"><span class="ex-num">3</span>Ella dice adiós.</div>
     </div>
-    <div class="tip-box">💡 Para memorizar os pronomes, tente substituir o seu nome por "yo" e o nome de outra pessoa por "tú", "él" ou "ella" em frases simples.</div>
+    <div class="tip-box">💡 Para lembrar, associe "yo" a "eu", "tú" a "você" e "él/ella" a "ele" ou "ela" para facilitar a compreensão e o uso correto.</div>
   </div>
 
   <!-- EXERCÍCIOS -->
@@ -209,10 +224,10 @@
     <span class="ex-n">1</span>
     <span class="ex-badge">Preencha</span>
   </div>
-  <p class="ex-text">Complete: Hola, ___ soy María.</p>
+  <p class="ex-text">Complete: Yo ___ hola.</p>
   
   <button class="btn-gabarito" onclick="toggleEl('resp-es-0')">Ver resposta</button>
-  <div class="resposta" id="resp-es-0" hidden>✅ yo</div>
+  <div class="resposta" id="resp-es-0" hidden>✅ digo</div>
 </div>
 <div class="exercise">
   <div class="ex-header">
@@ -229,10 +244,10 @@
     <span class="ex-n">3</span>
     <span class="ex-badge">Preencha</span>
   </div>
-  <p class="ex-text">___ como una fruta, ¿verdad?</p>
+  <p class="ex-text">Ella ___ adiós.</p>
   
   <button class="btn-gabarito" onclick="toggleEl('resp-es-2')">Ver resposta</button>
-  <div class="resposta" id="resp-es-2" hidden>✅ Tú</div>
+  <div class="resposta" id="resp-es-2" hidden>✅ dice</div>
 </div>
 <div class="exercise">
   <div class="ex-header">
@@ -249,26 +264,11 @@
     <span class="ex-n">5</span>
     <span class="ex-badge">Traduza</span>
   </div>
-  <p class="ex-text">Traduza para espanhol: "Goodbye, thank you."</p>
+  <p class="ex-text">Traduza para espanhol: "Obrigado, por favor."</p>
   
   <button class="btn-gabarito" onclick="toggleEl('resp-es-4')">Ver resposta</button>
-  <div class="resposta" id="resp-es-4" hidden>✅ Adiós, gracias.</div>
+  <div class="resposta" id="resp-es-4" hidden>✅ Gracias, por favor.</div>
 </div>
-  </div>
-
-  <!-- DIÁLOGO + ÁUDIO -->
-  <div id="es-dial" class="panel">
-    <p class="section-label">Saudações</p>
-    <div class="dialogo"><div class="fala fala-a">Hola: Hola</div><div class="fala fala-b">Alex: Buenos días</div><div class="fala fala-a">Hola: Gracias</div><div class="fala fala-b">Alex: Por favor</div><div class="fala fala-a">Hola: Adiós</div><div class="fala fala-b">Alex: Adiós</div></div>
-    <div class="audio-block">
-      <p class="section-label">Ouça o diálogo</p>
-      <audio controls src="es_historia.mp3" style="width:100%"></audio>
-    </div>
-    <button class="btn-trad" onclick="toggleEl('trad-es')">🌐 Ver tradução</button>
-    <div class="trad-box" id="trad-es" hidden>
-      <p class="section-label">Tradução</p>
-      <p class="trad-text">Olá<br>Bom dia<br>Obrigado<br>Por favor<br>Tchau<br>Tchau</p>
-    </div>
   </div>
 </div>
 
@@ -283,25 +283,40 @@
   <h3 class="licao-titulo">Hello! Greetings</h3>
 
   <div class="tabs">
-    <button class="tab active" onclick="tab('en','gram',this)">📘 Gramática</button>
+    <button class="tab active" onclick="tab('en','dial',this)">🎧 História</button>
+    <button class="tab" onclick="tab('en','gram',this)">📘 Gramática</button>
     <button class="tab" onclick="tab('en','ex',this)">✏️ Exercícios</button>
-    <button class="tab" onclick="tab('en','dial',this)">🎧 Diálogo</button>
+  </div>
+
+  <!-- HISTÓRIA + ÁUDIO -->
+  <div id="en-dial" class="panel active">
+    <p class="section-label">Saudações Básicas</p>
+    <div class="dialogo"><div class="fala fala-a">Hello: Hello</div><div class="fala fala-b">Alex: Good morning</div><div class="fala fala-a">Hello: Thank you</div><div class="fala fala-b">Alex: Please</div><div class="fala fala-a">Hello: Goodbye</div><div class="fala fala-b">Alex: Goodbye</div></div>
+    <div class="audio-block">
+      <p class="section-label">Ouça o diálogo</p>
+      <audio controls src="en_historia.mp3" style="width:100%"></audio>
+    </div>
+    <button class="btn-trad" onclick="toggleEl('trad-en')">🌐 Ver tradução</button>
+    <div class="trad-box" id="trad-en" hidden>
+      <p class="section-label">Tradução</p>
+      <p class="trad-text">Olá<br>Bom dia<br>Obrigado<br>Por favor<br>Tchau<br>Tchau</p>
+    </div>
   </div>
 
   <!-- GRAMÁTICA -->
-  <div id="en-gram" class="panel active">
+  <div id="en-gram" class="panel">
     <div class="rule-box">
-      <h4 class="rule-title"></h4>
-      <p class="rule-exp">Os pronomes pessoais são usados para nos referirmos a nós mesmos e às outras pessoas. Eles ajudam a evitar repetir o nome de alguém. Nesta lição, aprenderemos sobre os pronomes "I", "you" e "he/she". São usados para substituir nomes.</p>
+      <h4 class="rule-title">Pronomes Pessoais Básicos</h4>
+      <p class="rule-exp">Os pronomes pessoais são palavras que usamos para nos referir a pessoas. Eles nos ajudam a evitar repetir nomes. Vamos aprender os pronomes I, you e he/she. Esses pronomes são importantes para começar a falar em inglês.</p>
     </div>
     <table class="gram-table">
-      <tbody><tr><td>Pronome</td><td>Forma</td><td>Exemplo</td></tr><tr><td>I</td><td>eu</td><td>I am happy</td></tr><tr><td>you</td><td>você</td><td>you are my friend</td></tr><tr><td>he</td><td>ele</td><td>he is my brother</td></tr><tr><td>she</td><td>ela</td><td>she is my sister</td></tr></tbody>
+      <tbody><tr><td>Pronome</td><td>Forma</td><td>Exemplo</td></tr><tr><td>I</td><td>Eu</td><td>I say hello</td></tr><tr><td>you</td><td>Você</td><td>You say goodbye</td></tr><tr><td>he</td><td>Ele</td><td>He says thank you</td></tr><tr><td>she</td><td>Ela</td><td>She says please</td></tr></tbody>
     </table>
     <div class="examples-block">
       <p class="section-label">Exemplos</p>
-      <div class="example"><span class="ex-num">1</span>Hello, I am happy</div><div class="example"><span class="ex-num">2</span>Good morning, you are my friend</div><div class="example"><span class="ex-num">3</span>He is my brother, thank you</div>
+      <div class="example"><span class="ex-num">1</span>I say hello</div><div class="example"><span class="ex-num">2</span>You say goodbye</div><div class="example"><span class="ex-num">3</span>He says thank you</div>
     </div>
-    <div class="tip-box">💡 Tente substituir os nomes pelas palavras "I", "you", "he" e "she" para melhorar a fluidez.</div>
+    <div class="tip-box">💡 Tente substituir os nomes pelas palavras I, you, he e she em frases simples para praticar o uso desses pronomes.</div>
   </div>
 
   <!-- EXERCÍCIOS -->
@@ -313,40 +328,40 @@
     <span class="ex-n">1</span>
     <span class="ex-badge">Preencha</span>
   </div>
-  <p class="ex-text">Complete: Hello, ___ am happy.</p>
+  <p class="ex-text">Complete: I ___ hello.</p>
   
   <button class="btn-gabarito" onclick="toggleEl('resp-en-0')">Ver resposta</button>
-  <div class="resposta" id="resp-en-0" hidden>✅ I</div>
+  <div class="resposta" id="resp-en-0" hidden>✅ say</div>
 </div>
 <div class="exercise">
   <div class="ex-header">
     <span class="ex-n">2</span>
     <span class="ex-badge">Escolha</span>
   </div>
-  <p class="ex-text">Qual é a tradução de "good morning"?</p>
-  <div class="opcoes"><span class="opcao">A) boa noite</span><span class="opcao">B) bom dia</span><span class="opcao">C) boa tarde</span></div>
+  <p class="ex-text">Qual é a tradução de "I say hello"?</p>
+  <div class="opcoes"><span class="opcao">A) Eu digo boa noite</span><span class="opcao">B) Eu digo bom dia</span><span class="opcao">C) Eu digo olá</span></div>
   <button class="btn-gabarito" onclick="toggleEl('resp-en-1')">Ver resposta</button>
-  <div class="resposta" id="resp-en-1" hidden>✅ B</div>
+  <div class="resposta" id="resp-en-1" hidden>✅ C</div>
 </div>
 <div class="exercise">
   <div class="ex-header">
     <span class="ex-n">3</span>
     <span class="ex-badge">Preencha</span>
   </div>
-  <p class="ex-text">Complete: Good morning, ___ are my friend.</p>
+  <p class="ex-text">He ___ thank you.</p>
   
   <button class="btn-gabarito" onclick="toggleEl('resp-en-2')">Ver resposta</button>
-  <div class="resposta" id="resp-en-2" hidden>✅ you</div>
+  <div class="resposta" id="resp-en-2" hidden>✅ says</div>
 </div>
 <div class="exercise">
   <div class="ex-header">
     <span class="ex-n">4</span>
     <span class="ex-badge">V ou F</span>
   </div>
-  <p class="ex-text">"He is my brother" significa "Ela é minha irmã". Verdadeiro ou Falso?</p>
+  <p class="ex-text">"Goodbye" significa "bom dia". Verdadeiro ou Falso?</p>
   
   <button class="btn-gabarito" onclick="toggleEl('resp-en-3')">Ver resposta</button>
-  <div class="resposta" id="resp-en-3" hidden>✅ Falso — "He is my brother" significa "Ele é meu irmão"</div>
+  <div class="resposta" id="resp-en-3" hidden>✅ Falso — "Goodbye" significa "tchau" ou "adeus"</div>
 </div>
 <div class="exercise">
   <div class="ex-header">
@@ -358,21 +373,6 @@
   <button class="btn-gabarito" onclick="toggleEl('resp-en-4')">Ver resposta</button>
   <div class="resposta" id="resp-en-4" hidden>✅ Thank you, please.</div>
 </div>
-  </div>
-
-  <!-- DIÁLOGO + ÁUDIO -->
-  <div id="en-dial" class="panel">
-    <p class="section-label">Saudações Simples</p>
-    <div class="dialogo"><div class="fala fala-a">Hello: Hello!</div><div class="fala fala-b">Alex: Good morning!</div><div class="fala fala-a">Hello: Thank you!</div><div class="fala fala-b">Alex: Please come!</div><div class="fala fala-a">Hello: Goodbye!</div><div class="fala fala-b">Alex: Goodbye!</div></div>
-    <div class="audio-block">
-      <p class="section-label">Ouça o diálogo</p>
-      <audio controls src="en_historia.mp3" style="width:100%"></audio>
-    </div>
-    <button class="btn-trad" onclick="toggleEl('trad-en')">🌐 Ver tradução</button>
-    <div class="trad-box" id="trad-en" hidden>
-      <p class="section-label">Tradução</p>
-      <p class="trad-text">Olá!<br>Bom dia!<br>Obrigado!<br>Por favor, venha!<br>Tchau!<br>Tchau!</p>
-    </div>
   </div>
 </div>
 </main>
