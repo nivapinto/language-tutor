@@ -1,0 +1,5 @@
+groq
+edge-tts
+python-dotenv
+requests
+apscheduler

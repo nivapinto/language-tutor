@@ -1,0 +1,47 @@
+{
+  "fr": {
+    "nome": "Français",
+    "licoes": [
+      {"numero": 1, "titulo": "Bonjour ! Les salutations", "gramatica": "Pronomes pessoais: je, tu, il/elle", "vocabulario": ["bonjour", "bonsoir", "merci", "s'il vous plaît", "au revoir"], "nivel": "A0"},
+      {"numero": 2, "titulo": "Je m'appelle... Les présentations", "gramatica": "Verbo être no presente: je suis, tu es, il/elle est", "vocabulario": ["je m'appelle", "j'ai ... ans", "je suis", "et toi?", "enchanté(e)"], "nivel": "A0"},
+      {"numero": 3, "titulo": "Les nombres 1-20", "gramatica": "Artigos definidos: le, la, les", "vocabulario": ["un", "deux", "trois", "quatre", "cinq"], "nivel": "A0"},
+      {"numero": 4, "titulo": "La famille", "gramatica": "Adjetivos possessivos: mon, ma, mes / ton, ta, tes", "vocabulario": ["père", "mère", "frère", "sœur", "famille"], "nivel": "A0"},
+      {"numero": 5, "titulo": "Les couleurs et les objets", "gramatica": "Gênero dos substantivos: masculino e feminino", "vocabulario": ["rouge", "bleu", "vert", "blanc", "noir"], "nivel": "A1"},
+      {"numero": 6, "titulo": "J'habite à... Les villes et pays", "gramatica": "Verbo habiter + preposições: à, en, au", "vocabulario": ["habiter", "ville", "pays", "France", "Paris"], "nivel": "A1"},
+      {"numero": 7, "titulo": "Qu'est-ce que tu fais ? Les métiers", "gramatica": "Verbo faire no presente (todo o paradigma)", "vocabulario": ["médecin", "professeur", "étudiant", "travailler", "étudier"], "nivel": "A1"},
+      {"numero": 8, "titulo": "Manger et boire — au café", "gramatica": "Artigos partitivos: du, de la, de l'", "vocabulario": ["café", "eau", "pain", "fromage", "s'il vous plaît"], "nivel": "A1"},
+      {"numero": 9, "titulo": "Quelle heure est-il ? L'heure", "gramatica": "Interrogação com quel/quelle", "vocabulario": ["heure", "matin", "midi", "soir", "minuit"], "nivel": "A1"},
+      {"numero": 10, "titulo": "Aller et venir — les transports", "gramatica": "Verbo aller + futur proche: je vais + infinitivo", "vocabulario": ["aller", "venir", "métro", "bus", "train"], "nivel": "A1"}
+    ]
+  },
+  "es": {
+    "nome": "Español",
+    "licoes": [
+      {"numero": 1, "titulo": "Opiniones y acuerdos", "gramatica": "Subjuntivo presente — expresar opinión y duda", "vocabulario": ["aunque", "sin embargo", "quizás", "es posible que", "me parece que"], "nivel": "B1"},
+      {"numero": 2, "titulo": "Contar experiencias pasadas", "gramatica": "Pretérito indefinido vs imperfecto — contraste", "vocabulario": ["de repente", "mientras", "al final", "enseguida", "todavía"], "nivel": "B1"},
+      {"numero": 3, "titulo": "Hablar del futuro", "gramatica": "Futuro simple e condicional simples", "vocabulario": ["probablemente", "seguramente", "en caso de que", "a menos que", "siempre que"], "nivel": "B1"},
+      {"numero": 4, "titulo": "Describir personas y lugares", "gramatica": "Oraciones relativas com que, quien, donde", "vocabulario": ["cuyo", "el cual", "donde", "quien", "lo que"], "nivel": "B1"},
+      {"numero": 5, "titulo": "Comparar y contrastar", "gramatica": "Comparativos e superlativos irregulares", "vocabulario": ["mejor", "peor", "mayor", "menor", "el más"], "nivel": "B2"},
+      {"numero": 6, "titulo": "Dar consejos y recomendaciones", "gramatica": "Imperativo formal e informal — afirmativo e negativo", "vocabulario": ["te recomiendo", "es mejor que", "intenta", "evita", "asegúrate de"], "nivel": "B2"},
+      {"numero": 7, "titulo": "Debates y argumentación", "gramatica": "Conectores discursivos — argumentar e refutar", "vocabulario": ["por otro lado", "en cuanto a", "cabe destacar", "hay que tener en cuenta", "en definitiva"], "nivel": "B2"},
+      {"numero": 8, "titulo": "Vocabulario en contexto laboral", "gramatica": "Voz pasiva com ser + participio", "vocabulario": ["fue contratado", "ha sido aprobado", "será implementado", "reunión", "propuesta"], "nivel": "B2"},
+      {"numero": 9, "titulo": "Narrar hechos hipotéticos", "gramatica": "Condicional compuesto — si hubiera + condicional", "vocabulario": ["habría sido", "hubiera sabido", "de haberlo", "ojalá", "lástima que"], "nivel": "B2"},
+      {"numero": 10, "titulo": "Expresar emociones complejas", "gramatica": "Subjuntivo imperfecto — expresar deseos e hipótesis", "vocabulario": ["ojala que", "como si", "a no ser que", "con tal de que", "aunque fuera"], "nivel": "B2"}
+    ]
+  },
+  "en": {
+    "nome": "English",
+    "licoes": [
+      {"numero": 1, "titulo": "Advanced opinions & nuance", "gramatica": "Inversion for emphasis — 'Not only... but also', 'Rarely do I...'", "vocabulario": ["albeit", "nonetheless", "whereas", "presumably", "nuanced"], "nivel": "C1"},
+      {"numero": 2, "titulo": "Hypothetical & abstract ideas", "gramatica": "Mixed conditionals — past condition + present result", "vocabulario": ["had it not been for", "were it not for", "supposing that", "as it were", "in hindsight"], "nivel": "C1"},
+      {"numero": 3, "titulo": "Formal writing & discourse", "gramatica": "Passive voice advanced — reporting verbs: it is claimed, it has been argued", "vocabulario": ["it is alleged", "it is widely acknowledged", "purportedly", "ostensibly", "hitherto"], "nivel": "C1"},
+      {"numero": 4, "titulo": "Colloquial & idiomatic English", "gramatica": "Phrasal verbs in context — multi-word verbs with nuance", "vocabulario": ["to bail out", "to come across", "to bring about", "to fall through", "to pull off"], "nivel": "C1"},
+      {"numero": 5, "titulo": "Expressing attitude & stance", "gramatica": "Modal verbs for speculation — must, might, could have + past participle", "vocabulario": ["presumably", "conceivably", "it stands to reason", "in all likelihood", "there is no denying"], "nivel": "C1"},
+      {"numero": 6, "titulo": "Academic & professional register", "gramatica": "Nominalization — turning verbs into nouns for formal tone", "vocabulario": ["the implementation of", "a significant reduction", "the allocation of resources", "to undertake", "to facilitate"], "nivel": "C1"},
+      {"numero": 7, "titulo": "Narrative techniques", "gramatica": "Advanced narrative tenses — past perfect continuous, narrative present", "vocabulario": ["as the story unfolded", "little did he know", "in retrospect", "against all odds", "on the verge of"], "nivel": "C2"},
+      {"numero": 8, "titulo": "Debate & critical thinking", "gramatica": "Cleft sentences for focus — 'It was X that...', 'What I mean is...'", "vocabulario": ["to counter the argument", "to rebut", "to substantiate", "a compelling case", "to take issue with"], "nivel": "C2"},
+      {"numero": 9, "titulo": "Cultural references & humour", "gramatica": "Irony, understatement and hedging in native speech", "vocabulario": ["hardly a surprise", "to put it mildly", "you could say that", "to say the least", "not exactly"], "nivel": "C2"},
+      {"numero": 10, "titulo": "Spontaneous fluency", "gramatica": "Discourse markers for fluency — buying time, reformulating", "vocabulario": ["as I was saying", "to put it another way", "if I recall correctly", "bear with me", "what I'm getting at is"], "nivel": "C2"}
+    ]
+  }
+}

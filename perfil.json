@@ -1,0 +1,26 @@
+{
+  "fr": {
+    "nivel_atual": "A0",
+    "descricao": "Iniciante absoluto — francês do zero",
+    "dificuldade_preferida": "normal",
+    "avaliacoes": [],
+    "pontos_de_melhoria": [],
+    "feedback_historia": []
+  },
+  "es": {
+    "nivel_atual": "B1",
+    "descricao": "Intermediário — espanhol",
+    "dificuldade_preferida": "normal",
+    "avaliacoes": [],
+    "pontos_de_melhoria": [],
+    "feedback_historia": []
+  },
+  "en": {
+    "nivel_atual": "C1",
+    "descricao": "Avançado conversacional — inglês",
+    "dificuldade_preferida": "normal",
+    "avaliacoes": [],
+    "pontos_de_melhoria": [],
+    "feedback_historia": []
+  }
+}
