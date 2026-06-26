@@ -134,16 +134,16 @@ def ia(pergunta, sistema_extra="", max_tokens=200):
     return r.choices[0].message.content.strip()
 
 
-# ── gerar vocabulário rápido ──────────────────────────────────────────────────
+# ── helpers de geração ────────────────────────────────────────────────────────
 
 def gerar_vocab(lang_code, historia_texto, licao):
     sys.path.insert(0, str(BASE_DIR))
     ga = importlib.import_module("gerar_aula"); importlib.reload(ga)
     lang = next(l for l in ga.LANGS if l["code"] == lang_code)
     raw = ga.groq(ga.SYS_PROF, f"""
-Da história abaixo em {lang['lingua']} (nível {licao['nivel']}), selecione 5 palavras-chave.
-
-{historia_texto}
+Do vocabulário da lição abaixo em {lang['lingua']} (nível {licao['nivel']}), selecione 5 palavras-chave.
+Vocabulário da lição: {', '.join(licao.get('vocabulario', []))}
+Contexto da história: {historia_texto[:300]}
 
 Para cada palavra, use EXATAMENTE este formato (uma por linha):
 PALAVRA: <palavra no idioma> | PT: <tradução em português> | EX: <frase curta de exemplo>
@@ -159,6 +159,35 @@ PALAVRA: <palavra no idioma> | PT: <tradução em português> | EX: <frase curta
     return words[:5]
 
 
+def gerar_pronuncia(ga, lang, licao):
+    return ga.groq(ga.SYS_PROF, f"""
+Crie UMA dica de pronúncia para a lição {licao['numero']} de {lang['lingua']} (nível {licao['nivel']}).
+Vocabulário: {', '.join(licao.get('vocabulario', [])[:3])}
+
+Formato EXATO (3 linhas):
+SOM: <o som ou padrão fonético mais importante desta lição, ex: "o R francês" ou "a ligação nasal -on">
+COMO: <explicação em português de como produzir esse som, em 1 frase simples>
+EXEMPLO: <palavra da lição com indicação fonética entre colchetes, ex: bonjour [bõ-JUUR]>
+""", tokens=150)
+
+
+def gerar_frase_ancora(ga, lang, licao):
+    return ga.groq(ga.SYS_PROF, f"""
+Crie UMA frase-âncora memorável para a lição {licao['numero']} de {lang['lingua']} (nível {licao['nivel']}).
+Gramática desta lição: {licao.get('gramatica_nova', '')}
+Vocabulário: {', '.join(licao.get('vocabulario', []))}
+
+A frase deve:
+- Usar a gramática nova de forma natural
+- Ser curta (máximo 8 palavras)
+- Ser fácil de lembrar — de preferência engraçada ou útil no cotidiano
+
+Formato EXATO (2 linhas):
+FRASE: <a frase em {lang['lingua']}>
+PT: <tradução em português>
+""", tokens=100)
+
+
 # ── enviar aula de um idioma ──────────────────────────────────────────────────
 
 def enviar_aula_idioma(chat_id, lang_code, cb_id=None):
@@ -169,25 +198,65 @@ def enviar_aula_idioma(chat_id, lang_code, cb_id=None):
     ga = importlib.import_module("gerar_aula"); importlib.reload(ga)
     lang  = next(l for l in ga.LANGS if l["code"] == lang_code)
     licao = ga.licao_do_dia(lang_code)
-    hist  = ga.gerar_historia(lang, licao)
 
+    nivel       = licao.get("nivel", "")
+    nivel_titulo = licao.get("nivel_titulo", "")
+    cabecalho   = (f"{lang['flag']} *{lang['label']}* — {nivel} · Lição {licao['numero']}\n"
+                   f"_{licao['titulo']}_" + (f"\n`{nivel_titulo}`" if nivel_titulo else ""))
+
+    # ── 1. GRAMÁTICA ──────────────────────────────────────────────────────────
+    gram = ga.gerar_gramatica(lang, licao)
+    tabela = "\n".join(f"  {r}" for r in gram["tabela"]) if gram["tabela"] else ""
+    exemplos = "\n".join(f"  • {e}" for e in gram["exemplos"])
+    gram_txt = (f"{cabecalho}\n\n"
+                f"📘 *Gramática — {gram['titulo']}*\n\n"
+                f"{gram['explicacao']}\n\n"
+                f"{tabela}\n\n"
+                f"*Exemplos:*\n{exemplos}\n\n"
+                f"💡 _{gram['dica']}_")
+    msg(chat_id, gram_txt)
+
+    # ── 2. PRONÚNCIA ──────────────────────────────────────────────────────────
+    pron_raw = gerar_pronuncia(ga, lang, licao)
+    pron_txt = "🔊 *Pronúncia do dia*\n\n"
+    for linha in pron_raw.splitlines():
+        if linha.startswith("SOM:"):
+            pron_txt += f"*Som:* {linha.split(':',1)[1].strip()}\n"
+        elif linha.startswith("COMO:"):
+            pron_txt += f"*Como:* {linha.split(':',1)[1].strip()}\n"
+        elif linha.startswith("EXEMPLO:"):
+            pron_txt += f"*Exemplo:* `{linha.split(':',1)[1].strip()}`"
+    msg(chat_id, pron_txt)
+
+    # ── 3. VOCABULÁRIO ────────────────────────────────────────────────────────
+    vocab = gerar_vocab(lang_code, "", licao)
+    if vocab:
+        vocab_txt = "📝 *Vocabulário da lição*\n\n"
+        for w in vocab:
+            vocab_txt += f"*{w.get('PALAVRA','')}* — {w.get('PT','')}\n_{w.get('EX','')}_\n\n"
+        msg(chat_id, vocab_txt.strip())
+
+    # ── 4. FRASE-ÂNCORA ───────────────────────────────────────────────────────
+    ancora_raw = gerar_frase_ancora(ga, lang, licao)
+    frase, trad_frase = "", ""
+    for linha in ancora_raw.splitlines():
+        if linha.startswith("FRASE:"):
+            frase = linha.split(":",1)[1].strip()
+        elif linha.startswith("PT:"):
+            trad_frase = linha.split(":",1)[1].strip()
+    if frase:
+        msg(chat_id, f"🎯 *Frase do dia — grave essa!*\n\n`{frase}`\n_{trad_frase}_")
+
+    # ── 5. HISTÓRIA + ÁUDIO ───────────────────────────────────────────────────
+    hist = ga.gerar_historia(lang, licao)
     audio_path = BASE_DIR / f"{lang_code}_historia.mp3"
     ga.gerar_audio(hist["texto_completo"], lang_code, audio_path)
 
-    # Salva no cache para os botões usarem depois
-    cache_key = f"{chat_id}_{lang_code}"
-    aula_cache[cache_key] = {"licao": licao, "historia": hist, "lang": lang}
+    aula_cache[f"{chat_id}_{lang_code}"] = {"licao": licao, "historia": hist, "lang": lang}
 
-    # Envia texto
-    nivel = licao.get("nivel", "")
-    nivel_titulo = licao.get("nivel_titulo", "")
     texto = "\n\n".join(hist["paragrafos"])
-    cabecalho = f"{lang['flag']} *{lang['label']}* — {nivel} · Lição {licao['numero']}\n_{licao['titulo']}_"
-    if nivel_titulo:
-        cabecalho += f"\n`{nivel_titulo}`"
-    msg(chat_id, f"{cabecalho}\n\n{texto}")
+    msg(chat_id, f"🎧 *Leitura do dia*\n\n{texto}")
 
-    # Envia áudio
     with open(audio_path, "rb") as f:
         tg_post("sendAudio", {
             "chat_id": chat_id,
