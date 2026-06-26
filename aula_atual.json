@@ -20,19 +20,20 @@
       },
       "gramatica": {
         "titulo": "",
-        "explicacao": "Os pronomes pessoais são usados para se referir a alguém ou algo sem precisar repetir o nome. Em francês, começamos com je, tu e il/elle. Je é usado para falar de si mesmo, tu para falar com alguém, e il/elle para falar de outra pessoa.",
+        "explicacao": "Os pronomes pessoais são usados para falar sobre as pessoas. Em francês, três pronomes importantes são je, tu e il/elle. Eles são usados para se referir a si mesmo, a outra pessoa ou a alguém. É fundamental aprender esses pronomes para começar a falar francês.",
         "tabela": [
-          "Je | Eu | Je m'appelle",
-          "Tu | Você | Tu es là",
-          "Il | Ele | Il est ici",
-          "Elle | Ela | Elle est là"
+          "Pronome | Forma | Exemplo",
+          "je | eu | Je m'appelle",
+          "tu | você | Tu es là",
+          "il | ele | Il est parti",
+          "elle | ela | Elle est ici"
         ],
         "exemplos": [
           "Je dis bonjour.",
-          "Tu es ici, merci.",
+          "Tu es poli, merci.",
           "Il dit au revoir."
         ],
-        "dica": "Para memorizar, associe cada pronome a uma ação, como je dizendo bonjour."
+        "dica": "Para lembrar, associe cada pronome a uma ação, como \"je\" para falar sobre si mesmo e \"tu\" para falar com alguém."
       },
       "exercicios": [
         {
@@ -46,37 +47,35 @@
           "opcoes": [
             "A) obrigado",
             "B) por favor",
-            "C) au revoir"
+            "C) bom dia"
           ],
           "resposta": "B"
         },
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: ___ dit au revoir. (ele/ela)",
-          "resposta": "Il/Elle"
+          "enunciado": "Complete: ___ est poli, merci. (você)",
+          "resposta": "Tu"
         },
         {
           "tipo": "verdadeiro_falso",
-          "enunciado": "\"Bonsoir\" significa \"bom dia\". Verdadeiro ou Falso?",
-          "resposta": "Falso — \"Bonsoir\" significa \"boa noite\""
+          "enunciado": "\"Au revoir\" significa \"bom dia\". Verdadeiro ou Falso?",
+          "resposta": "Falso — \"Au revoir\" significa \"tchau\" ou \"até logo\""
         },
         {
           "tipo": "traducao",
-          "enunciado": "Traduza para francês: \"Goodbye, thank you.\"",
-          "resposta": "Au revoir, merci."
+          "enunciado": "Traduza para francês: \"Good evening, thank you.\"",
+          "resposta": "Bonsoir, merci."
         }
       ],
-      "dialogo": {
-        "titulo": "",
-        "falas": [
-          "Bonjour: Bonjour",
-          "Alex: Bonjour",
-          "Bonjour: Merci",
-          "Alex: S'il vous plaît",
-          "Bonjour: Au revoir",
-          "Alex: Au revoir"
+      "historia": {
+        "titulo": "Um festival cultural",
+        "paragrafos": [
+          "Le festival culturel commence le 26 juin. Les gens vont au festival et disent bonjour. Ils sont heureux de voir leurs amis. Le soleil brille et tout le monde sourit.",
+          "Les artistes font des spectacles et les gens applaudissent. Quelqu'un dit merci à un artiste. Un enfant demande un ballon avec un grand sourire et dit s'il vous plaît. Les gens dansent et chantent ensemble.",
+          "La nuit tombe et le festival se termine. Les gens disent au revoir à leurs amis. Ils sont tristes que le festival soit fini, mais ils ont passé une bonne journée. Demain, ils iront au parc et se promèneront ensemble."
         ],
-        "traducao": "Olá\nOlá\nObrigado\nPor favor\nTchau\nTchau"
+        "texto_completo": "Le festival culturel commence le 26 juin. Les gens vont au festival et disent bonjour. Ils sont heureux de voir leurs amis. Le soleil brille et tout le monde sourit.\n\nLes artistes font des spectacles et les gens applaudissent. Quelqu'un dit merci à un artiste. Un enfant demande un ballon avec un grand sourire et dit s'il vous plaît. Les gens dansent et chantent ensemble.\n\nLa nuit tombe et le festival se termine. Les gens disent au revoir à leurs amis. Ils sont tristes que le festival soit fini, mais ils ont passé une bonne journée. Demain, ils iront au parc et se promèneront ensemble.",
+        "traducao": "O festival cultural começa em 26 de junho. As pessoas vão ao festival e dizem bom dia. Elas estão felizes em ver seus amigos. O sol brilha e todo mundo sorri.\n\nOs artistas fazem espetáculos e as pessoas aplaudem. Alguém agradece a um artista. Uma criança pede um balão com um grande sorriso e diz por favor. As pessoas dançam e cantam juntas.\n\nA noite cai e o festival termina. As pessoas dizem adeus a seus amigos. Elas estão tristes que o festival tenha acabado, mas elas passaram um bom dia. Amanhã, elas irão ao parque e caminharão juntas."
       },
       "audio_file": "fr_historia.mp3"
     },
@@ -98,20 +97,20 @@
         "nivel": "A0"
       },
       "gramatica": {
-        "titulo": "",
-        "explicacao": "Os pronomes personais são usados para se referir a pessoas. Em espanhol, os pronomes \"yo\", \"tú\" e \"él/ella\" são usados para falar sobre si mesmo, sobre a pessoa com quem se está falando e sobre outra pessoa, respectivamente. São fundamentais para comunicações básicas. Vamos aprender a usar esses pronomes.",
+        "titulo": "Pronombres Personales",
+        "explicacao": "Os pronomes pessoais são usados para falar sobre pessoas. Em espanhol, temos \"yo\" para falar de si mesmo, \"tú\" para falar de alguém que está cerca e \"él\" ou \"ella\" para falar de outra pessoa. É importante usar o pronome correto para se comunicar de forma clara.",
         "tabela": [
-          "Pronome | Forma | Exemplo",
-          "yo | eu | Yo digo hola",
-          "tú | você | Tú dices adiós",
-          "él/ella | ele/ela | Ella dice gracias"
+          "Yo | Eu | Yo como una manzana",
+          "Tú | Você | Tú comes una manzana",
+          "Él | Ele | Él come una manzana",
+          "Ella | Ela | Ella come una manzana"
         ],
         "exemplos": [
-          "Yo digo hola.",
-          "Tú dices por favor.",
-          "Ella dice adiós."
+          "Yo digo hola",
+          "Tú dices gracias",
+          "Él dice adiós"
         ],
-        "dica": "Para lembrar, associe \"yo\" a \"eu\", \"tú\" a \"você\" e \"él/ella\" a \"ele\" ou \"ela\" para facilitar a compreensão e o uso correto."
+        "dica": "Lembre-se de que \"yo\" é para você mesmo, \"tú\" é para o outro e \"él\" ou \"ella\" é para outra pessoa, como se estivesse se apresentando."
       },
       "exercicios": [
         {
@@ -131,8 +130,8 @@
         },
         {
           "tipo": "lacuna",
-          "enunciado": "Ella ___ adiós.",
-          "resposta": "dice"
+          "enunciado": "Tú ___ gracias.",
+          "resposta": "dices"
         },
         {
           "tipo": "verdadeiro_falso",
@@ -145,17 +144,15 @@
           "resposta": "Gracias, por favor."
         }
       ],
-      "dialogo": {
-        "titulo": "",
-        "falas": [
-          "Hola: Hola",
-          "Alex: Buenos días",
-          "Hola: Gracias",
-          "Alex: Por favor",
-          "Hola: Adiós",
-          "Alex: Adiós"
+      "historia": {
+        "titulo": "Uma invenção que mudou o cotidiano",
+        "paragrafos": [
+          "Hoy es un día soleado. Buenos días a todos. La gente va a trabajar. La vida es muy ocupada.",
+          "La invencción del teléfono cambió la vida. La gente puede hablar con amigos. Pueden decir hola y gracias. Pueden pedir ayuda con por favor.",
+          "La gente usa el teléfono todo el día. Al final del día, la gente dice adiós. La vida es más fácil con el teléfono. La gente está muy contenta."
         ],
-        "traducao": "Olá\nBom dia\nObrigado\nPor favor\nTchau\nTchau"
+        "texto_completo": "Hoy es un día soleado. Buenos días a todos. La gente va a trabajar. La vida es muy ocupada.\n\nLa invencción del teléfono cambió la vida. La gente puede hablar con amigos. Pueden decir hola y gracias. Pueden pedir ayuda con por favor.\n\nLa gente usa el teléfono todo el día. Al final del día, la gente dice adiós. La vida es más fácil con el teléfono. La gente está muy contenta.",
+        "traducao": "Hoje é um dia ensolarado. Bom dia a todos. As pessoas vão para o trabalho. A vida é muito ocupada.\n\nA invenção do telefone mudou a vida. As pessoas podem falar com amigos. Podem dizer olá e obrigado. Podem pedir ajuda com por favor.\n\nAs pessoas usam o telefone todo o dia. No final do dia, as pessoas dizem tchau. A vida é mais fácil com o telefone. As pessoas estão muito contentes."
       },
       "audio_file": "es_historia.mp3"
     },
@@ -177,21 +174,20 @@
         "nivel": "A0"
       },
       "gramatica": {
-        "titulo": "Pronomes Pessoais Básicos",
-        "explicacao": "Os pronomes pessoais são palavras que usamos para nos referir a pessoas. Eles nos ajudam a evitar repetir nomes. Vamos aprender os pronomes I, you e he/she. Esses pronomes são importantes para começar a falar em inglês.",
+        "titulo": "",
+        "explicacao": "Os pronomes pessoais são usedos para se referir a pessoas. Existem três pronomes pessoais básicos: eu, você e ele/ela. Esses pronomes são importantes para comunicar ideias de forma clara e simples.",
         "tabela": [
           "Pronome | Forma | Exemplo",
-          "I | Eu | I say hello",
-          "you | Você | You say goodbye",
-          "he | Ele | He says thank you",
-          "she | Ela | She says please"
+          "eu | I | I say hello",
+          "você | you | you say goodbye",
+          "ele/ela | he/she | he says thank you"
         ],
         "exemplos": [
-          "I say hello",
-          "You say goodbye",
-          "He says thank you"
+          "I say hello.",
+          "You say goodbye.",
+          "He says thank you."
         ],
-        "dica": "Tente substituir os nomes pelas palavras I, you, he e she em frases simples para praticar o uso desses pronomes."
+        "dica": "Para memorizar, leia as frases em voz alta e troque os pronomes pessoais para praticar!"
       },
       "exercicios": [
         {
@@ -201,41 +197,39 @@
         },
         {
           "tipo": "multipla_escolha",
-          "enunciado": "Qual é a tradução de \"I say hello\"?",
+          "enunciado": "Qual é a tradução de \"goodbye\"?",
           "opcoes": [
-            "A) Eu digo boa noite",
-            "B) Eu digo bom dia",
-            "C) Eu digo olá"
+            "A) obrigado",
+            "B) por favor",
+            "C) tchau"
           ],
           "resposta": "C"
         },
         {
           "tipo": "lacuna",
-          "enunciado": "He ___ thank you.",
-          "resposta": "says"
+          "enunciado": "Complete: You ___ goodbye.",
+          "resposta": "say"
         },
         {
           "tipo": "verdadeiro_falso",
-          "enunciado": "\"Goodbye\" significa \"bom dia\". Verdadeiro ou Falso?",
-          "resposta": "Falso — \"Goodbye\" significa \"tchau\" ou \"adeus\""
+          "enunciado": "\"He says thank you\" significa \"Ele diz por favor\". Verdadeiro ou Falso?",
+          "resposta": "Falso — \"He says thank you\" significa \"Ele diz obrigado\""
         },
         {
           "tipo": "traducao",
-          "enunciado": "Traduza para inglês: \"Obrigado, por favor.\"",
-          "resposta": "Thank you, please."
+          "enunciado": "Traduza para inglês: \"Ele diz please.\"",
+          "resposta": "He says please."
         }
       ],
-      "dialogo": {
-        "titulo": "Saudações Básicas",
-        "falas": [
-          "Hello: Hello",
-          "Alex: Good morning",
-          "Hello: Thank you",
-          "Alex: Please",
-          "Hello: Goodbye",
-          "Alex: Goodbye"
+      "historia": {
+        "titulo": "Um dia na vida de uma pessoa comum em outro país",
+        "paragrafos": [
+          "It is Saturday, 26 June 2026. Emma wakes up early. She says \"good morning\" to her family. They are sleeping.",
+          "Emma goes to the kitchen. She makes breakfast. She says \"hello\" to her friend on the phone. Her friend thanks her for calling. Emma says \"thank you\" and they talk about their day.",
+          "Emma goes to the park. She meets her friend. They say \"please\" and \"thank you\" to the vendor. They buy ice cream. After a nice day, Emma says \"goodbye\" to her friend. She goes home and rests."
         ],
-        "traducao": "Olá\nBom dia\nObrigado\nPor favor\nTchau\nTchau"
+        "texto_completo": "It is Saturday, 26 June 2026. Emma wakes up early. She says \"good morning\" to her family. They are sleeping.\n\nEmma goes to the kitchen. She makes breakfast. She says \"hello\" to her friend on the phone. Her friend thanks her for calling. Emma says \"thank you\" and they talk about their day.\n\nEmma goes to the park. She meets her friend. They say \"please\" and \"thank you\" to the vendor. They buy ice cream. After a nice day, Emma says \"goodbye\" to her friend. She goes home and rests.",
+        "traducao": ""
       },
       "audio_file": "en_historia.mp3"
     }
