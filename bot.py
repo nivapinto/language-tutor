@@ -514,30 +514,71 @@ def processar(msg_data):
                         f"P{i+1}: {p}\nR{i+1}: {r}"
                         for i, (p, r) in enumerate(zip(perguntas, estado["respostas"]))
                     )
-                    analise = ia(
-                        f"Analise as respostas do aluno em {NOMES[lang_code]} e avalie:\n\n"
+                    # Análise estruturada: retorna nível CEFR + feedback
+                    analise_raw = ia(
+                        f"Analise as respostas do aluno em {NOMES[lang_code]}:\n\n"
                         f"{respostas_txt}\n\n"
-                        f"1. Qual o nível aproximado (A0-C2)?\n"
-                        f"2. Pontos fortes (1-2)\n"
-                        f"3. Pontos a melhorar (1-2)\n"
-                        f"4. Recomendação para as próximas aulas\n\n"
-                        f"Seja específico, direto e encorajador. Máximo 6 frases.",
-                        max_tokens=400,
+                        f"Responda EXATAMENTE neste formato:\n"
+                        f"NIVEL: <apenas o código, ex: A1, B2, C1>\n"
+                        f"RESUMO: <2-3 frases: pontos fortes, pontos a melhorar e recomendação encorajadora>",
+                        max_tokens=300,
                     )
-                    # Salva no perfil
+                    # Extrai nível CEFR
+                    nivel_detectado = "A1"
+                    resumo = analise_raw
+                    for linha in analise_raw.splitlines():
+                        if linha.startswith("NIVEL:"):
+                            candidato = linha.split(":", 1)[1].strip().upper()
+                            if candidato in ("A0","A1","A2","B1","B2","C1","C2"):
+                                nivel_detectado = candidato
+                        if linha.startswith("RESUMO:"):
+                            resumo = linha.split(":", 1)[1].strip()
+
+                    # Posiciona no currículo na primeira lição do nível detectado
                     try:
-                        import datetime
+                        sys.path.insert(0, str(BASE_DIR))
+                        ga   = importlib.import_module("gerar_aula"); importlib.reload(ga)
+                        curr = ga.carregar_curriculo()
+                        licao_alvo = None
+                        for bloco in curr[lang_code]["jornada"]:
+                            if bloco["nivel"] == nivel_detectado and bloco["licoes"]:
+                                licao_alvo = bloco["licoes"][0]["numero"]
+                                break
+                        if licao_alvo is None:
+                            # Nível não existe no currículo → usa o mais próximo disponível
+                            todos = [l for b in curr[lang_code]["jornada"] for l in b["licoes"]]
+                            licao_alvo = todos[0]["numero"]
+
+                        prog = json.loads((BASE_DIR / "progresso.json").read_text(encoding="utf-8"))
+                        prog[lang_code]["licao_atual"] = licao_alvo
+                        salvar_json_e_sync(BASE_DIR / "progresso.json", prog)
+                    except Exception as e:
+                        print(f"  ⚠ posicionamento: {e}")
+                        licao_alvo = "?"
+
+                    # Salva avaliação no perfil
+                    try:
                         perfil = json.loads((BASE_DIR / "perfil.json").read_text(encoding="utf-8"))
+                        perfil[lang_code]["nivel_atual"] = nivel_detectado
                         perfil[lang_code]["avaliacoes"].append({
                             "data": datetime.date.today().isoformat(),
                             "respostas": estado["respostas"],
-                            "analise": analise,
+                            "nivel_detectado": nivel_detectado,
+                            "resumo": resumo,
                         })
                         salvar_json_e_sync(BASE_DIR / "perfil.json", perfil)
                     except Exception:
                         pass
-                    msg(chat_id, f"🎯 *Avaliação concluída!*\n\n{analise}")
-                    resposta_audio(chat_id, analise)
+
+                    resultado = (
+                        f"🎯 *Avaliação concluída!*\n\n"
+                        f"Nível detectado: *{nivel_detectado}*\n\n"
+                        f"{resumo}\n\n"
+                        f"✅ Suas próximas aulas de {NOMES[lang_code]} começam na lição {licao_alvo} — "
+                        f"nível {nivel_detectado}. Mande *aula* quando quiser começar!"
+                    )
+                    msg(chat_id, resultado)
+                    resposta_audio(chat_id, f"Nível detectado: {nivel_detectado}. {resumo}")
 
             # Modo conversa normal
             elif estado.get("modo") == "conversa":
