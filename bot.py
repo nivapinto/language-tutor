@@ -179,9 +179,13 @@ def enviar_aula_idioma(chat_id, lang_code, cb_id=None):
     aula_cache[cache_key] = {"licao": licao, "historia": hist, "lang": lang}
 
     # Envia texto
+    nivel = licao.get("nivel", "")
+    nivel_titulo = licao.get("nivel_titulo", "")
     texto = "\n\n".join(hist["paragrafos"])
-    msg(chat_id,
-        f"{lang['flag']} *{lang['label']}* — Lição {licao['numero']}: _{licao['titulo']}_\n\n{texto}")
+    cabecalho = f"{lang['flag']} *{lang['label']}* — {nivel} · Lição {licao['numero']}\n_{licao['titulo']}_"
+    if nivel_titulo:
+        cabecalho += f"\n`{nivel_titulo}`"
+    msg(chat_id, f"{cabecalho}\n\n{texto}")
 
     # Envia áudio
     with open(audio_path, "rb") as f:

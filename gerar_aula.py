@@ -61,16 +61,30 @@ def carregar_curriculo() -> dict:
     return json.loads((BASE_DIR / "curriculo.json").read_text(encoding="utf-8"))
 
 def licao_do_dia(lang_code: str) -> dict:
-    prog  = carregar_progresso()
-    curr  = carregar_curriculo()
-    num   = prog[lang_code]["licao_atual"]
-    licoes = curr[lang_code]["licoes"]
-    # se passou do currículo pré-definido, gera dados genéricos
-    for l in licoes:
+    prog = carregar_progresso()
+    curr = carregar_curriculo()
+    num  = prog[lang_code]["licao_atual"]
+
+    todas_licoes = []
+    for nivel_bloco in curr[lang_code]["jornada"]:
+        for l in nivel_bloco["licoes"]:
+            todas_licoes.append({**l, "nivel": nivel_bloco["nivel"],
+                                 "nivel_titulo": nivel_bloco["titulo"]})
+
+    for l in todas_licoes:
         if l["numero"] == num:
             return l
-    ultimo = licoes[-1]
-    return {**ultimo, "numero": num, "titulo": f"Revisão e expansão — lição {num}"}
+
+    # Passou do currículo — repete o último com revisão livre
+    ultimo = todas_licoes[-1]
+    return {**ultimo, "numero": num,
+            "titulo": f"Revisão livre — nível {ultimo['nivel']}",
+            "gramatica_nova": "Revisão e consolidação de todos os tópicos",
+            "gramatica_cumulativa": ["Todos os tópicos anteriores"]}
+
+def nivel_atual(lang_code: str) -> str:
+    licao = licao_do_dia(lang_code)
+    return licao.get("nivel", "A1")
 
 
 # ── geração de conteúdo ───────────────────────────────────────────────────────
@@ -84,11 +98,13 @@ SYS_PROF = (
 )
 
 def gerar_gramatica(lang: dict, licao: dict) -> dict:
+    cumul = licao.get("gramatica_cumulativa", [])
+    ctx_cumul = f"\nGramática já aprendida (use naturalmente, não explique de novo): {'; '.join(cumul)}" if cumul else ""
     raw = groq(SYS_PROF, f"""
 Crie a seção GRAMÁTICA da lição {licao['numero']} de {lang['lingua']} (nível {licao['nivel']}).
 
-Tópico gramatical: {licao['gramatica']}
-Vocabulário da lição: {', '.join(licao['vocabulario'])}
+Tópico NOVO desta lição: {licao.get('gramatica_nova', licao.get('gramatica',''))}
+Vocabulário da lição: {', '.join(licao['vocabulario'])}{ctx_cumul}
 
 Use EXATAMENTE este formato:
 
@@ -121,10 +137,12 @@ DICA: <dica de memorização em 1 frase>
 
 
 def gerar_exercicios(lang: dict, licao: dict, gramatica: dict) -> dict:
+    cumul = licao.get("gramatica_cumulativa", [])
+    ctx_cumul = f"\nGramática anterior (pode aparecer nos exercícios): {'; '.join(cumul[-3:])}" if cumul else ""
     raw = groq(SYS_PROF, f"""
 Crie 5 exercícios para a lição {licao['numero']} de {lang['lingua']} (nível {licao['nivel']}).
-Tópico: {licao['gramatica']}
-Vocabulário: {', '.join(licao['vocabulario'])}
+Tópico desta lição: {licao.get('gramatica_nova', licao.get('gramatica',''))}
+Vocabulário: {', '.join(licao['vocabulario'])}{ctx_cumul}
 Exemplos da gramática: {'; '.join(gramatica['exemplos'])}
 
 Use tipos variados. Formato EXATO:
@@ -187,33 +205,33 @@ def gerar_historia(lang: dict, licao: dict) -> dict:
     hoje = datetime.date.today().strftime("%d/%m/%Y")
 
     lingua_nome = {"fr": "FRANCÊS", "es": "ESPANHOL", "en": "INGLÊS"}.get(lang["code"], lang["lingua"].upper())
+    gramatica_nova   = licao.get("gramatica_nova", licao.get("gramatica", ""))
+    gramatica_cumul  = licao.get("gramatica_cumulativa", [])
+    temas_sugeridos  = licao.get("temas_historia", [tema])
+    tema_escolhido   = random.choice(temas_sugeridos) if temas_sugeridos else tema
+
+    ctx_cumul = ""
+    if gramatica_cumul:
+        ctx_cumul = f"\nEstruturas já conhecidas pelo aluno (use naturalmente na história): {'; '.join(gramatica_cumul[-4:])}"
+
     raw = groq(SYS_PROF, f"""
 ATENÇÃO: a história INTEIRA deve ser escrita em {lingua_nome} — nunca em português.
 Somente a tradução ao final deve estar em português.
 
-Escreva uma história narrativa em {lang['lingua']} para um aluno nível {licao['nivel']}.
+Escreva uma história narrativa em {lang['lingua']} para um aluno no nível {licao['nivel']}.
 
-Tema: {tema}
-Vocabulário da lição (inclua naturalmente): {', '.join(licao['vocabulario'])}
-Data: {hoje}
+Tema: {tema_escolhido}
+Vocabulário desta lição (inclua naturalmente): {', '.join(licao['vocabulario'])}
+Estrutura gramatical NOVA desta lição (use pelo menos 2x na história): {gramatica_nova}{ctx_cumul}
 
 Regras:
 - 3 parágrafos com 3-4 frases cada, TODO o texto em {lang['lingua']}
-- Narrativa real, com início, meio e fim
-- Linguagem adequada ao nível {licao['nivel']}
+- Narrativa real e envolvente, com início, meio e fim
+- A complexidade linguística deve ser adequada ao nível {licao['nivel']}
+- Use a gramática nova de forma natural, não forçada
 - NÃO inclua título, numeração ou instruções
 
-Após a história em {lang['lingua']}, coloque a tradução completa em português separada por: ---TRADUCAO---
-
-Formato:
-<parágrafo 1 em {lang['lingua']}>
-
-<parágrafo 2 em {lang['lingua']}>
-
-<parágrafo 3 em {lang['lingua']}>
-
----TRADUCAO---
-<tradução completa em português>
+Após a história, coloque a tradução completa em português separada por: ---TRADUCAO---
 """, tokens=900)
 
     if "---TRADUCAO---" in raw:
