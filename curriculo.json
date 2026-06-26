@@ -1,276 +1,90 @@
 {
   "fr": {
     "nome": "Français",
-    "nivel_inicial": "A0",
+    "nivel_inicial": "A1",
     "jornada": [
       {
-        "nivel": "A0",
-        "titulo": "Sobrevivência — primeiros passos",
-        "licoes": [
-          {
-            "numero": 1,
-            "titulo": "Bonjour ! Les salutations",
-            "gramatica_nova": "Pronomes pessoais: je, tu, il, elle",
-            "gramatica_cumulativa": [],
-            "vocabulario": ["bonjour", "bonsoir", "merci", "s'il vous plaît", "au revoir"],
-            "temas_historia": ["um encontro casual em Paris", "um turista perdido que pede ajuda"]
-          },
-          {
-            "numero": 2,
-            "titulo": "Je m'appelle... Les présentations",
-            "gramatica_nova": "Verbo être no presente: je suis, tu es, il/elle est",
-            "gramatica_cumulativa": ["Pronomes pessoais: je, tu, il, elle"],
-            "vocabulario": ["je m'appelle", "j'ai ... ans", "je suis", "enchanté(e)", "et vous?"],
-            "temas_historia": ["duas pessoas se conhecem num café", "uma criança se apresenta na escola"]
-          },
-          {
-            "numero": 3,
-            "titulo": "Les nombres 1 à 20",
-            "gramatica_nova": "Artigos definidos: le, la, les — artigos indefinidos: un, une",
-            "gramatica_cumulativa": ["Pronomes pessoais", "Verbo être"],
-            "vocabulario": ["un", "deux", "trois", "dix", "vingt"],
-            "temas_historia": ["uma criança conta objetos na sala de aula", "um vendedor de frutas no mercado"]
-          },
-          {
-            "numero": 4,
-            "titulo": "La famille",
-            "gramatica_nova": "Adjetivos possessivos: mon, ma, mes / ton, ta, tes",
-            "gramatica_cumulativa": ["Pronomes pessoais", "Verbo être", "Artigos"],
-            "vocabulario": ["père", "mère", "frère", "sœur", "famille"],
-            "temas_historia": ["uma família reunida no domingo", "uma criança descreve sua família para a professora"]
-          },
-          {
-            "numero": 5,
-            "titulo": "Les couleurs et les objets",
-            "gramatica_nova": "Concordância de gênero dos adjetivos (-e no feminino)",
-            "gramatica_cumulativa": ["Pronomes", "Être", "Artigos", "Possessivos mon/ma"],
-            "vocabulario": ["rouge", "bleu(e)", "vert(e)", "blanc/blanche", "noir(e)"],
-            "temas_historia": ["uma criança descrevendo seu quarto colorido", "uma artista escolhendo cores para sua pintura"]
-          },
-          {
-            "numero": 6,
-            "titulo": "Manger et boire — au café",
-            "gramatica_nova": "Verbo avoir: j'ai, tu as, il/elle a — Il y a (há/tem)",
-            "gramatica_cumulativa": ["Pronomes", "Être", "Artigos", "Possessivos", "Concordância adjetivos"],
-            "vocabulario": ["café", "eau", "pain", "fromage", "j'ai faim"],
-            "temas_historia": ["um café parisiense numa manhã de inverno", "um amigo visitando e tomando café"]
-          },
-          {
-            "numero": 7,
-            "titulo": "Où habites-tu? La ville",
-            "gramatica_nova": "Verbo habiter no presente — preposições: à, en, au, dans",
-            "gramatica_cumulativa": ["Pronomes", "Être", "Avoir", "Artigos", "Possessivos"],
-            "vocabulario": ["habiter", "ville", "rue", "maison", "appartement"],
-            "temas_historia": ["uma pessoa descrevendo sua cidade natal", "dois amigos comparando onde moram"]
-          },
-          {
-            "numero": 8,
-            "titulo": "Quelle heure est-il? Le temps",
-            "gramatica_nova": "Perguntas com Quelle/Quel — expressar horas",
-            "gramatica_cumulativa": ["Pronomes", "Être", "Avoir", "Habiter", "Artigos", "Possessivos"],
-            "vocabulario": ["heure", "matin", "après-midi", "soir", "maintenant"],
-            "temas_historia": ["um viajante perdendo o trem por causa do horário", "uma rotina matinal simples"]
-          }
-        ]
-      },
-      {
         "nivel": "A1",
-        "titulo": "Comunicação básica — presente e cotidiano",
+        "titulo": "Primeiros passos — sobrevivência e identidade",
         "licoes": [
-          {
-            "numero": 9,
-            "titulo": "Les verbes du quotidien",
-            "gramatica_nova": "Verbos -er regulares no presente: parler, manger, travailler, écouter",
-            "gramatica_cumulativa": ["Être", "Avoir", "Habiter", "Artigos", "Pronomes", "Possessivos", "Horas"],
-            "vocabulario": ["parler", "travailler", "écouter", "regarder", "aimer"],
-            "temas_historia": ["um dia típico de uma pessoa trabalhadora em Lyon", "estudantes numa biblioteca"]
-          },
-          {
-            "numero": 10,
-            "titulo": "Les professions",
-            "gramatica_nova": "Negação: ne...pas — Je ne suis pas, Je ne travaille pas",
-            "gramatica_cumulativa": ["Verbos -er", "Être", "Avoir", "Artigos", "Possessivos"],
-            "vocabulario": ["médecin", "professeur", "étudiant(e)", "cuisinier", "architecte"],
-            "temas_historia": ["uma entrevista de emprego inesperada", "um jovem escolhendo sua profissão"]
-          },
-          {
-            "numero": 11,
-            "titulo": "Faire les courses — au marché",
-            "gramatica_nova": "Artigos partitivos: du, de la, des — quantidades",
-            "gramatica_cumulativa": ["Verbos -er", "Negação ne...pas", "Être", "Avoir", "Il y a"],
-            "vocabulario": ["marché", "boulangerie", "combien", "s'il vous plaît", "merci beaucoup"],
-            "temas_historia": ["uma manhã de sábado no mercado local", "uma mãe comprando ingredientes para o jantar"]
-          },
-          {
-            "numero": 12,
-            "titulo": "Les transports — aller quelque part",
-            "gramatica_nova": "Verbo aller no presente (irregular) — futur proche: aller + infinitif",
-            "gramatica_cumulativa": ["Verbos -er", "Être", "Avoir", "Negação", "Partitivos"],
-            "vocabulario": ["aller", "venir", "métro", "bus", "gare"],
-            "temas_historia": ["uma viagem de trem de Paris ao interior", "alguém planejando uma visita a um amigo"]
-          },
-          {
-            "numero": 13,
-            "titulo": "La maison — décrire un lieu",
-            "gramatica_nova": "Verbos -ir regulares: finir, choisir — c'est / ce sont",
-            "gramatica_cumulativa": ["Verbos -er", "Aller", "Futur proche", "Être", "Ter", "Negação"],
-            "vocabulario": ["salon", "cuisine", "chambre", "jardin", "confortable"],
-            "temas_historia": ["uma pessoa mudando para um novo apartamento", "um lar acolhedor numa tarde de chuva"]
-          },
-          {
-            "numero": 14,
-            "titulo": "Les loisirs — qu'est-ce que tu aimes?",
-            "gramatica_nova": "Perguntas com est-ce que / inversion — Qu'est-ce que",
-            "gramatica_cumulativa": ["Verbos -er e -ir", "Aller", "Futur proche", "Negação", "Artigos"],
-            "vocabulario": ["lire", "voyager", "sport", "musique", "cinéma"],
-            "temas_historia": ["dois amigos descobrindo que têm gostos opostos", "um fim de semana perfeito"]
-          },
-          {
-            "numero": 15,
-            "titulo": "Le passé — le passé composé I",
-            "gramatica_nova": "Passé composé com avoir: j'ai mangé, tu as parlé",
-            "gramatica_cumulativa": ["Verbos -er/-ir", "Aller", "Être", "Avoir", "Futur proche", "Negação"],
-            "vocabulario": ["hier", "la semaine dernière", "déjà", "finalement", "j'ai visité"],
-            "temas_historia": ["alguém contando o que fez nas férias", "uma criança descrevendo seu aniversário"]
-          },
-          {
-            "numero": 16,
-            "titulo": "Le passé — verbes avec être",
-            "gramatica_nova": "Passé composé com être: je suis allé(e), je suis venu(e) — concordância",
-            "gramatica_cumulativa": ["Passé composé avoir", "Verbos -er/-ir", "Futur proche", "Negação"],
-            "vocabulario": ["arriver", "partir", "rester", "tomber", "naître"],
-            "temas_historia": ["uma viagem inesquecível ao sul da França", "o dia em que tudo deu errado numa viagem"]
-          }
+          {"numero":1,"titulo":"Bonjour — être et pronoms","gramatica_nova":"Verbo être no presente: je suis, tu es, il/elle est, nous sommes, vous êtes, ils/elles sont","gramatica_cumulativa":[],"vocabulario":["bonjour","bonsoir","merci","s'il vous plaît","au revoir"],"temas_historia":["um turista perdido em Paris pedindo ajuda","dois desconhecidos se cumprimentando num café"]},
+          {"numero":2,"titulo":"J'ai... — avoir et la famille","gramatica_nova":"Verbo avoir no presente: j'ai, tu as, il a, nous avons, vous avez, ils ont","gramatica_cumulativa":["Verbo être"],"vocabulario":["père","mère","frère","sœur","ami(e)"],"temas_historia":["uma criança descrevendo sua família para a professora","um jovem apresentando sua família numa foto"]},
+          {"numero":3,"titulo":"Je parle — verbes en -er","gramatica_nova":"Verbos -er regulares no presente: parler, manger, travailler, habiter, écouter","gramatica_cumulativa":["être","avoir"],"vocabulario":["parler","travailler","habiter","aimer","regarder"],"temas_historia":["uma rotina matinal simples em Lyon","estudantes numa universidade parisiense"]},
+          {"numero":4,"titulo":"Le, la, les — articles et genre","gramatica_nova":"Artigos definidos (le, la, les) e indefinidos (un, une, des) — género gramatical","gramatica_cumulativa":["être","avoir","verbos -er"],"vocabulario":["livre","maison","ville","café","école"],"temas_historia":["uma livraria cheia de tesouros","um bairro parisiense num dia de sol"]},
+          {"numero":5,"titulo":"Ne... pas — la négation","gramatica_nova":"Negação: ne...pas — je ne suis pas, je ne parle pas, il n'a pas","gramatica_cumulativa":["être","avoir","verbos -er","artigos"],"vocabulario":["non","jamais","pas du tout","ne...pas","personne"],"temas_historia":["um personagem que nega tudo com humor","uma criança que não quer nada"]},
+          {"numero":6,"titulo":"Je vais — aller et futur proche","gramatica_nova":"Verbo aller (je vais, tu vas...) — futur proche: aller + infinitif","gramatica_cumulativa":["être","avoir","verbos -er","négation"],"vocabulario":["aller","venir","partir","arriver","bientôt"],"temas_historia":["planos para o fim de semana","uma viagem de trem inesperada"]},
+          {"numero":7,"titulo":"Est-ce que...? — les questions","gramatica_nova":"Formação de perguntas: est-ce que, inversion, mots interrogatifs (qui, quoi, où, quand, comment)","gramatica_cumulativa":["être","avoir","verbos -er","aller","négation"],"vocabulario":["où","quand","comment","pourquoi","combien"],"temas_historia":["uma entrevista de emprego descontraída","um curioso interrogando um viajante"]},
+          {"numero":8,"titulo":"Finir, vendre — verbes en -ir et -re","gramatica_nova":"Verbos -ir regulares: finir, choisir, réussir — verbos -re: vendre, répondre, attendre","gramatica_cumulativa":["être","avoir","verbos -er","aller","négation","questions"],"vocabulario":["finir","choisir","vendre","attendre","répondre"],"temas_historia":["um vendedor num mercado animado","uma estudante escolhendo sua carreira"]},
+          {"numero":9,"titulo":"Mon, ma, mes — adjectifs possessifs","gramatica_nova":"Adjetivos possessivos: mon/ma/mes, ton/ta/tes, son/sa/ses, notre/nos, votre/vos, leur/leurs","gramatica_cumulativa":["être","avoir","verbos -er/-ir/-re","aller","négation","questions"],"vocabulario":["maison","chambre","livre","voiture","téléphone"],"temas_historia":["alguém descrevendo seu apartamento novo","uma criança organizando seus brinquedos"]},
+          {"numero":10,"titulo":"Il y a — décrire un lieu","gramatica_nova":"Il y a (há/tem) — c'est / ce sont — prépositions de lieu: dans, sur, sous, devant, derrière","gramatica_cumulativa":["être","avoir","verbos -er/-ir/-re","aller","possessifs","négation"],"vocabulario":["il y a","devant","derrière","près de","loin de"],"temas_historia":["uma visita a uma cidade nova","um apartamento descrito para um amigo"]},
+          {"numero":11,"titulo":"Quelle heure? — le temps et les nombres","gramatica_nova":"Números 1-100 — expressar horas — dias da semana — meses","gramatica_cumulativa":["être","avoir","verbos","aller","il y a","possessifs"],"vocabulario":["heure","matin","après-midi","soir","semaine"],"temas_historia":["uma corrida contra o relógio","uma agenda cheia de compromissos"]}
         ]
       },
       {
         "nivel": "A2",
-        "titulo": "Independência básica — descrever e narrar",
+        "titulo": "Cotidiano — passado, comparações e preferências",
         "licoes": [
-          {
-            "numero": 17,
-            "titulo": "Décrire des personnes — l'imparfait I",
-            "gramatica_nova": "Imparfait para descrições: j'étais, il avait, c'était",
-            "gramatica_cumulativa": ["Passé composé (avoir+être)", "Futur proche", "Verbos -er/-ir", "Negação"],
-            "vocabulario": ["grand(e)", "petit(e)", "jeune", "vieux/vieille", "sympathique"],
-            "temas_historia": ["uma avó descrevendo como era jovem", "um detetive descrevendo um suspeito"]
-          },
-          {
-            "numero": 18,
-            "titulo": "Raconter une histoire — passé composé vs imparfait",
-            "gramatica_nova": "Contraste passé composé (ação) vs imparfait (descrição/fundo)",
-            "gramatica_cumulativa": ["Imparfait", "Passé composé", "Futur proche", "Negação"],
-            "vocabulario": ["pendant que", "soudain", "à ce moment-là", "d'abord", "ensuite"],
-            "temas_historia": ["uma história de aventura com reviravolta", "uma noite estranha numa cidade desconhecida"]
-          },
-          {
-            "numero": 19,
-            "titulo": "Exprimer ses opinions",
-            "gramatica_nova": "Je pense que / Je crois que / À mon avis — verbes d'opinion",
-            "gramatica_cumulativa": ["Imparfait", "Passé composé", "Futur proche", "Negação", "Perguntas"],
-            "vocabulario": ["je pense", "je crois", "selon moi", "il me semble", "d'accord"],
-            "temas_historia": ["dois amigos debatem sobre um filme", "uma reunião de vizinhos com opiniões diferentes"]
-          },
-          {
-            "numero": 20,
-            "titulo": "Le futur simple — projets et rêves",
-            "gramatica_nova": "Futur simple: je parlerai, tu iras, il sera — formas regulares e irregulares",
-            "gramatica_cumulativa": ["Futur proche", "Passé composé", "Imparfait", "Opinions"],
-            "vocabulario": ["demain", "l'année prochaine", "un jour", "peut-être", "rêve"],
-            "temas_historia": ["um jovem falando sobre seus sonhos profissionais", "planos para uma viagem futura"]
-          },
-          {
-            "numero": 21,
-            "titulo": "Les comparaisons",
-            "gramatica_nova": "Comparatifs: plus...que, moins...que, aussi...que — superlatifs: le plus, le moins",
-            "gramatica_cumulativa": ["Futur simple", "Passé composé", "Imparfait", "Opinions"],
-            "vocabulario": ["meilleur", "pire", "plus grand", "moins cher", "le plus beau"],
-            "temas_historia": ["dois candidatos a um emprego sendo comparados", "um guia turístico comparando cidades"]
-          },
-          {
-            "numero": 22,
-            "titulo": "Donner des conseils — le conditionnel",
-            "gramatica_nova": "Conditionnel présent: je voudrais, tu devrais, il faudrait",
-            "gramatica_cumulativa": ["Futur simple", "Comparatifs", "Imparfait", "Passé composé"],
-            "vocabulario": ["je voudrais", "tu devrais", "il faudrait", "à ta place", "conseil"],
-            "temas_historia": ["um amigo dando conselhos sobre uma decisão difícil", "um coach motivacional"]
-          }
+          {"numero":12,"titulo":"J'ai mangé — passé composé avec avoir","gramatica_nova":"Passé composé com avoir: j'ai mangé, tu as parlé, il a fini — particípios regulares e irregulares comuns","gramatica_cumulativa":["être","avoir","verbos -er/-ir/-re","aller","négation","il y a"],"vocabulario":["hier","la semaine dernière","déjà","finalement","j'ai visité"],"temas_historia":["alguém contando as férias para os amigos","uma noite inesquecível num restaurante"]},
+          {"numero":13,"titulo":"Je suis allé(e) — passé composé avec être","gramatica_nova":"Passé composé com être: je suis allé(e), je suis venu(e) — concordância de gênero","gramatica_cumulativa":["passé composé avoir","être","aller","négation"],"vocabulario":["arriver","partir","rester","tomber","naître"],"temas_historia":["uma viagem ao interior da França","o dia em que tudo deu errado"]},
+          {"numero":14,"titulo":"C'était — l'imparfait (description)","gramatica_nova":"Imparfait para descrição e estado: j'étais, il avait, c'était, il faisait — raíz do présent + -ais/-ait","gramatica_cumulativa":["passé composé","être","avoir","verbos"],"vocabulario":["avant","autrefois","toujours","souvent","à l'époque"],"temas_historia":["uma avó relembrando a infância","um bairro que mudou muito ao longo dos anos"]},
+          {"numero":15,"titulo":"Soudain — passé composé vs imparfait","gramatica_nova":"Contraste: imparfait (fundo/descrição) vs passé composé (ação/evento) — marqueurs: soudain, quand, pendant que","gramatica_cumulativa":["imparfait","passé composé","être","avoir"],"vocabulario":["soudain","pendant que","à ce moment","d'abord","ensuite"],"temas_historia":["uma história de aventura com reviravolta","uma noite estranha numa cidade desconhecida"]},
+          {"numero":16,"titulo":"Le, la — pronoms COD","gramatica_nova":"Pronomes complemento direto: me, te, le, la, nous, vous, les — posição antes do verbo","gramatica_cumulativa":["passé composé","imparfait","verbos","négation"],"vocabulario":["le voir","la prendre","les aimer","me comprendre","vous écouter"],"temas_historia":["um mal-entendido que se resolve com pronomes","um filme descrito sem citar os personagens pelo nome"]},
+          {"numero":17,"titulo":"Lui, leur — pronoms COI","gramatica_nova":"Pronomes complemento indireto: me, te, lui, nous, vous, leur — verbes qui demandent à quelqu'un","gramatica_cumulativa":["COD","passé composé","imparfait","verbos"],"vocabulario":["lui parler","leur écrire","me donner","te demander","nous dire"],"temas_historia":["uma troca de cartas entre amigos distantes","um professor explicando algo a seus alunos"]},
+          {"numero":18,"titulo":"Plus grand — comparatifs et superlatifs","gramatica_nova":"Comparatifs: plus...que, moins...que, aussi...que — superlatifs: le/la plus, le/la moins — formas irregulares: meilleur, pire","gramatica_cumulativa":["COD/COI","passé composé","imparfait","verbos"],"vocabulario":["meilleur","pire","plus grand","moins cher","le plus beau"],"temas_historia":["um guia turístico comparando duas cidades","dois amigos debatendo qual restaurante é melhor"]},
+          {"numero":19,"titulo":"Je voudrais — le conditionnel présent","gramatica_nova":"Conditionnel présent: je voudrais, tu devrais, il faudrait, nous pourrions — cortesia e conselho","gramatica_cumulativa":["comparatifs","passé composé","imparfait","COD/COI"],"vocabulario":["je voudrais","tu devrais","il faudrait","à votre place","conseil"],"temas_historia":["um amigo dando conselhos sobre uma decisão difícil","um pedido educado num hotel de luxo"]},
+          {"numero":20,"titulo":"Se lever — verbes pronominaux","gramatica_nova":"Verbos pronominais: se lever, se coucher, s'appeler, se souvenir — presente e passé composé (avec être)","gramatica_cumulativa":["conditionnel","passé composé","imparfait","COD/COI"],"vocabulario":["se réveiller","se lever","se coucher","se souvenir","s'ennuyer"],"temas_historia":["uma manhã caótica antes de um evento importante","rotina de um atleta profissional"]},
+          {"numero":21,"titulo":"Parce que — les connecteurs logiques","gramatica_nova":"Conectores: et, mais, donc, car, parce que, cependant, pourtant, puis, ensuite","gramatica_cumulativa":["pronominaux","conditionnel","passé composé","imparfait"],"vocabulario":["cependant","pourtant","donc","en effet","par contre"],"temas_historia":["um editorial sobre uma polêmica local","um debate entre vizinhos com opiniões diferentes"]}
         ]
       },
       {
         "nivel": "B1",
-        "titulo": "Independência real — argumentar e expressar nuance",
+        "titulo": "Independência — argumentar, narrar e expressar nuance",
         "licoes": [
-          {
-            "numero": 23,
-            "titulo": "Le subjonctif présent I — émotions et nécessité",
-            "gramatica_nova": "Subjonctif présent: il faut que, je veux que, c'est important que",
-            "gramatica_cumulativa": ["Conditionnel", "Futur", "Passé composé", "Imparfait", "Comparatifs"],
-            "vocabulario": ["il faut que", "je veux que", "bien que", "pour que", "malgré"],
-            "temas_historia": ["um pai preocupado com o futuro do filho", "uma ONG exigindo mudanças"]
-          },
-          {
-            "numero": 24,
-            "titulo": "Connecteurs logiques — argumenter",
-            "gramatica_nova": "Conectores: d'abord, ensuite, cependant, donc, en revanche, c'est pourquoi",
-            "gramatica_cumulativa": ["Subjonctif", "Conditionnel", "Futur", "Passé composé", "Imparfait"],
-            "vocabulario": ["cependant", "néanmoins", "en revanche", "par conséquent", "ainsi"],
-            "temas_historia": ["um debate sobre tecnologia e privacidade", "um editorial de jornal sobre uma polêmica"]
-          },
-          {
-            "numero": 25,
-            "titulo": "Le discours indirect — rapporter des paroles",
-            "gramatica_nova": "Discours indirect: il a dit que, elle a demandé si — concordância de tempos",
-            "gramatica_cumulativa": ["Subjonctif", "Conectores", "Conditionnel", "Passé composé"],
-            "vocabulario": ["il a dit que", "elle a demandé si", "selon lui", "d'après elle", "prétendre"],
-            "temas_historia": ["uma jornalista relatando uma entrevista", "uma fofoca que se transforma num mal-entendido"]
-          },
-          {
-            "numero": 26,
-            "titulo": "Exprimer la cause et la conséquence",
-            "gramatica_nova": "Cause: parce que, puisque, étant donné que — Conséquence: donc, c'est pourquoi, si bien que",
-            "gramatica_cumulativa": ["Discours indirect", "Subjonctif", "Conectores", "Conditionnel"],
-            "vocabulario": ["puisque", "étant donné que", "c'est la raison pour laquelle", "en raison de", "grâce à"],
-            "temas_historia": ["uma investigação científica com descoberta surpreendente", "uma crise resolvida com criatividade"]
-          }
+          {"numero":22,"titulo":"Il faut que — subjonctif présent I","gramatica_nova":"Subjonctif présent: formação (radical 3ª pessoa plural + -e/-es/-e/-ions/-iez/-ent) — nécessité: il faut que, il est important que","gramatica_cumulativa":["connecteurs","conditionnel","passé composé","imparfait","pronominaux"],"vocabulario":["il faut que","il est important","il est nécessaire","je dois","on doit"],"temas_historia":["um médico dando orientações urgentes a um paciente","uma ONG exigindo mudanças na cidade"]},
+          {"numero":23,"titulo":"Je suis content que — subjonctif présent II","gramatica_nova":"Subjonctif com emoção e dúvida: je suis content que, j'ai peur que, je doute que, bien que, pour que","gramatica_cumulativa":["subjonctif nécessité","connecteurs","conditionnel","imparfait"],"vocabulario":["bien que","pour que","à condition que","malgré","quoique"],"temas_historia":["uma carta emocionada de despedida","um discurso de formatura cheio de sentimento"]},
+          {"numero":24,"titulo":"J'avais fait — le plus-que-parfait","gramatica_nova":"Plus-que-parfait: j'avais mangé, il était parti — auxiliaire à l'imparfait + participe — antériorité","gramatica_cumulativa":["subjonctif","passé composé","imparfait","conditionnel"],"vocabulario":["avant de","après avoir","déjà","auparavant","depuis longtemps"],"temas_historia":["uma investigação policial revelando o passado","alguém chegando tarde demais a um evento"]},
+          {"numero":25,"titulo":"Il parlera — le futur simple","gramatica_nova":"Futur simple: radical do infinitif + -ai/-as/-a/-ons/-ez/-ont — formas irregulares: être→sera, avoir→aura, aller→ira","gramatica_cumulativa":["plus-que-parfait","subjonctif","conditionnel","passé composé"],"vocabulario":["demain","l'année prochaine","un jour","sûrement","dans longtemps"],"temas_historia":["um cientista apresentando sua visão de futuro","planos ambiciosos de um jovem empreendedor"]},
+          {"numero":26,"titulo":"Il a dit que — le discours indirect","gramatica_nova":"Discours indirect: il a dit que, elle a demandé si — concordância de tempos (présent→imparfait, passé composé→plus-que-parfait)","gramatica_cumulativa":["futur","subjonctif","plus-que-parfait","passé composé","imparfait"],"vocabulario":["il a dit que","elle a demandé si","selon lui","d'après elle","prétendre"],"temas_historia":["um fofoca que vira mal-entendido","uma jornalista relatando uma entrevista exclusiva"]},
+          {"numero":27,"titulo":"Qui, que, dont — propositions relatives","gramatica_nova":"Pronomes relativos: qui (sujeito), que (objeto), dont (de+), où (lugar/tempo) — orações relativas restritivas","gramatica_cumulativa":["discours indirect","futur","subjonctif","plus-que-parfait"],"vocabulario":["celui qui","ce que","dont j'ai besoin","là où","ce dont"],"temas_historia":["um detetive descrevendo uma testemunha","uma descrição poética de uma cidade"]},
+          {"numero":28,"titulo":"La voix passive","gramatica_nova":"Voz passiva: être + participe passé — todos os tempos — agente com par — passiva impessoal com on","gramatica_cumulativa":["relatives","discours indirect","futur","subjonctif","passé composé"],"vocabulario":["être fait","être construit","a été découvert","sera annoncé","par"],"temas_historia":["uma descoberta científica anunciada nos jornais","uma obra de arte roubada e recuperada"]},
+          {"numero":29,"titulo":"Puisque, donc — cause et conséquence","gramatica_nova":"Causa: parce que, puisque, étant donné que, car — Conséquence: donc, c'est pourquoi, ainsi, si bien que","gramatica_cumulativa":["voix passive","relatives","discours indirect","subjonctif","connecteurs"],"vocabulario":["puisque","étant donné que","c'est pourquoi","ainsi","par conséquent"],"temas_historia":["uma investigação científica com descoberta surpreendente","uma decisão política e seus efeitos"]},
+          {"numero":30,"titulo":"Si j'avais — conditionnel passé","gramatica_nova":"Conditionnel passé: j'aurais mangé, il serait allé — si + plus-que-parfait + conditionnel passé — hypothèse sur le passé","gramatica_cumulativa":["cause/conséquence","voix passive","discours indirect","subjonctif","futur"],"vocabulario":["j'aurais dû","si j'avais su","il aurait pu","tu aurais voulu","on aurait"],"temas_historia":["uma reflexão sobre uma decisão que mudou tudo","um personagem imaginando uma vida alternativa"]}
         ]
       },
       {
         "nivel": "B2",
-        "titulo": "Fluência — nuance, registro formal e expressão rica",
+        "titulo": "Fluência — nuance, registro formal e argumentação",
         "licoes": [
-          {
-            "numero": 27,
-            "titulo": "Le subjonctif passé et imparfait",
-            "gramatica_nova": "Subjonctif passé: bien qu'il ait fait — Subjonctif imparfait (literário): bien qu'il fût",
-            "gramatica_cumulativa": ["Subjonctif présent", "Conectores", "Discours indirect", "Cause/Conséquence"],
-            "vocabulario": ["bien que", "quoique", "à moins que", "pourvu que", "de peur que"],
-            "temas_historia": ["um romance literário com personagens complexos", "uma análise de uma obra de arte"]
-          },
-          {
-            "numero": 28,
-            "titulo": "Registres de langue — formel et familier",
-            "gramatica_nova": "Registro formal vs informal — Ne explétif — inversion stylistique",
-            "gramatica_cumulativa": ["Subjonctif", "Conditionnel", "Discours indirect", "Conectores"],
-            "vocabulario": ["néanmoins", "toutefois", "en effet", "par ailleurs", "il convient de"],
-            "temas_historia": ["uma carta de candidatura a emprego vs conversa casual", "um diplomata numa situação informal"]
-          },
-          {
-            "numero": 29,
-            "titulo": "Enrichir son vocabulaire — figures de style",
-            "gramatica_nova": "Metáforas, perífrases, eufemismos — vocabulário rico e variado",
-            "gramatica_cumulativa": ["Todos os tempos verbais", "Subjonctif", "Conditionnel", "Registros"],
-            "vocabulario": ["métaphore", "périphrase", "euphémisme", "ironie", "sous-entendu"],
-            "temas_historia": ["uma crítica literária de um clássico francês", "um discurso político analisado"]
-          },
-          {
-            "numero": 30,
-            "titulo": "Débattre et convaincre",
-            "gramatica_nova": "Stratégies rhétoriques — concession, réfutation, nuance",
-            "gramatica_cumulativa": ["Todos os níveis anteriores"],
-            "vocabulario": ["certes", "il est vrai que", "on pourrait objecter", "force est de constater", "quoi qu'il en soit"],
-            "temas_historia": ["um debate filosófico entre dois amigos", "uma negociação importante com final inesperado"]
-          }
+          {"numero":31,"titulo":"Bien qu'il ait — subjonctif passé","gramatica_nova":"Subjonctif passé: que j'aie mangé, qu'il soit parti — pour exprimer antériorité dans une subordonnée","gramatica_cumulativa":["conditionnel passé","subjonctif présent","relatives","voix passive","discours indirect"],"vocabulario":["bien qu'il ait","avant que tu partes","pour que vous ayez","à moins qu'il soit","quoiqu'elle ait"],"temas_historia":["uma personagem relutante aceitando uma missão impossível","um romance com obstáculos emocionais"]},
+          {"numero":32,"titulo":"Il fut — le passé simple (lecture)","gramatica_nova":"Passé simple: il fut, il alla, il prit, il vint — reconhecimento e leitura de textos literários (não produção ativa)","gramatica_cumulativa":["subjonctif passé","conditionnel passé","passé composé","relatives"],"vocabulario":["il fut","il alla","il dit","ils prirent","elle vit"],"temas_historia":["um conto literário clássico adaptado","uma lenda francesa recontada"]},
+          {"numero":33,"titulo":"Jamais ne — inversion et emphase","gramatica_nova":"Inversion stylistique: Jamais il n'avait vu, Rarement peut-on, À peine était-il — ênfase e registro formal","gramatica_cumulativa":["passé simple","subjonctif passé","conditionnel passé","voix passive"],"vocabulario":["jamais","rarement","à peine","non seulement","c'est...qui/que"],"temas_historia":["um discurso político impactante","um editorial provocador de jornal"]},
+          {"numero":34,"titulo":"Lequel, dont — pronoms relatifs composés","gramatica_nova":"Pronomes relativos composés: lequel/laquelle/lesquels, auquel, duquel, dont — em frases complexas","gramatica_cumulativa":["inversion","passé simple","subjonctif passé","relatives simples"],"vocabulario":["lequel","duquel","auquel","grâce auquel","à travers lequel"],"temas_historia":["uma análise de uma obra de arte","um debate jurídico com argumentos complexos"]},
+          {"numero":35,"titulo":"La construction — la nominalisation","gramatica_nova":"Nominalização: transformer verbes en noms — la construction (construire), la réduction (réduire) — registre formel","gramatica_cumulativa":["relatifs composés","inversion","passé simple","subjonctif passé"],"vocabulario":["la réduction","l'amélioration","la mise en œuvre","le développement","la croissance"],"temas_historia":["um relatório empresarial com linguagem formal","uma proposta para resolver um problema urbano"]},
+          {"numero":36,"titulo":"Néanmoins — connecteurs du discours","gramatica_nova":"Conectores avançados: néanmoins, en revanche, toutefois, par ailleurs, quant à, force est de constater","gramatica_cumulativa":["nominalisation","relatifs composés","inversion","subjonctif"],"vocabulario":["néanmoins","en revanche","par ailleurs","quant à","force est de constater"],"temas_historia":["um artigo de opinião sobre tecnologia e privacidade","um debate filosófico entre dois amigos intelectuais"]},
+          {"numero":37,"titulo":"Il convient — registres de langue","gramatica_nova":"Registre formel vs familier — ne explétif — vouvoiement étendu — expressions figées formelles","gramatica_cumulativa":["connecteurs avancés","nominalisation","inversion","subjonctif"],"vocabulario":["il convient de","veuillez","je me permets de","en ce qui concerne","dans le cadre de"],"temas_historia":["uma carta formal de candidatura vs conversa casual","um diplomata numa situação inesperadamente informal"]},
+          {"numero":38,"titulo":"À moins que — hypothèse et concession","gramatica_nova":"Concessão: bien que, quoique, malgré, même si — Hipótese: à moins que, pourvu que, à condition que + subjonctif","gramatica_cumulativa":["registres","connecteurs avancés","subjonctif passé","conditionnel passé"],"vocabulario":["à moins que","pourvu que","à condition que","malgré tout","même si"],"temas_historia":["uma negociação que quase falha","um plano que depende de muitas condições"]},
+          {"numero":39,"titulo":"Il aurait fallu — style indirect avancé","gramatica_nova":"Discours indirect avancé: concordância completa de temps — interrogation indirecte — formas condicionais no discours indirect","gramatica_cumulativa":["concession/hypothèse","registres","connecteurs","conditionnel passé","subjonctif"],"vocabulario":["il aurait fallu","elle aurait dû","on s'était demandé si","il aurait préféré que","selon lui"],"temas_historia":["uma investigação jornalística reveladora","uma memória distorcida por vários narradores"]}
+        ]
+      },
+      {
+        "nivel": "C1",
+        "titulo": "Proficiência — precisão, ironia e expressão rica",
+        "licoes": [
+          {"numero":40,"titulo":"Qu'il fût — subjonctif imparfait","gramatica_nova":"Subjonctif imparfait (literário): qu'il fût, qu'elle allât, qu'ils eussent — reconhecimento em textos clássicos","gramatica_cumulativa":["style indirect avancé","concession","subjonctif passé","passé simple"],"vocabulario":["bien qu'il fût","pour qu'elle allât","à moins qu'ils eussent","quoiqu'il semblât","pourvu qu'elle pût"],"temas_historia":["um trecho de Flaubert ou Zola adaptado","um romance histórico ambientado no século XIX"]},
+          {"numero":41,"titulo":"Figures de style — langage figuré","gramatica_nova":"Metáforas, metonímias, perífrases, litotes, antiphrase (ironie) — reconhecimento e uso expressivo","gramatica_cumulativa":["subjonctif imparfait","style indirect avancé","registres","connecteurs"],"vocabulario":["métaphore","périphrase","litote","antiphrase","sous-entendu"],"temas_historia":["uma crítica literária de um romance clássico","uma charge política analisada"]},
+          {"numero":42,"titulo":"Certes, mais — rhétorique et argumentation","gramatica_nova":"Estratégias retóricas: concession (certes, il est vrai que), réfutation (cependant, il n'en reste pas moins), nuance (tout en reconnaissant)","gramatica_cumulativa":["langage figuré","subjonctif imparfait","connecteurs avancés","registres"],"vocabulario":["certes","il est vrai que","quoi qu'il en soit","il n'en reste pas moins","on pourrait objecter"],"temas_historia":["um debate parlamentar com argumentos contrários","uma defesa de uma tese acadêmica"]},
+          {"numero":43,"titulo":"Non seulement — structures d'emphase","gramatica_nova":"Estruturas de ênfase: c'est...qui/que, non seulement...mais aussi, ce qui m'étonne c'est, voilà pourquoi","gramatica_cumulativa":["rhétorique","langage figuré","inversion","registres"],"vocabulario":["c'est lui qui","non seulement","ce qui m'étonne","voilà pourquoi","c'est bien parce que"],"temas_historia":["um monólogo dramático de um personagem em crise","um discurso de aceitação de prêmio emocionado"]},
+          {"numero":44,"titulo":"Nuances modales — devoir, pouvoir, falloir","gramatica_nova":"Nuances dos modais: devoir (obligation vs probabilité), pouvoir (capacité vs permission vs éventualité), falloir (nécessité impersonnelle) — tous les temps","gramatica_cumulativa":["emphase","rhétorique","subjonctif imparfait","conditionnel passé"],"vocabulario":["il doit être","il se peut que","il aurait fallu","cela devrait","ça pourrait"],"temas_historia":["um médico avaliando probabilidades de diagnóstico","um advogado ponderando as possibilidades de um caso"]}
+        ]
+      },
+      {
+        "nivel": "C2",
+        "titulo": "Maestria — expressão nativa, criatividade e sutileza",
+        "licoes": [
+          {"numero":45,"titulo":"À vrai dire — ironie et humour","gramatica_nova":"Ironia, understatement, humour subtil — euphémismes — double sens — registre ironique","gramatica_cumulativa":["nuances modales","emphase","rhétorique","langage figuré"],"vocabulario":["à vrai dire","on pourrait dire","c'est peu dire","c'est le moins qu'on puisse dire","enfin bref"],"temas_historia":["uma crítica velada disfarçada de elogio","um personagem britânico vivendo em Paris"]},
+          {"numero":46,"titulo":"Marqueurs du discours natif","gramatica_nova":"Marcadores discursivos nativos: bref, d'ailleurs, au fond, en somme, qui plus est, cela étant, toujours est-il que","gramatica_cumulativa":["ironie","emphase","connecteurs avancés","registres"],"vocabulario":["bref","au fond","qui plus est","cela étant","toujours est-il que"],"temas_historia":["uma conversa filosófica entre amigos próximos","um ensaio literário de estilo livre"]},
+          {"numero":47,"titulo":"Registre académique et créatif","gramatica_nova":"Registro académico completo — criação de neologismos — jeux de mots — densité stylistique","gramatica_cumulativa":["marqueurs","ironie","rhétorique","toutes structures"],"vocabulario":["paradigme","épistémologie","à dessein","nonobstant","il appert que"],"temas_historia":["um artigo de pesquisa sobre linguagem e identidade","uma coluna literária num jornal de prestígio"]},
+          {"numero":48,"titulo":"Expression libre — maîtrise complète","gramatica_nova":"Revisão criativa de todas as estruturas — uso expressivo e estilístico livre — voz própria em francês","gramatica_cumulativa":["tous les niveaux A1-C2"],"vocabulario":["authenticité","nuance","subtilité","aisance","spontanéité"],"temas_historia":["um conto original de estilo pessoal","uma carta aberta sobre um tema que importa ao aluno"]}
         ]
       }
     ]
@@ -282,116 +96,45 @@
     "jornada": [
       {
         "nivel": "B1",
-        "titulo": "Independência real — argumentar e narrar com confiança",
+        "titulo": "Independência — narrar, opinar e argumentar",
         "licoes": [
-          {
-            "numero": 1,
-            "titulo": "Narrar experiencias pasadas con detalle",
-            "gramatica_nova": "Contraste indefinido vs imperfecto — marcadores: de repente, mientras, entonces",
-            "gramatica_cumulativa": ["Presente", "Pretérito perfecto", "Futur próximo"],
-            "vocabulario": ["de repente", "mientras", "al final", "enseguida", "todavía"],
-            "temas_historia": ["una aventura inesperada durante un viaje", "el día que todo salió al revés"]
-          },
-          {
-            "numero": 2,
-            "titulo": "Expresar opiniones y acuerdos",
-            "gramatica_nova": "Subjuntivo presente: es importante que, quiero que, no creo que",
-            "gramatica_cumulativa": ["Indefinido vs imperfecto", "Presente", "Futur próximo"],
-            "vocabulario": ["aunque", "sin embargo", "quizás", "es posible que", "me parece que"],
-            "temas_historia": ["dos amigos con puntos de vista opuestos sobre tecnología", "una reunión de vecinos con propuestas diferentes"]
-          },
-          {
-            "numero": 3,
-            "titulo": "Hablar del futuro — planes y predicciones",
-            "gramatica_nova": "Futuro simple: hablaré, irás, será — condicional: hablaría, iría",
-            "gramatica_cumulativa": ["Subjuntivo presente", "Indefinido", "Imperfecto"],
-            "vocabulario": ["probablemente", "seguramente", "en caso de que", "a menos que", "siempre que"],
-            "temas_historia": ["un joven planificando su futuro profesional", "una ciudad imaginando cómo será en 2050"]
-          },
-          {
-            "numero": 4,
-            "titulo": "Describir con oraciones relativas",
-            "gramatica_nova": "Oraciones relativas: que, quien, donde, cuyo — con indicativo y subjuntivo",
-            "gramatica_cumulativa": ["Futuro", "Condicional", "Subjuntivo", "Indefinido", "Imperfecto"],
-            "vocabulario": ["cuyo", "el cual", "donde", "quien", "lo que"],
-            "temas_historia": ["un arqueólogo describiendo un hallazgo misterioso", "la búsqueda de una persona desaparecida"]
-          },
-          {
-            "numero": 5,
-            "titulo": "Comparar y argumentar",
-            "gramatica_nova": "Comparativos irregulares: mejor, peor, mayor, menor — conectores de contraste",
-            "gramatica_cumulativa": ["Relativas", "Futuro", "Condicional", "Subjuntivo"],
-            "vocabulario": ["por otro lado", "en cuanto a", "cabe destacar", "hay que tener en cuenta", "en definitiva"],
-            "temas_historia": ["un debate sobre vida en ciudad vs campo", "un periodista comparando dos candidatos políticos"]
-          },
-          {
-            "numero": 6,
-            "titulo": "Dar consejos y recomendaciones",
-            "gramatica_nova": "Imperativo formal e informal afirmativo y negativo — subjuntivo para recomendaciones",
-            "gramatica_cumulativa": ["Comparativos", "Futuro", "Condicional", "Subjuntivo", "Relativas"],
-            "vocabulario": ["te recomiendo", "es mejor que", "intenta", "evita", "asegúrate de"],
-            "temas_historia": ["un médico dando consejos de vida a un paciente", "un mentor guiando a un joven emprendedor"]
-          }
+          {"numero":1,"titulo":"Mientras — imperfecto vs indefinido","gramatica_nova":"Contraste pretérito indefinido (acción puntual) vs imperfecto (descripción/fondo) — marcadores: de repente, mientras, cuando, en ese momento","gramatica_cumulativa":["presente","pretérito perfecto","futuro próximo"],"vocabulario":["de repente","mientras","en ese momento","al final","enseguida"],"temas_historia":["una aventura inesperada durante un viaje","el día que todo salió al revés"]},
+          {"numero":2,"titulo":"Es importante que — subjuntivo I","gramatica_nova":"Subjuntivo presente: formação (1ª pessoa do presente → cambio de vocal) — necessidade e vontade: es importante que, quiero que, necesito que","gramatica_cumulativa":["imperfecto vs indefinido","presente","perfecto"],"vocabulario":["es importante que","quiero que","necesito que","espero que","ojalá"],"temas_historia":["una reunión de trabajo con demandas claras","un padre hablando con su hijo sobre el futuro"]},
+          {"numero":3,"titulo":"Dudo que — subjuntivo II","gramatica_nova":"Subjuntivo com emoção e dúvida: me alegra que, es posible que, dudo que, no creo que — indicativo vs subjuntivo","gramatica_cumulativa":["subjuntivo necesidad","imperfecto vs indefinido","presente"],"vocabulario":["me alegra que","es posible que","dudo que","no creo que","tal vez"],"temas_historia":["un debate sobre si la tecnología nos hace más felices","dudas de un joven ante una gran decisión"]},
+          {"numero":4,"titulo":"Hablaré — futuro simple y condicional","gramatica_nova":"Futuro simple: hablaré, irás, será — Condicional simple: hablaría, iría — formas irregulares: tener→tendré, hacer→haré","gramatica_cumulativa":["subjuntivo","imperfecto vs indefinido","presente"],"vocabulario":["probablemente","seguramente","en el futuro","si pudiera","me gustaría"],"temas_historia":["un joven imaginando su vida en diez años","predicciones sobre el mundo en 2050"]},
+          {"numero":5,"titulo":"El que — oraciones relativas","gramatica_nova":"Oraciones relativas: que, quien, el que/la que, donde, cuyo — com indicativo (definido) e subjuntivo (indefinido/hipotético)","gramatica_cumulativa":["futuro/condicional","subjuntivo","imperfecto vs indefinido"],"vocabulario":["el que","quien","cuyo","donde","lo que"],"temas_historia":["un detective describiendo al sospechoso","la búsqueda del apartamento perfecto"]},
+          {"numero":6,"titulo":"Te recomiendo que — dar consejos","gramatica_nova":"Imperativo afirmativo e negativo (tú, usted, vosotros, ustedes) — consejos con subjuntivo: te recomiendo que, es mejor que","gramatica_cumulativa":["relativas","subjuntivo","futuro/condicional"],"vocabulario":["te recomiendo","es mejor que","intenta","evita","asegúrate de"],"temas_historia":["un médico aconsejando a un paciente difícil","un mentor guiando a un joven emprendedor"]},
+          {"numero":7,"titulo":"Se habla — voz pasiva y pasiva refleja","gramatica_nova":"Voz pasiva: ser + participio — pasiva refleja impersonal: se habla, se considera, se construyó — diferencias de uso","gramatica_cumulativa":["imperativo/consejos","relativas","subjuntivo","futuro"],"vocabulario":["fue aprobado","se considera","ha sido implementado","se construyó","es conocido"],"temas_historia":["un comunicado de prensa sobre un descubrimiento","la historia de un edificio famoso"]},
+          {"numero":8,"titulo":"Por otro lado — conectores del discurso","gramatica_nova":"Conectores: sin embargo, no obstante, por otro lado, en cuanto a, cabe destacar, en definitiva, en resumen","gramatica_cumulativa":["voz pasiva","imperativo","relativas","subjuntivo"],"vocabulario":["sin embargo","no obstante","por otro lado","en definitiva","cabe destacar"],"temas_historia":["un artículo de opinión sobre educación","un debate entre dos posiciones contrarias"]}
         ]
       },
       {
         "nivel": "B2",
-        "titulo": "Fluência — debater, convencer, registros formais",
+        "titulo": "Fluência — complexidade, hipótese e registro formal",
         "licoes": [
-          {
-            "numero": 7,
-            "titulo": "Voz pasiva y registro formal",
-            "gramatica_nova": "Voz pasiva con ser + participio — se pasiva impersonal",
-            "gramatica_cumulativa": ["Subjuntivo", "Imperativo", "Futuro", "Condicional", "Relativas"],
-            "vocabulario": ["fue aprobado", "ha sido implementado", "se considera", "cabe señalar", "en el marco de"],
-            "temas_historia": ["una investigación científica publicada", "una decisión política y sus consecuencias"]
-          },
-          {
-            "numero": 8,
-            "titulo": "Narrar hipótesis — condicional compuesto",
-            "gramatica_nova": "Condicional compuesto: habría sido, habría hecho — si + pluscuamperfecto",
-            "gramatica_cumulativa": ["Voz pasiva", "Subjuntivo", "Futuro", "Condicional simple"],
-            "vocabulario": ["habría sido", "hubiera sabido", "de haberlo", "ojalá", "lástima que"],
-            "temas_historia": ["¿qué habría pasado si...? — una decisión histórica alternativa", "un personaje reflexionando sobre sus elecciones"]
-          },
-          {
-            "numero": 9,
-            "titulo": "Subjuntivo imperfecto — deseos e hipótesis",
-            "gramatica_nova": "Subjuntivo imperfecto: quisiera, ojalá que pudiera, como si fuera",
-            "gramatica_cumulativa": ["Condicional compuesto", "Voz pasiva", "Subjuntivo presente"],
-            "vocabulario": ["ojalá", "como si", "a no ser que", "con tal de que", "aunque fuera"],
-            "temas_historia": ["un escritor imaginando una vida alternativa", "una historia de amor imposible"]
-          },
-          {
-            "numero": 10,
-            "titulo": "Vocabulario rico y matices expresivos",
-            "gramatica_nova": "Locuciones adverbiales — intensificadores y atenuadores del discurso",
-            "gramatica_cumulativa": ["Todos los tiempos B1-B2", "Subjuntivo", "Condicional"],
-            "vocabulario": ["a grandes rasgos", "en cierta medida", "con creces", "a rajatabla", "de buenas a primeras"],
-            "temas_historia": ["una entrevista a un artista famoso", "un reportaje sobre una comunidad innovadora"]
-          }
+          {"numero":9,"titulo":"Habría — condicional compuesto","gramatica_nova":"Condicional compuesto: habría hablado, habría ido — Si + pluscuamperfecto + condicional compuesto — hipótesis sobre el pasado","gramatica_cumulativa":["conectores","voz pasiva","subjuntivo","futuro/condicional simple"],"vocabulario":["habría sido","hubiera sabido","de haberlo","si hubiera podido","lástima que"],"temas_historia":["una decisión histórica que cambió el mundo","reflexión de un personaje sobre sus elecciones pasadas"]},
+          {"numero":10,"titulo":"Ojalá pudiera — subjuntivo imperfecto","gramatica_nova":"Subjuntivo imperfecto: hablara/hablase, fuera/fuese — ojalá (que), como si, aunque (+ valor concesivo)","gramatica_cumulativa":["condicional compuesto","subjuntivo presente","relativas","conectores"],"vocabulario":["ojalá","como si","aunque fuera","a no ser que","con tal de que"],"temas_historia":["un escritor soñando con una vida distinta","una historia de amor con obstáculos imposibles"]},
+          {"numero":11,"titulo":"Perífrasis — llevar + gerundio","gramatica_nova":"Perífrasis verbales: llevar + gerundio, acabar de + infinitivo, estar a punto de, ponerse a, dejar de, seguir + gerundio","gramatica_cumulativa":["subjuntivo imperfecto","condicional compuesto","voz pasiva"],"vocabulario":["llevo esperando","acabo de llegar","está a punto de","se puso a","dejó de"],"temas_historia":["un día de trabajo lleno de interrupciones","alguien que nunca termina lo que empieza"]},
+          {"numero":12,"titulo":"Según — estilo indirecto avanzado","gramatica_nova":"Estilo indirecto avanzado: concordância completa de tiempos — preguntas indirectas — si condicional en estilo indirecto","gramatica_cumulativa":["perífrasis","subjuntivo imperfecto","condicional compuesto","conectores"],"vocabulario":["según él","afirmó que","preguntó si","añadió que","reconoció que"],"temas_historia":["una jornalista investigando una historia compleja","un testigo cuya versión cambia"]},
+          {"numero":13,"titulo":"La puesta en marcha — nominalización","gramatica_nova":"Nominalización en español: el desarrollo, la implementación, la mejora, la puesta en marcha — registro formal y académico","gramatica_cumulativa":["estilo indirecto","perífrasis","subjuntivo imperfecto","conectores"],"vocabulario":["la implementación","el desarrollo","la mejora","la reducción","la puesta en marcha"],"temas_historia":["una propuesta de mejora para una empresa","un informe sobre el impacto de una política pública"]},
+          {"numero":14,"titulo":"Inversión — énfasis y retórica","gramatica_nova":"Inversión y énfasis: No solo...sino también, Raramente, Solo cuando — estructuras de énfasis: Lo que me sorprende es que","gramatica_cumulativa":["nominalización","estilo indirecto","subjuntivo imperfecto","conectores avanzados"],"vocabulario":["no solo sino","lo que me sorprende","raramente","jamás he visto","es precisamente"],"temas_historia":["un discurso político memorable","una carta de denuncia pública con fuerza retórica"]}
         ]
       },
       {
         "nivel": "C1",
-        "titulo": "Maestría — expresión sofisticada e idiomática",
+        "titulo": "Maestría expresiva — sofisticación e idiomatismo",
         "licoes": [
-          {
-            "numero": 11,
-            "titulo": "Lenguaje figurado e idiomático",
-            "gramatica_nova": "Modismos, frases hechas, eufemismos — uso expresivo del idioma",
-            "gramatica_cumulativa": ["Todos los niveles B1-B2"],
-            "vocabulario": ["meter la pata", "no hay mal que por bien no venga", "ponerse las pilas", "ser un rollo", "dar en el clavo"],
-            "temas_historia": ["un escritor explicando el español coloquial a un extranjero", "un diálogo cargado de ironía y doble sentido"]
-          },
-          {
-            "numero": 12,
-            "titulo": "Retórica y argumentación avanzada",
-            "gramatica_nova": "Inversión enfática — dislocación — estructuras de énfasis: lo que... es, quien... fue",
-            "gramatica_cumulativa": ["Todos los niveles anteriores"],
-            "vocabulario": ["no cabe duda de que", "es harto sabido que", "lejos de", "más allá de", "en aras de"],
-            "temas_historia": ["un discurso político memorable", "una defensa apasionada de una causa justa"]
-          }
+          {"numero":15,"titulo":"Meter la pata — lenguaje idiomático","gramatica_nova":"Modismos y expresiones idiomáticas: meter la pata, dar en el clavo, ponerse las pilas, ser un rollo, no hay mal que por bien no venga","gramatica_cumulativa":["inversión","nominalización","estilo indirecto","subjuntivo imperfecto"],"vocabulario":["meter la pata","dar en el clavo","ponerse las pilas","ser un rollo","a rajatabla"],"temas_historia":["un malentendido cultural gracioso","un personaje que siempre dice lo opuesto de lo que piensa"]},
+          {"numero":16,"titulo":"Cabe señalar — registro académico formal","gramatica_nova":"Registro académico: cabe señalar, es de destacar, en el marco de, a grandes rasgos, en cierta medida, con creces","gramatica_cumulativa":["lenguaje idiomático","inversión","nominalización","conectores"],"vocabulario":["cabe señalar","es de destacar","en el marco de","a grandes rasgos","con creces"],"temas_historia":["la presentación de una investigación científica","un debate universitario sobre un tema filosófico"]},
+          {"numero":17,"titulo":"No cabe duda — estructuras de énfasis avanzadas","gramatica_nova":"Énfasis avanzado: no cabe duda de que, es harto sabido que, lejos de, más allá de, en aras de — estructuras retóricas complejas","gramatica_cumulativa":["registro académico","modismos","inversión","todos los subjuntivos"],"vocabulario":["no cabe duda","es harto sabido","lejos de","en aras de","más allá de"],"temas_historia":["un defensor apasionado de una causa","una crítica literaria de un clásico hispanoamericano"]}
+        ]
+      },
+      {
+        "nivel": "C2",
+        "titulo": "Domínio pleno — expressão nativa e criatividade",
+        "licoes": [
+          {"numero":18,"titulo":"A las claras — ironía y matiz","gramatica_nova":"Ironía, eufemismo, understatement — doble sentido — manejo de ambigüedad intencional en español nativo","gramatica_cumulativa":["énfasis avanzado","registro académico","modismos","todos los niveles"],"vocabulario":["a las claras","entre líneas","con todos sus matices","es un decir","sin tapujos"],"temas_historia":["una entrevista donde nadie dice lo que piensa","un personaje que habla con ironía en una situación tensa"]},
+          {"numero":19,"titulo":"Expresión libre — voz propia en español","gramatica_nova":"Revisión creativa de todas las estructuras — dominio estilístico — voz auténtica en español","gramatica_cumulativa":["todos los niveles B1-C2"],"vocabulario":["autenticidad","matiz","espontaneidad","fluidez","dominio"],"temas_historia":["un ensayo personal sobre un tema que apasiona al alumno","un cuento propio de estilo libre"]}
         ]
       }
     ]
@@ -403,94 +146,26 @@
     "jornada": [
       {
         "nivel": "C1",
-        "titulo": "Advanced fluency — precision, nuance, register",
+        "titulo": "Advanced fluency — precision, nuance and register",
         "licoes": [
-          {
-            "numero": 1,
-            "titulo": "Inversion and emphasis",
-            "gramatica_nova": "Emphatic inversion: Not only... but also, Rarely do I, Hardly had... when",
-            "gramatica_cumulativa": ["All B2 grammar", "Advanced modal verbs", "Passive voice"],
-            "vocabulario": ["albeit", "nonetheless", "whereas", "presumably", "nuanced"],
-            "temas_historia": ["a scientist making a groundbreaking announcement", "a whistleblower revealing corporate secrets"]
-          },
-          {
-            "numero": 2,
-            "titulo": "Mixed conditionals — complex hypotheticals",
-            "gramatica_nova": "Mixed conditionals: past condition + present result — If I had studied, I would be...",
-            "gramatica_cumulativa": ["Inversion", "All conditionals", "Advanced modals"],
-            "vocabulario": ["had it not been for", "were it not for", "supposing that", "as it were", "in hindsight"],
-            "temas_historia": ["a diplomat reflecting on a missed peace deal", "a doctor considering alternative career paths"]
-          },
-          {
-            "numero": 3,
-            "titulo": "Hedging and academic register",
-            "gramatica_nova": "Passive reporting verbs: it is claimed, it has been argued, it is widely acknowledged",
-            "gramatica_cumulativa": ["Mixed conditionals", "Inversion", "All passive forms"],
-            "vocabulario": ["it is alleged", "purportedly", "ostensibly", "hitherto", "notwithstanding"],
-            "temas_historia": ["a scientific paper being peer-reviewed", "a journalist investigating a controversial claim"]
-          },
-          {
-            "numero": 4,
-            "titulo": "Phrasal verbs in sophisticated context",
-            "gramatica_nova": "Advanced multi-word verbs with subtle meaning shifts — context-dependent interpretation",
-            "gramatica_cumulativa": ["Hedging", "Inversion", "Mixed conditionals", "Reporting verbs"],
-            "vocabulario": ["to bring about", "to fall through", "to pull off", "to come across", "to bail out"],
-            "temas_historia": ["a startup founder pulling off an unlikely deal", "a rescue mission that almost fell through"]
-          },
-          {
-            "numero": 5,
-            "titulo": "Modal speculation — advanced epistemic use",
-            "gramatica_nova": "Modals for speculation: must have, might have, could have + past participle — degrees of certainty",
-            "gramatica_cumulativa": ["Phrasal verbs", "Inversion", "Mixed conditionals", "Hedging"],
-            "vocabulario": ["presumably", "conceivably", "it stands to reason", "in all likelihood", "there is no denying"],
-            "temas_historia": ["a detective reconstructing the sequence of events", "historians debating what really happened"]
-          },
-          {
-            "numero": 6,
-            "titulo": "Nominalisation — formal written English",
-            "gramatica_nova": "Nominalisation: turning verbs/adjectives into nouns for formal tone — the implementation of, a significant reduction",
-            "gramatica_cumulativa": ["Modal speculation", "Hedging", "Passive reporting", "Inversion"],
-            "vocabulario": ["the implementation of", "a significant reduction", "to facilitate", "to undertake", "the allocation of"],
-            "temas_historia": ["a corporate board meeting with high stakes", "a policy brief on climate change"]
-          }
+          {"numero":1,"titulo":"Not only — emphatic inversion","gramatica_nova":"Emphatic inversion: Not only...but also, Rarely do I, Hardly had...when, Never have I, Seldom does one","gramatica_cumulativa":["all B2 grammar","passive voice","conditionals","reported speech"],"vocabulario":["albeit","nonetheless","whereas","presumably","nuanced"],"temas_historia":["a whistleblower making a shocking announcement","a scientist revealing a counterintuitive discovery"]},
+          {"numero":2,"titulo":"Had it not been — mixed conditionals","gramatica_nova":"Mixed conditionals: past condition + present result (If I had studied, I would be...) — unreal past to present — had it not been for, were it not for","gramatica_cumulativa":["inversion","all conditionals","advanced modals"],"vocabulario":["had it not been for","were it not for","supposing that","as it were","in hindsight"],"temas_historia":["a diplomat reflecting on a missed opportunity","a doctor wondering about the road not taken"]},
+          {"numero":3,"titulo":"It is claimed — hedging and passive reporting","gramatica_nova":"Passive reporting verbs: it is claimed, it has been argued, it is widely acknowledged, it has been suggested, it would appear that","gramatica_cumulativa":["mixed conditionals","inversion","all passive forms"],"vocabulario":["it is alleged","purportedly","ostensibly","hitherto","notwithstanding"],"temas_historia":["a journalist fact-checking a controversial study","a scientific paper being challenged"]},
+          {"numero":4,"titulo":"To pull off — advanced phrasal verbs","gramatica_nova":"Advanced multi-word verbs with subtle meaning: bring about, fall through, pull off, come across, bail out, live up to, make up for","gramatica_cumulativa":["hedging","inversion","mixed conditionals","reporting verbs"],"vocabulario":["to bring about","to fall through","to pull off","to live up to","to make up for"],"temas_historia":["a startup founder who almost lost everything","a rescue mission that nearly fell through"]},
+          {"numero":5,"titulo":"Must have — modal speculation","gramatica_nova":"Epistemic modals: must have, might have, could have, should have + past participle — degrees of certainty and probability","gramatica_cumulativa":["phrasal verbs","inversion","mixed conditionals","hedging"],"vocabulario":["presumably","conceivably","in all likelihood","it stands to reason","there is no denying"],"temas_historia":["a detective reconstructing events from clues","historians debating what really happened"]},
+          {"numero":6,"titulo":"The implementation of — nominalisation","gramatica_nova":"Nominalisation for formal register: implementation (implement), reduction (reduce), allocation (allocate) — noun phrases in formal writing","gramatica_cumulativa":["modal speculation","hedging","passive reporting","inversion"],"vocabulario":["the implementation of","a significant reduction","to facilitate","to undertake","the allocation of"],"temas_historia":["a corporate board meeting with high stakes","a policy brief on an urgent social issue"]},
+          {"numero":7,"titulo":"It was she who — cleft sentences","gramatica_nova":"Cleft sentences for focus and emphasis: It was X that..., What I mean is..., The reason why...is that, What strikes me is","gramatica_cumulativa":["nominalisation","inversion","all C1 grammar","modal speculation"],"vocabulario":["it was precisely","what strikes me","the reason why","what I'm suggesting","all I'm saying is"],"temas_historia":["a lawyer making a powerful closing argument","a character finally revealing their true feelings"]},
+          {"numero":8,"titulo":"Hardly a surprise — irony and understatement","gramatica_nova":"British understatement and irony: hardly surprising, not exactly, to say the least, if anything, you could say that, funnily enough","gramatica_cumulativa":["cleft sentences","nominalisation","inversion","all C1 grammar"],"vocabulario":["hardly a surprise","to put it mildly","not exactly","to say the least","funnily enough"],"temas_historia":["a very British way of dealing with a crisis","cultural misunderstandings between nationalities"]}
         ]
       },
       {
         "nivel": "C2",
-        "titulo": "Mastery — native-like expression and cultural fluency",
+        "titulo": "Mastery — native-like expression and creative fluency",
         "licoes": [
-          {
-            "numero": 7,
-            "titulo": "Narrative voice and literary techniques",
-            "gramatica_nova": "Advanced narrative tenses — past perfect continuous, narrative present for effect",
-            "gramatica_cumulativa": ["Nominalisation", "Inversion", "All C1 grammar"],
-            "vocabulario": ["as the story unfolded", "little did he know", "in retrospect", "against all odds", "on the verge of"],
-            "temas_historia": ["a short story with an unreliable narrator", "a historical event retold from an unexpected perspective"]
-          },
-          {
-            "numero": 8,
-            "titulo": "Cleft sentences and rhetorical focus",
-            "gramatica_nova": "Cleft sentences: It was X that..., What I mean is..., The reason why... is that",
-            "gramatica_cumulativa": ["Narrative techniques", "Nominalisation", "Inversion", "All C1"],
-            "vocabulario": ["to counter the argument", "to rebut", "to substantiate", "a compelling case", "to take issue with"],
-            "temas_historia": ["a TED-style talk on a provocative idea", "a courtroom closing argument"]
-          },
-          {
-            "numero": 9,
-            "titulo": "Irony, understatement and cultural humour",
-            "gramatica_nova": "Irony and understatement in British/American English — hedging as politeness strategy",
-            "gramatica_cumulativa": ["Cleft sentences", "Narrative techniques", "All C1-C2 grammar"],
-            "vocabulario": ["hardly a surprise", "to put it mildly", "not exactly", "to say the least", "funnily enough"],
-            "temas_historia": ["a very British way of complaining", "cultural misunderstandings between nationalities"]
-          },
-          {
-            "numero": 10,
-            "titulo": "Spontaneous fluency — discourse markers",
-            "gramatica_nova": "Discourse markers for native-like fluency: buying time, reformulating, emphasising",
-            "gramatica_cumulativa": ["All C1-C2 grammar and vocabulary"],
-            "vocabulario": ["as I was saying", "to put it another way", "bear with me", "what I'm getting at is", "if anything"],
-            "temas_historia": ["a live radio interview going unexpectedly", "a dinner party conversation that takes an interesting turn"]
-          }
+          {"numero":9,"titulo":"As the story unfolded — narrative voice","gramatica_nova":"Advanced narrative techniques: past perfect continuous for background, narrative present for vividness, free indirect speech","gramatica_cumulativa":["irony/understatement","cleft sentences","nominalisation","all C1"],"vocabulario":["as the story unfolded","little did he know","in retrospect","against all odds","on the verge of"],"temas_historia":["a short story with an unreliable narrator","a historical event retold from an unexpected perspective"]},
+          {"numero":10,"titulo":"Bear with me — discourse fluency","gramatica_nova":"Native-like discourse markers: as I was saying, to put it another way, bear with me, what I'm getting at is, if anything, the thing is","gramatica_cumulativa":["narrative voice","irony","cleft sentences","all C1-C2"],"vocabulario":["as I was saying","to put it another way","bear with me","what I'm getting at","if anything"],"temas_historia":["a live radio interview that takes an unexpected turn","a dinner party conversation that becomes surprisingly deep"]},
+          {"numero":11,"titulo":"A paradigm shift — academic mastery","gramatica_nova":"Academic register at C2: paradigm shift, epistemological, notwithstanding, it behoves us to, the ramifications of — dense formal prose","gramatica_cumulativa":["discourse fluency","narrative voice","nominalisation","all C1-C2"],"vocabulario":["paradigm shift","notwithstanding","the ramifications","it behoves us","hitherto overlooked"],"temas_historia":["a keynote speech at an academic conference","a think-piece challenging conventional wisdom"]},
+          {"numero":12,"titulo":"To put it mildly — creative and free expression","gramatica_nova":"Creative use of all structures — stylistic choices — finding your own voice in English — mixing registers for effect","gramatica_cumulativa":["all C1-C2 levels"],"vocabulario":["authenticity","nuance","spontaneity","eloquence","wit"],"temas_historia":["a personal essay on something that deeply matters to you","an original short piece in your own English voice"]}
         ]
       }
     ]
