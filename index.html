@@ -3,184 +3,388 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Language Tutor — 26 de June de 2026</title>
+  <title>Language Tutor — 26/06/2026</title>
   <style>
+    :root {
+      --bg: #0f172a; --surface: #1e293b; --border: #334155;
+      --text: #e2e8f0; --muted: #94a3b8; --accent: #6366f1;
+      --accent2: #a5b4fc; --success: #22c55e; --warn: #fbbf24;
+    }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;padding:1.5rem 1rem}
-    header{text-align:center;margin-bottom:2rem}
-    header h1{font-size:1.9rem;color:#f8fafc}
-    header p{color:#94a3b8;font-size:.9rem;margin-top:.3rem}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem;max-width:1100px;margin:0 auto}
-    .card{background:#1e293b;border:1px solid #334155;border-radius:16px;padding:1.25rem;display:flex;flex-direction:column;gap:.9rem}
-    .card-header{display:flex;align-items:center;gap:.5rem}
-    .flag{font-size:1.5rem}.badge{font-size:.7rem;color:#94a3b8;background:#0f172a;border:1px solid #475569;border-radius:99px;padding:.15rem .5rem;margin-left:auto}
-    .card-header h2{font-size:1.1rem;color:#f1f5f9}
-    .tabs{display:flex;gap:.4rem}
-    .tab{flex:1;padding:.45rem;border:1px solid #334155;border-radius:8px;background:#0f172a;color:#94a3b8;font-size:.8rem;font-weight:600;cursor:pointer}
-    .tab.active{background:#6366f1;color:#fff;border-color:#6366f1}
-    .tab-panel{display:none}.tab-panel.active{display:block}
-    .story-text .para{color:#cbd5e1;line-height:1.75;margin-bottom:.75rem}
-    .controls{display:flex;gap:.6rem;margin-top:.5rem}
-    .btn{flex:1;padding:.55rem;border:none;border-radius:8px;font-size:.85rem;font-weight:600;cursor:pointer}
-    .btn-audio{background:#6366f1;color:#fff}.btn-trans{background:#0f172a;color:#94a3b8;border:1px solid #334155}
-    .translation{margin-top:.75rem;padding:.9rem 1rem;background:#0f172a;border-left:3px solid #6366f1;border-radius:0 8px 8px 0}
-    .translation h4{font-size:.75rem;color:#6366f1;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem}
-    .translation p{color:#94a3b8;line-height:1.65;font-size:.9rem;margin-bottom:.5rem}
-    .grammar-box{background:#0f172a;border-radius:10px;padding:1rem}
-    .grammar-box h3{color:#a5b4fc;font-size:1rem;margin-bottom:.6rem}
-    .gram-exp{color:#cbd5e1;line-height:1.65;font-size:.9rem;margin-bottom:.75rem}
-    .gram-ex{padding-left:1.2rem;color:#94a3b8;font-size:.88rem;line-height:1.8}
-    .dica{margin-top:.75rem;padding:.6rem .9rem;background:#1e293b;border-radius:8px;color:#fbbf24;font-size:.85rem}
-    .vocab-table{width:100%;border-collapse:collapse;font-size:.85rem}
-    .vocab-table th{text-align:left;color:#6366f1;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;padding:.5rem .4rem;border-bottom:1px solid #334155}
-    .vocab-table td{padding:.5rem .4rem;border-bottom:1px solid #1e293b;vertical-align:top}
-    .vp{color:#f1f5f9;font-weight:600}.vt{color:#94a3b8}.ve{color:#64748b;font-style:italic}
-    footer{text-align:center;margin-top:2.5rem;color:#475569;font-size:.75rem}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding:1rem}
+    header{text-align:center;padding:1.5rem 0 1rem}
+    header h1{font-size:1.8rem;color:#f8fafc;font-weight:700}
+    header p{color:var(--muted);font-size:.875rem;margin-top:.3rem}
+    .lang-block{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:1.25rem;margin-bottom:1.5rem;max-width:680px;margin-left:auto;margin-right:auto}
+    .lang-header{display:flex;align-items:center;gap:.75rem;margin-bottom:.5rem}
+    .flag{font-size:2rem}
+    .lang-info h2{font-size:1.15rem;color:#f1f5f9;font-weight:700}
+    .licao-badge{font-size:.7rem;color:var(--muted);background:var(--bg);border:1px solid var(--border);border-radius:99px;padding:.15rem .6rem;display:inline-block;margin-top:.2rem}
+    .licao-titulo{font-size:1rem;color:var(--accent2);margin-bottom:1rem;padding-left:.25rem}
+    .tabs{display:flex;gap:.4rem;margin-bottom:1rem}
+    .tab{flex:1;padding:.5rem .25rem;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--muted);font-size:.8rem;font-weight:600;cursor:pointer;transition:.15s}
+    .tab.active,.tab:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+    .panel{display:none}.panel.active{display:block}
+    .rule-box{background:var(--bg);border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:1rem 1.1rem;margin-bottom:1rem}
+    .rule-title{color:var(--accent2);font-size:.95rem;font-weight:700;margin-bottom:.5rem}
+    .rule-exp{color:var(--text);line-height:1.7;font-size:.9rem}
+    .gram-table{width:100%;border-collapse:collapse;margin-bottom:1rem;font-size:.88rem}
+    .gram-table td{padding:.5rem .75rem;border-bottom:1px solid var(--border);color:var(--text)}
+    .gram-table tr:first-child td{color:var(--accent2);font-weight:700;background:var(--bg);font-size:.78rem;text-transform:uppercase;letter-spacing:.05em}
+    .section-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:700;margin-bottom:.6rem}
+    .examples-block{margin-bottom:.9rem}
+    .example{display:flex;align-items:flex-start;gap:.6rem;padding:.5rem 0;border-bottom:1px solid var(--border);color:var(--text);font-size:.9rem;line-height:1.5}
+    .example:last-child{border-bottom:none}
+    .ex-num{background:var(--accent);color:#fff;border-radius:99px;width:1.3rem;height:1.3rem;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;flex-shrink:0;margin-top:.1rem}
+    .tip-box{background:#1c1a00;border:1px solid #854d0e;border-radius:8px;padding:.75rem 1rem;color:var(--warn);font-size:.85rem;line-height:1.5}
+    .exercise{background:var(--bg);border-radius:10px;padding:.9rem 1rem;margin-bottom:.75rem}
+    .ex-header{display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem}
+    .ex-n{background:var(--accent);color:#fff;border-radius:99px;width:1.4rem;height:1.4rem;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700}
+    .ex-badge{font-size:.7rem;color:var(--muted);background:var(--surface);border:1px solid var(--border);border-radius:99px;padding:.1rem .5rem}
+    .ex-text{color:var(--text);font-size:.9rem;line-height:1.6;margin-bottom:.5rem}
+    .opcoes{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.5rem}
+    .opcao{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:.3rem .7rem;font-size:.85rem;color:var(--text)}
+    .btn-gabarito{font-size:.78rem;color:var(--accent);background:none;border:1px solid var(--accent);border-radius:6px;padding:.3rem .7rem;cursor:pointer}
+    .resposta{margin-top:.5rem;padding:.5rem .75rem;background:#052e16;border-radius:6px;color:var(--success);font-size:.88rem}
+    .dialogo{background:var(--bg);border-radius:10px;padding:.75rem;margin-bottom:1rem}
+    .fala{padding:.5rem .75rem;border-radius:8px;margin-bottom:.4rem;font-size:.9rem;line-height:1.5;max-width:90%}
+    .fala-a{background:var(--accent);color:#fff;margin-left:0}
+    .fala-b{background:var(--surface);color:var(--text);border:1px solid var(--border);margin-left:auto}
+    .audio-block{margin-bottom:.75rem}
+    audio{border-radius:8px;margin-top:.4rem}
+    .btn-trad{font-size:.85rem;color:var(--accent);background:none;border:1px solid var(--accent);border-radius:8px;padding:.5rem 1rem;cursor:pointer;margin-bottom:.5rem}
+    .trad-box{background:var(--bg);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:.9rem 1rem}
+    .trad-text{color:var(--muted);font-size:.88rem;line-height:1.7}
+    footer{text-align:center;padding:2rem 0 1rem;color:var(--border);font-size:.75rem}
   </style>
 </head>
 <body>
-<header><h1>🌍 Language Tutor</h1><p>26 de June de 2026</p></header>
-<main class="grid">
-<div class="card">
-  <div class="card-header">
+<header>
+  <h1>🌍 Language Tutor</h1>
+  <p>Aula do dia — 26/06/2026</p>
+</header>
+<main>
+<div class="lang-block" id="block-fr">
+  <div class="lang-header">
     <span class="flag">🇫🇷</span>
-    <h2>Français</h2>
-    <span class="badge">A1-A2</span>
+    <div class="lang-info">
+      <h2>Français</h2>
+      <span class="licao-badge">Lição 1 · A0</span>
+    </div>
   </div>
+  <h3 class="licao-titulo">Bonjour ! Les salutations</h3>
 
   <div class="tabs">
-    <button class="tab active" onclick="showTab('fr','historia',this)">📖 História</button>
-    <button class="tab" onclick="showTab('fr','gramatica',this)">🧠 Gramática</button>
-    <button class="tab" onclick="showTab('fr','vocab',this)">📝 Vocabulário</button>
+    <button class="tab active" onclick="tab('fr','gram',this)">📘 Gramática</button>
+    <button class="tab" onclick="tab('fr','ex',this)">✏️ Exercícios</button>
+    <button class="tab" onclick="tab('fr','dial',this)">🎧 Diálogo</button>
   </div>
 
-  <div id="fr-historia" class="tab-panel active">
-    <div class="story-text"><p class="para">Je m'appelle Marie et je suis étudiante à Paris. J'aime beaucoup cette ville parce qu'il y a toujours quelque chose à faire. Le matin, je vais au café pour prendre un petit déjeuner avec mes amis. Nous mangeons des croissants et buvons du café.</p><p class="para">Je suis en train de préparer un voyage à Lyon pour les vacances d'été. J'ai entendu que la gastronomie lyonnaise est délicieuse et je veux essayer les spécialités locales. J'ai réservé un hôtel dans le centre-ville pour être près des restaurants et des monuments historiques. Je suis très excitée de découvrir cette ville.</p><p class="para">J'ai déjà commencé à faire des plans pour mon séjour à Lyon. Je veux visiter le musée des Beaux-Arts et le parc de la Tête d'Or. Je vais également essayer de parler avec les habitants pour améliorer mon français et apprendre plus sur la culture locale. Je suis sûre que ce voyage sera inoubliable.</p></div>
-    <div class="controls">
-      <button class="btn btn-audio" onclick="toggleAudio('fr',this)">▶ Ouvir</button>
-      <button class="btn btn-trans" onclick="toggleEl('trans-fr')">🌐 Tradução</button>
+  <!-- GRAMÁTICA -->
+  <div id="fr-gram" class="panel active">
+    <div class="rule-box">
+      <h4 class="rule-title">Pronomes Pessoais Básicos</h4>
+      <p class="rule-exp">Os pronomes pessoais são usados para substituir nomes de pessoas. Em francês, começamos com je, tu e il/elle. Eles têm formas diferentes para usar em frases.</p>
     </div>
-    <audio id="audio-fr" src="fr_historia.mp3" preload="none"></audio>
-    <div class="translation" id="trans-fr" hidden>
-      <h4>Tradução</h4><p>Eu me chamo Marie e sou estudante em Paris. Eu gosto muito desta cidade porque há sempre alguma coisa para fazer. De manhã, eu vou ao café para tomar o café da manhã com meus amigos. Nós comemos croissants e bebemos café.</p><p>Estou preparando uma viagem a Lyon para as férias de verão. Eu ouvi que a gastronomia lionesa é deliciosa e quero experimentar as especialidades locais. Eu reservei um hotel no centro da cidade para estar perto dos restaurantes e monumentos históricos. Estou muito animada para descobrir esta cidade.</p><p>Eu já comecei a fazer planos para minha estadia em Lyon. Eu quero visitar o museu de Belas Artes e o parque da Tête d'Or. Eu também vou tentar conversar com os habitantes para melhorar meu francês e aprender mais sobre a cultura local. Estou certa de que esta viagem será inesquecível.</p>
-    </div>
-  </div>
-
-  <div id="fr-gramatica" class="tab-panel">
-    <div class="grammar-box">
-      <h3>🧠 Uso do presente do indicativo para descrever hábitos e ações cotidianas</h3>
-      <p class="gram-exp">O presente do indicativo é usado em francês para descrever ações que são realizadas regularmente, como hábitos diários ou semanais. Isso é especialmente comum ao falar sobre o que se gosta de fazer ou como se passa o tempo. O uso do presente do indicativo ajuda a transmitir uma sensação de rotina e normalidade.</p>
-      <ul class="gram-ex"><li>J'aime beaucoup cette ville parce qu'il y a toujours quelque chose à faire.</li><li>Je vais souvent au parc pour me promener.</li><li>Elle étudie le français tous les jours pour améliorer son niveau.</li></ul>
-      <div class="dica">💡 Para memorizar o uso do presente do indicativo, pratique descrever seu dia a dia em francês, utilizando verbos como "je fais", "j'aime", "je vais" para tornar as frases mais naturais e fluentes.</div>
-    </div>
-  </div>
-
-  <div id="fr-vocab" class="tab-panel">
-    <table class="vocab-table">
-      <thead><tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr></thead>
-      <tbody><tr><td class="vp">étudiante</td><td class="vt">estudante</td><td class="ve">Elle est étudiante à l'université de Paris.</td></tr><tr><td class="vp">gastronomie</td><td class="vt">culinária</td><td class="ve">La gastronomie française est réputée dans le monde entier.</td></tr><tr><td class="vp">spécialités</td><td class="vt">especialidades</td><td class="ve">Les spécialités locales sont délicieuses à Lyon.</td></tr><tr><td class="vp">monuments</td><td class="vt">monumentos</td><td class="ve">La ville de Paris est connue pour ses monuments historiques.</td></tr><tr><td class="vp">inoubliable</td><td class="vt">inesquecível</td><td class="ve">Ce voyage à Paris a été inoubliable pour moi.</td></tr></tbody>
+    <table class="gram-table">
+      <tbody><tr><td>Pronome</td><td>Forma</td><td>Exemplo</td></tr><tr><td>je</td><td>eu</td><td>Je m'appelle</td></tr><tr><td>tu</td><td>você</td><td>Tu es étudiant</td></tr><tr><td>il</td><td>ele</td><td>Il est français</td></tr><tr><td>elle</td><td>ela</td><td>Elle est étudiante</td></tr></tbody>
     </table>
+    <div class="examples-block">
+      <p class="section-label">Exemplos</p>
+      <div class="example"><span class="ex-num">1</span>Bonjour, je m'appelle Pierre.</div><div class="example"><span class="ex-num">2</span>Tu es étudiant, n'est-ce pas?</div><div class="example"><span class="ex-num">3</span>Il est français, elle est française.</div>
+    </div>
+    <div class="tip-box">💡 Para memorizar, associe cada pronome a uma pessoa: je para si mesmo, tu para alguém conhecido e il/elle para alguém específico.</div>
+  </div>
+
+  <!-- EXERCÍCIOS -->
+  <div id="fr-ex" class="panel">
+    <p class="section-label">Exercícios — Lição 1</p>
+    
+<div class="exercise">
+  <div class="ex-header">
+    <span class="ex-n">1</span>
+    <span class="ex-badge">Preencha</span>
+  </div>
+  <p class="ex-text">Complete: ___ m'appelle Marie. (eu)</p>
+  
+  <button class="btn-gabarito" onclick="toggleEl('resp-fr-0')">Ver resposta</button>
+  <div class="resposta" id="resp-fr-0" hidden>✅ Je</div>
+</div>
+<div class="exercise">
+  <div class="ex-header">
+    <span class="ex-n">2</span>
+    <span class="ex-badge">Escolha</span>
+  </div>
+  <p class="ex-text">Qual é a tradução de "merci"?</p>
+  <div class="opcoes"><span class="opcao">A) por favor</span><span class="opcao">B) obrigado</span><span class="opcao">C) bom dia</span></div>
+  <button class="btn-gabarito" onclick="toggleEl('resp-fr-1')">Ver resposta</button>
+  <div class="resposta" id="resp-fr-1" hidden>✅ B</div>
+</div>
+<div class="exercise">
+  <div class="ex-header">
+    <span class="ex-n">3</span>
+    <span class="ex-badge">Preencha</span>
+  </div>
+  <p class="ex-text">Complete: Il ___ français. (ele)</p>
+  
+  <button class="btn-gabarito" onclick="toggleEl('resp-fr-2')">Ver resposta</button>
+  <div class="resposta" id="resp-fr-2" hidden>✅ est</div>
+</div>
+<div class="exercise">
+  <div class="ex-header">
+    <span class="ex-n">4</span>
+    <span class="ex-badge">V ou F</span>
+  </div>
+  <p class="ex-text">"Bonjour" significa "boa noite". Verdadeiro ou Falso?</p>
+  
+  <button class="btn-gabarito" onclick="toggleEl('resp-fr-3')">Ver resposta</button>
+  <div class="resposta" id="resp-fr-3" hidden>✅ Falso — "Bonjour" significa "bom dia"</div>
+</div>
+<div class="exercise">
+  <div class="ex-header">
+    <span class="ex-n">5</span>
+    <span class="ex-badge">Traduza</span>
+  </div>
+  <p class="ex-text">Traduza para francês: "Thank you, please."</p>
+  
+  <button class="btn-gabarito" onclick="toggleEl('resp-fr-4')">Ver resposta</button>
+  <div class="resposta" id="resp-fr-4" hidden>✅ Merci, s'il vous plaît.</div>
+</div>
+  </div>
+
+  <!-- DIÁLOGO + ÁUDIO -->
+  <div id="fr-dial" class="panel">
+    <p class="section-label">Saudações Simples</p>
+    <div class="dialogo"><div class="fala fala-a">Bonjour: Bonjour</div><div class="fala fala-b">Alex: Bonjour</div><div class="fala fala-a">Bonjour: Merci</div><div class="fala fala-b">Alex: S'il vous plaît</div><div class="fala fala-a">Bonjour: Au revoir</div><div class="fala fala-b">Alex: Au revoir</div></div>
+    <div class="audio-block">
+      <p class="section-label">Ouça o diálogo</p>
+      <audio controls src="fr_historia.mp3" style="width:100%"></audio>
+    </div>
+    <button class="btn-trad" onclick="toggleEl('trad-fr')">🌐 Ver tradução</button>
+    <div class="trad-box" id="trad-fr" hidden>
+      <p class="section-label">Tradução</p>
+      <p class="trad-text">Olá<br>Olá<br>Obrigado<br>Por favor<br>Tchau<br>Tchau</p>
+    </div>
   </div>
 </div>
 
-<div class="card">
-  <div class="card-header">
+<div class="lang-block" id="block-es">
+  <div class="lang-header">
     <span class="flag">🇪🇸</span>
-    <h2>Español</h2>
-    <span class="badge">B1-B2</span>
+    <div class="lang-info">
+      <h2>Español</h2>
+      <span class="licao-badge">Lição 1 · A0</span>
+    </div>
   </div>
+  <h3 class="licao-titulo">¡Hola! Los saludos</h3>
 
   <div class="tabs">
-    <button class="tab active" onclick="showTab('es','historia',this)">📖 História</button>
-    <button class="tab" onclick="showTab('es','gramatica',this)">🧠 Gramática</button>
-    <button class="tab" onclick="showTab('es','vocab',this)">📝 Vocabulário</button>
+    <button class="tab active" onclick="tab('es','gram',this)">📘 Gramática</button>
+    <button class="tab" onclick="tab('es','ex',this)">✏️ Exercícios</button>
+    <button class="tab" onclick="tab('es','dial',this)">🎧 Diálogo</button>
   </div>
 
-  <div id="es-historia" class="tab-panel active">
-    <div class="story-text"><p class="para">Me llamo Sofía y vivo en Madrid. Mi familia y yo estamos planeando una viaje a México para conocer la cultura y la gastronomía de ese país. Estamos muy emocionados de probar los platos típicos como tacos y mole, y de visitar lugares como la ciudad de México y Cancún.</p><p class="para">La idea de viajar a México surgió cuando mi prima regresó de una viaje por allí y nos contó sobre la riqueza cultural y la amabilidad de la gente. Mi familia y yo somos muy curiosos y queremos experimentar todo lo que México tiene que ofrecer. Estamos estudiando un poco de español mexicano para poder comunicarnos con la gente local y aprovechar al máximo nuestra estancia en el país.</p><p class="para">En cuanto lleguemos a México, planeamos visitar el zócalo de la ciudad de México y probar la comida callejera. También queremos conocer la historia y la arquitectura de los lugares que visitemos, y tal vez incluso tomar algunas clases de cocina para aprender a preparar platos típicos mexicanos. Estamos seguros de que esta viaje será una experiencia inolvidable y que aprenderemos mucho sobre la cultura y la gastronomía de México.</p></div>
-    <div class="controls">
-      <button class="btn btn-audio" onclick="toggleAudio('es',this)">▶ Ouvir</button>
-      <button class="btn btn-trans" onclick="toggleEl('trans-es')">🌐 Tradução</button>
+  <!-- GRAMÁTICA -->
+  <div id="es-gram" class="panel active">
+    <div class="rule-box">
+      <h4 class="rule-title">Pronombres Personales</h4>
+      <p class="rule-exp">Os pronomes personais são usados para substituir nomes de pessoas. Em espanhol, existem pronomes pessoais como yo, tú e él/ella. Eles são importantes para comunicar de forma clara e eficaz. A escolha do pronome depende da pessoa que está falando ou sendo referida.</p>
     </div>
-    <audio id="audio-es" src="es_historia.mp3" preload="none"></audio>
-    <div class="translation" id="trans-es" hidden>
-      <h4>Tradução</h4><p>Me chamo Sofía e vivo em Madrid. Minha família e eu estamos planejando uma viagem ao México para conhecer a cultura e a gastronomia desse país. Estamos muito animados para provar os pratos típicos como tacos e mole, e para visitar lugares como a Cidade do México e Cancún.</p><p>A ideia de viajar ao México surgiu quando minha prima voltou de uma viagem por lá e nos contou sobre a riqueza cultural e a amabilidade das pessoas. Minha família e eu somos muito curiosos e queremos experimentar tudo o que o México tem a oferecer. Estamos estudando um pouco de espanhol mexicano para podermos nos comunicar com as pessoas locais e aproveitar ao máximo nossa estadia no país.</p><p>Assim que chegarmos ao México, planejamos visitar o zócalo da Cidade do México e provar a comida de rua. Também queremos conhecer a história e a arquitetura dos lugares que visitarmos, e talvez até mesmo tomar algumas aulas de culinária para aprender a preparar pratos típicos mexicanos. Estamos seguros de que essa viagem será uma experiência inesquecível e de que aprenderemos muito sobre a cultura e a gastronomia do México.</p>
-    </div>
-  </div>
-
-  <div id="es-gramatica" class="tab-panel">
-    <div class="grammar-box">
-      <h3>🧠 Uso do Pretérito Imperfeito</h3>
-      <p class="gram-exp">O pretérito imperfeito é usado para descrever ações que ocorriam regularmente no passado e para expressar hábitos ou costumes. Ele é formado adicionando-se as terminações "-aba", "-abas", "-aba", "-ábamos", "-abais", "-aban" ao radical do verbo.</p>
-      <ul class="gram-ex"><li>Mi familia y yo somos muy curiosos y queremos experimentar todo lo que México tiene que ofrecer.</li><li>Cuando era estudiante, estudiaba español todas las mañanas.</li><li>Mi abuela cocinaba platos típicos mexicanos cuando vivía en México.</li></ul>
-      <div class="dica">💡 Para memorizar o uso do pretérito imperfeito, tente criar frases que descrevam suas rotinas diárias no passado, como "cuando era adolescente, jugaba fútbol todos los fines de semana".</div>
-    </div>
-  </div>
-
-  <div id="es-vocab" class="tab-panel">
-    <table class="vocab-table">
-      <thead><tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr></thead>
-      <tbody><tr><td class="vp">gastronomía</td><td class="vt">culinária, gastronomia</td><td class="ve">La gastronomía de España es muy famosa por sus tapas.</td></tr><tr><td class="vp">emocionados</td><td class="vt">entusiasmados, animados</td><td class="ve">Estamos emocionados para el concierto de esta noche.</td></tr><tr><td class="vp">surgió</td><td class="vt">surgiu, apareceu</td><td class="ve">La idea surgió cuando leí un libro sobre el tema.</td></tr><tr><td class="vp">aprovechar</td><td class="vt">aproveitar, tirar proveito</td><td class="ve">Queremos aprovechar nuestro tiempo en la playa.</td></tr><tr><td class="vp">inolvidable</td><td class="vt">inesquecível</td><td class="ve">La boda fue una experiencia inolvidable para todos los invitados.</td></tr></tbody>
+    <table class="gram-table">
+      <tbody><tr><td>yo</td><td>eu</td><td>Yo como una manzana</td></tr><tr><td>tú</td><td>você</td><td>Tú comes una fruta</td></tr><tr><td>él</td><td>ele</td><td>Él come una carne</td></tr><tr><td>ella</td><td>ela</td><td>Ella bebe agua</td></tr></tbody>
     </table>
+    <div class="examples-block">
+      <p class="section-label">Exemplos</p>
+      <div class="example"><span class="ex-num">1</span>Hola, yo como una manzana.</div><div class="example"><span class="ex-num">2</span>Tú comes una fruta, ¿verdad?</div><div class="example"><span class="ex-num">3</span>Él come una carne y ella bebe agua.</div>
+    </div>
+    <div class="tip-box">💡 Para memorizar os pronomes, tente substituir o seu nome por "yo" e o nome de outra pessoa por "tú", "él" ou "ella" em frases simples.</div>
+  </div>
+
+  <!-- EXERCÍCIOS -->
+  <div id="es-ex" class="panel">
+    <p class="section-label">Exercícios — Lição 1</p>
+    
+<div class="exercise">
+  <div class="ex-header">
+    <span class="ex-n">1</span>
+    <span class="ex-badge">Preencha</span>
+  </div>
+  <p class="ex-text">Complete: Hola, ___ soy María.</p>
+  
+  <button class="btn-gabarito" onclick="toggleEl('resp-es-0')">Ver resposta</button>
+  <div class="resposta" id="resp-es-0" hidden>✅ yo</div>
+</div>
+<div class="exercise">
+  <div class="ex-header">
+    <span class="ex-n">2</span>
+    <span class="ex-badge">Escolha</span>
+  </div>
+  <p class="ex-text">Qual é a tradução de "gracias"?</p>
+  <div class="opcoes"><span class="opcao">A) por favor</span><span class="opcao">B) obrigado</span><span class="opcao">C) bom dia</span></div>
+  <button class="btn-gabarito" onclick="toggleEl('resp-es-1')">Ver resposta</button>
+  <div class="resposta" id="resp-es-1" hidden>✅ B</div>
+</div>
+<div class="exercise">
+  <div class="ex-header">
+    <span class="ex-n">3</span>
+    <span class="ex-badge">Preencha</span>
+  </div>
+  <p class="ex-text">___ como una fruta, ¿verdad?</p>
+  
+  <button class="btn-gabarito" onclick="toggleEl('resp-es-2')">Ver resposta</button>
+  <div class="resposta" id="resp-es-2" hidden>✅ Tú</div>
+</div>
+<div class="exercise">
+  <div class="ex-header">
+    <span class="ex-n">4</span>
+    <span class="ex-badge">V ou F</span>
+  </div>
+  <p class="ex-text">"Buenos días" significa "boa noite". Verdadeiro ou Falso?</p>
+  
+  <button class="btn-gabarito" onclick="toggleEl('resp-es-3')">Ver resposta</button>
+  <div class="resposta" id="resp-es-3" hidden>✅ Falso — "Buenos días" significa "bom dia"</div>
+</div>
+<div class="exercise">
+  <div class="ex-header">
+    <span class="ex-n">5</span>
+    <span class="ex-badge">Traduza</span>
+  </div>
+  <p class="ex-text">Traduza para espanhol: "Goodbye, thank you."</p>
+  
+  <button class="btn-gabarito" onclick="toggleEl('resp-es-4')">Ver resposta</button>
+  <div class="resposta" id="resp-es-4" hidden>✅ Adiós, gracias.</div>
+</div>
+  </div>
+
+  <!-- DIÁLOGO + ÁUDIO -->
+  <div id="es-dial" class="panel">
+    <p class="section-label">Saudações</p>
+    <div class="dialogo"><div class="fala fala-a">Hola: Hola</div><div class="fala fala-b">Alex: Buenos días</div><div class="fala fala-a">Hola: Gracias</div><div class="fala fala-b">Alex: Por favor</div><div class="fala fala-a">Hola: Adiós</div><div class="fala fala-b">Alex: Adiós</div></div>
+    <div class="audio-block">
+      <p class="section-label">Ouça o diálogo</p>
+      <audio controls src="es_historia.mp3" style="width:100%"></audio>
+    </div>
+    <button class="btn-trad" onclick="toggleEl('trad-es')">🌐 Ver tradução</button>
+    <div class="trad-box" id="trad-es" hidden>
+      <p class="section-label">Tradução</p>
+      <p class="trad-text">Olá<br>Bom dia<br>Obrigado<br>Por favor<br>Tchau<br>Tchau</p>
+    </div>
   </div>
 </div>
 
-<div class="card">
-  <div class="card-header">
+<div class="lang-block" id="block-en">
+  <div class="lang-header">
     <span class="flag">🇬🇧</span>
-    <h2>English</h2>
-    <span class="badge">C1</span>
+    <div class="lang-info">
+      <h2>English</h2>
+      <span class="licao-badge">Lição 1 · A0</span>
+    </div>
   </div>
+  <h3 class="licao-titulo">Hello! Greetings</h3>
 
   <div class="tabs">
-    <button class="tab active" onclick="showTab('en','historia',this)">📖 História</button>
-    <button class="tab" onclick="showTab('en','gramatica',this)">🧠 Gramática</button>
-    <button class="tab" onclick="showTab('en','vocab',this)">📝 Vocabulário</button>
+    <button class="tab active" onclick="tab('en','gram',this)">📘 Gramática</button>
+    <button class="tab" onclick="tab('en','ex',this)">✏️ Exercícios</button>
+    <button class="tab" onclick="tab('en','dial',this)">🎧 Diálogo</button>
   </div>
 
-  <div id="en-historia" class="tab-panel active">
-    <div class="story-text"><p class="para">Enquanto caminhava pelas ruas estreitas de Tokyo, eu não pude deixar de notar a mistura fascinante de tradição e modernidade que permeia a cidade. Lojas de eletrônicos de ponta e arranha-céus se erguem ao lado de templos antigos e mercados tradicionais, criando uma atmosfera única que é ao mesmo tempo estimulante e desconcertante. A comida também reflete essa mistura, com restaurantes de sushi de alta tecnologia ao lado de barracas de rua que servem pratos caseiros.</p><p class="para">Ainda assim, foi a culinária que realmente me atraiu para essa cidade, com sua rica variedade de sabores e texturas que desafiam constantemente meus sentidos. De manhãs, eu amava frequentar os mercados de peixe para provar o sushi fresco e assistir aos leilões animados. À noite, eu explorava os bairros de Shinjuku e Shibuya, onde as luzes neon e a música alta criam uma atmosfera vibrante que é difícil de encontrar em qualquer outro lugar.</p><p class="para">Durante minhas viagens, também tive a oportunidade de explorar a rica herança cultural do Japão, visitando castelos históricos e participando de cerimônias de chá tradicionais. Essas experiências não apenas aprofundaram meu entendimento da história e dos valores do país, mas também me permitiram apreciar a beleza simples e a elegância que permeiam todos os aspectos da vida japonesa. Essa jornada foi, sem dúvida, uma das mais enriquecedoras experiências de minha vida, e uma que certamente influenciará minhas perspectivas e escolhas futuras.</p></div>
-    <div class="controls">
-      <button class="btn btn-audio" onclick="toggleAudio('en',this)">▶ Ouvir</button>
-      <button class="btn btn-trans" onclick="toggleEl('trans-en')">🌐 Tradução</button>
+  <!-- GRAMÁTICA -->
+  <div id="en-gram" class="panel active">
+    <div class="rule-box">
+      <h4 class="rule-title"></h4>
+      <p class="rule-exp">Os pronomes pessoais são usados para nos referirmos a nós mesmos e às outras pessoas. Eles ajudam a evitar repetir o nome de alguém. Nesta lição, aprenderemos sobre os pronomes "I", "you" e "he/she". São usados para substituir nomes.</p>
     </div>
-    <audio id="audio-en" src="en_historia.mp3" preload="none"></audio>
-    <div class="translation" id="trans-en" hidden>
-      <h4>Tradução</h4><p>Enquanto caminhava pelas ruas estreitas de Tóquio, eu não pude deixar de notar a mistura fascinante de tradição e modernidade que permeia a cidade. Lojas de eletrônicos de ponta e arranha-céus se erguem ao lado de templos antigos e mercados tradicionais, criando uma atmosfera única que é ao mesmo tempo estimulante e desconcertante. A comida também reflete essa mistura, com restaurantes de sushi de alta tecnologia ao lado de barracas de rua que servem pratos caseiros.</p><p>Ainda assim, foi a culinária que realmente me atraiu para essa cidade, com sua rica variedade de sabores e texturas que desafiam constantemente meus sentidos. De manhãs, eu amava frequentar os mercados de peixe para provar o sushi fresco e assistir aos leilões animados. À noite, eu explorava os bairros de Shinjuku e Shibuya, onde as luzes neon e a música alta criam uma atmosfera vibrante que é difícil de encontrar em qualquer outro lugar.</p><p>Durante minhas viagens, também tive a oportunidade de explorar a rica herança cultural do Japão, visitando castelos históricos e participando de cerimônias de chá tradicionais. Essas experiências não apenas aprofundaram meu entendimento da história e dos valores do país, mas também me permitiram apreciar a beleza simples e a elegância que permeiam todos os aspectos da vida japonesa. Essa jornada foi, sem dúvida, uma das mais enriquecedoras experiências de minha vida, e uma que certamente influenciará minhas perspectivas e escolhas futuras.</p>
-    </div>
-  </div>
-
-  <div id="en-gramatica" class="tab-panel">
-    <div class="grammar-box">
-      <h3>🧠 Uso de subordinadas temporais</h3>
-      <p class="gram-exp">As subordinadas temporais são usadas para indicar a relação temporal entre dois eventos, podendo ser introduzidas por conjunções como "enquanto", "quando", "depois que", etc. Elas ajudam a organizar a narrativa e a estabelecer uma cronologia clara.</p>
-      <ul class="gram-ex"><li>Enquanto caminhava pelas ruas estreitas de Tokyo, eu não pude deixar de notar a mistura fascinante de tradição e modernidade que permeia a cidade.</li><li>Quando cheguei em Paris, fui diretamente ao museu do Louvre para ver a Mona Lisa.</li><li>Depois que terminei meus estudos, viajei para a Itália para aprofundar meus conhecimentos sobre a arte renascentista.</li></ul>
-      <div class="dica">💡 Para memorizar o uso de subordinadas temporais, tente criar frases que relate eventos que ocorrem em diferentes momentos, como "enquanto eu estudo, meu irmão assiste TV".</div>
-    </div>
-  </div>
-
-  <div id="en-vocab" class="tab-panel">
-    <table class="vocab-table">
-      <thead><tr><th>Palavra</th><th>Tradução</th><th>Exemplo</th></tr></thead>
-      <tbody></tbody>
+    <table class="gram-table">
+      <tbody><tr><td>Pronome</td><td>Forma</td><td>Exemplo</td></tr><tr><td>I</td><td>eu</td><td>I am happy</td></tr><tr><td>you</td><td>você</td><td>you are my friend</td></tr><tr><td>he</td><td>ele</td><td>he is my brother</td></tr><tr><td>she</td><td>ela</td><td>she is my sister</td></tr></tbody>
     </table>
+    <div class="examples-block">
+      <p class="section-label">Exemplos</p>
+      <div class="example"><span class="ex-num">1</span>Hello, I am happy</div><div class="example"><span class="ex-num">2</span>Good morning, you are my friend</div><div class="example"><span class="ex-num">3</span>He is my brother, thank you</div>
+    </div>
+    <div class="tip-box">💡 Tente substituir os nomes pelas palavras "I", "you", "he" e "she" para melhorar a fluidez.</div>
+  </div>
+
+  <!-- EXERCÍCIOS -->
+  <div id="en-ex" class="panel">
+    <p class="section-label">Exercícios — Lição 1</p>
+    
+<div class="exercise">
+  <div class="ex-header">
+    <span class="ex-n">1</span>
+    <span class="ex-badge">Preencha</span>
+  </div>
+  <p class="ex-text">Complete: Hello, ___ am happy.</p>
+  
+  <button class="btn-gabarito" onclick="toggleEl('resp-en-0')">Ver resposta</button>
+  <div class="resposta" id="resp-en-0" hidden>✅ I</div>
+</div>
+<div class="exercise">
+  <div class="ex-header">
+    <span class="ex-n">2</span>
+    <span class="ex-badge">Escolha</span>
+  </div>
+  <p class="ex-text">Qual é a tradução de "good morning"?</p>
+  <div class="opcoes"><span class="opcao">A) boa noite</span><span class="opcao">B) bom dia</span><span class="opcao">C) boa tarde</span></div>
+  <button class="btn-gabarito" onclick="toggleEl('resp-en-1')">Ver resposta</button>
+  <div class="resposta" id="resp-en-1" hidden>✅ B</div>
+</div>
+<div class="exercise">
+  <div class="ex-header">
+    <span class="ex-n">3</span>
+    <span class="ex-badge">Preencha</span>
+  </div>
+  <p class="ex-text">Complete: Good morning, ___ are my friend.</p>
+  
+  <button class="btn-gabarito" onclick="toggleEl('resp-en-2')">Ver resposta</button>
+  <div class="resposta" id="resp-en-2" hidden>✅ you</div>
+</div>
+<div class="exercise">
+  <div class="ex-header">
+    <span class="ex-n">4</span>
+    <span class="ex-badge">V ou F</span>
+  </div>
+  <p class="ex-text">"He is my brother" significa "Ela é minha irmã". Verdadeiro ou Falso?</p>
+  
+  <button class="btn-gabarito" onclick="toggleEl('resp-en-3')">Ver resposta</button>
+  <div class="resposta" id="resp-en-3" hidden>✅ Falso — "He is my brother" significa "Ele é meu irmão"</div>
+</div>
+<div class="exercise">
+  <div class="ex-header">
+    <span class="ex-n">5</span>
+    <span class="ex-badge">Traduza</span>
+  </div>
+  <p class="ex-text">Traduza para inglês: "Obrigado, por favor."</p>
+  
+  <button class="btn-gabarito" onclick="toggleEl('resp-en-4')">Ver resposta</button>
+  <div class="resposta" id="resp-en-4" hidden>✅ Thank you, please.</div>
+</div>
+  </div>
+
+  <!-- DIÁLOGO + ÁUDIO -->
+  <div id="en-dial" class="panel">
+    <p class="section-label">Saudações Simples</p>
+    <div class="dialogo"><div class="fala fala-a">Hello: Hello!</div><div class="fala fala-b">Alex: Good morning!</div><div class="fala fala-a">Hello: Thank you!</div><div class="fala fala-b">Alex: Please come!</div><div class="fala fala-a">Hello: Goodbye!</div><div class="fala fala-b">Alex: Goodbye!</div></div>
+    <div class="audio-block">
+      <p class="section-label">Ouça o diálogo</p>
+      <audio controls src="en_historia.mp3" style="width:100%"></audio>
+    </div>
+    <button class="btn-trad" onclick="toggleEl('trad-en')">🌐 Ver tradução</button>
+    <div class="trad-box" id="trad-en" hidden>
+      <p class="section-label">Tradução</p>
+      <p class="trad-text">Olá!<br>Bom dia!<br>Obrigado!<br>Por favor, venha!<br>Tchau!<br>Tchau!</p>
+    </div>
   </div>
 </div>
 </main>
-<footer>Gerado automaticamente · 26 de June de 2026</footer>
+<footer>Language Tutor · 26/06/2026 · nivapinto.github.io/language-tutor</footer>
 <script>
-function showTab(lang,tab,btn){
-  document.querySelectorAll('[id^="'+lang+'-"]').forEach(p=>p.classList.remove('active'));
-  document.getElementById(lang+'-'+tab).classList.add('active');
-  btn.closest('.tabs').querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
+function tab(lang, panel, btn) {
+  ['gram','ex','dial'].forEach(p => document.getElementById(lang+'-'+p).classList.remove('active'));
+  document.getElementById(lang+'-'+panel).classList.add('active');
+  btn.closest('.tabs').querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
 }
-function toggleAudio(lang,btn){
-  const a=document.getElementById('audio-'+lang);
-  if(a.paused){document.querySelectorAll('audio').forEach(x=>x.pause());document.querySelectorAll('.btn-audio').forEach(b=>b.textContent='▶ Ouvir');a.play();btn.textContent='⏸ Pausar';}
-  else{a.pause();btn.textContent='▶ Ouvir';}
-  a.onended=()=>btn.textContent='▶ Ouvir';
-}
-function toggleEl(id){const el=document.getElementById(id);el.hidden=!el.hidden;}
+function toggleEl(id) { const e = document.getElementById(id); e.hidden = !e.hidden; }
 </script>
-</body></html>
+</body>
+</html>

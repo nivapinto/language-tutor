@@ -1,128 +1,243 @@
 {
   "data": "2026-06-26",
-  "stories": [
+  "aulas": [
     {
       "code": "fr",
       "label": "Français",
       "flag": "🇫🇷",
-      "level": "iniciante (A1-A2)",
-      "paragraphs": [
-        "Je m'appelle Marie et je suis étudiante à Paris. J'aime beaucoup cette ville parce qu'il y a toujours quelque chose à faire. Le matin, je vais au café pour prendre un petit déjeuner avec mes amis. Nous mangeons des croissants et buvons du café.",
-        "Je suis en train de préparer un voyage à Lyon pour les vacances d'été. J'ai entendu que la gastronomie lyonnaise est délicieuse et je veux essayer les spécialités locales. J'ai réservé un hôtel dans le centre-ville pour être près des restaurants et des monuments historiques. Je suis très excitée de découvrir cette ville.",
-        "J'ai déjà commencé à faire des plans pour mon séjour à Lyon. Je veux visiter le musée des Beaux-Arts et le parc de la Tête d'Or. Je vais également essayer de parler avec les habitants pour améliorer mon français et apprendre plus sur la culture locale. Je suis sûre que ce voyage sera inoubliable."
-      ],
-      "translation": "Eu me chamo Marie e sou estudante em Paris. Eu gosto muito desta cidade porque há sempre alguma coisa para fazer. De manhã, eu vou ao café para tomar o café da manhã com meus amigos. Nós comemos croissants e bebemos café.\n\nEstou preparando uma viagem a Lyon para as férias de verão. Eu ouvi que a gastronomia lionesa é deliciosa e quero experimentar as especialidades locais. Eu reservei um hotel no centro da cidade para estar perto dos restaurantes e monumentos históricos. Estou muito animada para descobrir esta cidade.\n\nEu já comecei a fazer planos para minha estadia em Lyon. Eu quero visitar o museu de Belas Artes e o parque da Tête d'Or. Eu também vou tentar conversar com os habitantes para melhorar meu francês e aprender mais sobre a cultura local. Estou certa de que esta viagem será inesquecível.",
-      "gramatica": {
-        "titulo": "Uso do presente do indicativo para descrever hábitos e ações cotidianas",
-        "explicacao": "O presente do indicativo é usado em francês para descrever ações que são realizadas regularmente, como hábitos diários ou semanais. Isso é especialmente comum ao falar sobre o que se gosta de fazer ou como se passa o tempo. O uso do presente do indicativo ajuda a transmitir uma sensação de rotina e normalidade.",
-        "exemplos": [
-          "J'aime beaucoup cette ville parce qu'il y a toujours quelque chose à faire.",
-          "Je vais souvent au parc pour me promener.",
-          "Elle étudie le français tous les jours pour améliorer son niveau."
+      "licao": {
+        "numero": 1,
+        "titulo": "Bonjour ! Les salutations",
+        "gramatica": "Pronomes pessoais: je, tu, il/elle",
+        "vocabulario": [
+          "bonjour",
+          "bonsoir",
+          "merci",
+          "s'il vous plaît",
+          "au revoir"
         ],
-        "dica": "Para memorizar o uso do presente do indicativo, pratique descrever seu dia a dia em francês, utilizando verbos como \"je fais\", \"j'aime\", \"je vais\" para tornar as frases mais naturais e fluentes."
+        "nivel": "A0"
       },
-      "vocabulario": [
+      "gramatica": {
+        "titulo": "Pronomes Pessoais Básicos",
+        "explicacao": "Os pronomes pessoais são usados para substituir nomes de pessoas. Em francês, começamos com je, tu e il/elle. Eles têm formas diferentes para usar em frases.",
+        "tabela": [
+          "Pronome | Forma | Exemplo",
+          "je | eu | Je m'appelle",
+          "tu | você | Tu es étudiant",
+          "il | ele | Il est français",
+          "elle | ela | Elle est étudiante"
+        ],
+        "exemplos": [
+          "Bonjour, je m'appelle Pierre.",
+          "Tu es étudiant, n'est-ce pas?",
+          "Il est français, elle est française."
+        ],
+        "dica": "Para memorizar, associe cada pronome a uma pessoa: je para si mesmo, tu para alguém conhecido e il/elle para alguém específico."
+      },
+      "exercicios": [
         {
-          "palavra": "étudiante",
-          "traducao": "estudante",
-          "exemplo": "Elle est étudiante à l'université de Paris."
+          "tipo": "lacuna",
+          "enunciado": "Complete: ___ m'appelle Marie. (eu)",
+          "resposta": "Je"
         },
         {
-          "palavra": "gastronomie",
-          "traducao": "culinária",
-          "exemplo": "La gastronomie française est réputée dans le monde entier."
+          "tipo": "multipla_escolha",
+          "enunciado": "Qual é a tradução de \"merci\"?",
+          "opcoes": [
+            "A) por favor",
+            "B) obrigado",
+            "C) bom dia"
+          ],
+          "resposta": "B"
         },
         {
-          "palavra": "spécialités",
-          "traducao": "especialidades",
-          "exemplo": "Les spécialités locales sont délicieuses à Lyon."
+          "tipo": "lacuna",
+          "enunciado": "Complete: Il ___ français. (ele)",
+          "resposta": "est"
         },
         {
-          "palavra": "monuments",
-          "traducao": "monumentos",
-          "exemplo": "La ville de Paris est connue pour ses monuments historiques."
+          "tipo": "verdadeiro_falso",
+          "enunciado": "\"Bonjour\" significa \"boa noite\". Verdadeiro ou Falso?",
+          "resposta": "Falso — \"Bonjour\" significa \"bom dia\""
         },
         {
-          "palavra": "inoubliable",
-          "traducao": "inesquecível",
-          "exemplo": "Ce voyage à Paris a été inoubliable pour moi."
+          "tipo": "traducao",
+          "enunciado": "Traduza para francês: \"Thank you, please.\"",
+          "resposta": "Merci, s'il vous plaît."
         }
       ],
+      "dialogo": {
+        "titulo": "Saudações Simples",
+        "falas": [
+          "Bonjour: Bonjour",
+          "Alex: Bonjour",
+          "Bonjour: Merci",
+          "Alex: S'il vous plaît",
+          "Bonjour: Au revoir",
+          "Alex: Au revoir"
+        ],
+        "traducao": "Olá\nOlá\nObrigado\nPor favor\nTchau\nTchau"
+      },
       "audio_file": "fr_historia.mp3"
     },
     {
       "code": "es",
       "label": "Español",
       "flag": "🇪🇸",
-      "level": "intermediário (B1-B2)",
-      "paragraphs": [
-        "Me llamo Sofía y vivo en Madrid. Mi familia y yo estamos planeando una viaje a México para conocer la cultura y la gastronomía de ese país. Estamos muy emocionados de probar los platos típicos como tacos y mole, y de visitar lugares como la ciudad de México y Cancún.",
-        "La idea de viajar a México surgió cuando mi prima regresó de una viaje por allí y nos contó sobre la riqueza cultural y la amabilidad de la gente. Mi familia y yo somos muy curiosos y queremos experimentar todo lo que México tiene que ofrecer. Estamos estudiando un poco de español mexicano para poder comunicarnos con la gente local y aprovechar al máximo nuestra estancia en el país.",
-        "En cuanto lleguemos a México, planeamos visitar el zócalo de la ciudad de México y probar la comida callejera. También queremos conocer la historia y la arquitectura de los lugares que visitemos, y tal vez incluso tomar algunas clases de cocina para aprender a preparar platos típicos mexicanos. Estamos seguros de que esta viaje será una experiencia inolvidable y que aprenderemos mucho sobre la cultura y la gastronomía de México."
-      ],
-      "translation": "Me chamo Sofía e vivo em Madrid. Minha família e eu estamos planejando uma viagem ao México para conhecer a cultura e a gastronomia desse país. Estamos muito animados para provar os pratos típicos como tacos e mole, e para visitar lugares como a Cidade do México e Cancún.\n\nA ideia de viajar ao México surgiu quando minha prima voltou de uma viagem por lá e nos contou sobre a riqueza cultural e a amabilidade das pessoas. Minha família e eu somos muito curiosos e queremos experimentar tudo o que o México tem a oferecer. Estamos estudando um pouco de espanhol mexicano para podermos nos comunicar com as pessoas locais e aproveitar ao máximo nossa estadia no país.\n\nAssim que chegarmos ao México, planejamos visitar o zócalo da Cidade do México e provar a comida de rua. Também queremos conhecer a história e a arquitetura dos lugares que visitarmos, e talvez até mesmo tomar algumas aulas de culinária para aprender a preparar pratos típicos mexicanos. Estamos seguros de que essa viagem será uma experiência inesquecível e de que aprenderemos muito sobre a cultura e a gastronomia do México.",
-      "gramatica": {
-        "titulo": "Uso do Pretérito Imperfeito",
-        "explicacao": "O pretérito imperfeito é usado para descrever ações que ocorriam regularmente no passado e para expressar hábitos ou costumes. Ele é formado adicionando-se as terminações \"-aba\", \"-abas\", \"-aba\", \"-ábamos\", \"-abais\", \"-aban\" ao radical do verbo.",
-        "exemplos": [
-          "Mi familia y yo somos muy curiosos y queremos experimentar todo lo que México tiene que ofrecer.",
-          "Cuando era estudiante, estudiaba español todas las mañanas.",
-          "Mi abuela cocinaba platos típicos mexicanos cuando vivía en México."
+      "licao": {
+        "numero": 1,
+        "titulo": "¡Hola! Los saludos",
+        "gramatica": "Pronombres personales: yo, tú, él/ella",
+        "vocabulario": [
+          "hola",
+          "buenos días",
+          "gracias",
+          "por favor",
+          "adiós"
         ],
-        "dica": "Para memorizar o uso do pretérito imperfeito, tente criar frases que descrevam suas rotinas diárias no passado, como \"cuando era adolescente, jugaba fútbol todos los fines de semana\"."
+        "nivel": "A0"
       },
-      "vocabulario": [
+      "gramatica": {
+        "titulo": "Pronombres Personales",
+        "explicacao": "Os pronomes personais são usados para substituir nomes de pessoas. Em espanhol, existem pronomes pessoais como yo, tú e él/ella. Eles são importantes para comunicar de forma clara e eficaz. A escolha do pronome depende da pessoa que está falando ou sendo referida.",
+        "tabela": [
+          "yo | eu | Yo como una manzana",
+          "tú | você | Tú comes una fruta",
+          "él | ele | Él come una carne",
+          "ella | ela | Ella bebe agua"
+        ],
+        "exemplos": [
+          "Hola, yo como una manzana.",
+          "Tú comes una fruta, ¿verdad?",
+          "Él come una carne y ella bebe agua."
+        ],
+        "dica": "Para memorizar os pronomes, tente substituir o seu nome por \"yo\" e o nome de outra pessoa por \"tú\", \"él\" ou \"ella\" em frases simples."
+      },
+      "exercicios": [
         {
-          "palavra": "gastronomía",
-          "traducao": "culinária, gastronomia",
-          "exemplo": "La gastronomía de España es muy famosa por sus tapas."
+          "tipo": "lacuna",
+          "enunciado": "Complete: Hola, ___ soy María.",
+          "resposta": "yo"
         },
         {
-          "palavra": "emocionados",
-          "traducao": "entusiasmados, animados",
-          "exemplo": "Estamos emocionados para el concierto de esta noche."
+          "tipo": "multipla_escolha",
+          "enunciado": "Qual é a tradução de \"gracias\"?",
+          "opcoes": [
+            "A) por favor",
+            "B) obrigado",
+            "C) bom dia"
+          ],
+          "resposta": "B"
         },
         {
-          "palavra": "surgió",
-          "traducao": "surgiu, apareceu",
-          "exemplo": "La idea surgió cuando leí un libro sobre el tema."
+          "tipo": "lacuna",
+          "enunciado": "___ como una fruta, ¿verdad?",
+          "resposta": "Tú"
         },
         {
-          "palavra": "aprovechar",
-          "traducao": "aproveitar, tirar proveito",
-          "exemplo": "Queremos aprovechar nuestro tiempo en la playa."
+          "tipo": "verdadeiro_falso",
+          "enunciado": "\"Buenos días\" significa \"boa noite\". Verdadeiro ou Falso?",
+          "resposta": "Falso — \"Buenos días\" significa \"bom dia\""
         },
         {
-          "palavra": "inolvidable",
-          "traducao": "inesquecível",
-          "exemplo": "La boda fue una experiencia inolvidable para todos los invitados."
+          "tipo": "traducao",
+          "enunciado": "Traduza para espanhol: \"Goodbye, thank you.\"",
+          "resposta": "Adiós, gracias."
         }
       ],
+      "dialogo": {
+        "titulo": "Saudações",
+        "falas": [
+          "Hola: Hola",
+          "Alex: Buenos días",
+          "Hola: Gracias",
+          "Alex: Por favor",
+          "Hola: Adiós",
+          "Alex: Adiós"
+        ],
+        "traducao": "Olá\nBom dia\nObrigado\nPor favor\nTchau\nTchau"
+      },
       "audio_file": "es_historia.mp3"
     },
     {
       "code": "en",
       "label": "English",
       "flag": "🇬🇧",
-      "level": "avançado conversacional (C1)",
-      "paragraphs": [
-        "Enquanto caminhava pelas ruas estreitas de Tokyo, eu não pude deixar de notar a mistura fascinante de tradição e modernidade que permeia a cidade. Lojas de eletrônicos de ponta e arranha-céus se erguem ao lado de templos antigos e mercados tradicionais, criando uma atmosfera única que é ao mesmo tempo estimulante e desconcertante. A comida também reflete essa mistura, com restaurantes de sushi de alta tecnologia ao lado de barracas de rua que servem pratos caseiros.",
-        "Ainda assim, foi a culinária que realmente me atraiu para essa cidade, com sua rica variedade de sabores e texturas que desafiam constantemente meus sentidos. De manhãs, eu amava frequentar os mercados de peixe para provar o sushi fresco e assistir aos leilões animados. À noite, eu explorava os bairros de Shinjuku e Shibuya, onde as luzes neon e a música alta criam uma atmosfera vibrante que é difícil de encontrar em qualquer outro lugar.",
-        "Durante minhas viagens, também tive a oportunidade de explorar a rica herança cultural do Japão, visitando castelos históricos e participando de cerimônias de chá tradicionais. Essas experiências não apenas aprofundaram meu entendimento da história e dos valores do país, mas também me permitiram apreciar a beleza simples e a elegância que permeiam todos os aspectos da vida japonesa. Essa jornada foi, sem dúvida, uma das mais enriquecedoras experiências de minha vida, e uma que certamente influenciará minhas perspectivas e escolhas futuras."
-      ],
-      "translation": "Enquanto caminhava pelas ruas estreitas de Tóquio, eu não pude deixar de notar a mistura fascinante de tradição e modernidade que permeia a cidade. Lojas de eletrônicos de ponta e arranha-céus se erguem ao lado de templos antigos e mercados tradicionais, criando uma atmosfera única que é ao mesmo tempo estimulante e desconcertante. A comida também reflete essa mistura, com restaurantes de sushi de alta tecnologia ao lado de barracas de rua que servem pratos caseiros.\n\n \nAinda assim, foi a culinária que realmente me atraiu para essa cidade, com sua rica variedade de sabores e texturas que desafiam constantemente meus sentidos. De manhãs, eu amava frequentar os mercados de peixe para provar o sushi fresco e assistir aos leilões animados. À noite, eu explorava os bairros de Shinjuku e Shibuya, onde as luzes neon e a música alta criam uma atmosfera vibrante que é difícil de encontrar em qualquer outro lugar.\n\n \nDurante minhas viagens, também tive a oportunidade de explorar a rica herança cultural do Japão, visitando castelos históricos e participando de cerimônias de chá tradicionais. Essas experiências não apenas aprofundaram meu entendimento da história e dos valores do país, mas também me permitiram apreciar a beleza simples e a elegância que permeiam todos os aspectos da vida japonesa. Essa jornada foi, sem dúvida, uma das mais enriquecedoras experiências de minha vida, e uma que certamente influenciará minhas perspectivas e escolhas futuras.",
-      "gramatica": {
-        "titulo": "Uso de subordinadas temporais",
-        "explicacao": "As subordinadas temporais são usadas para indicar a relação temporal entre dois eventos, podendo ser introduzidas por conjunções como \"enquanto\", \"quando\", \"depois que\", etc. Elas ajudam a organizar a narrativa e a estabelecer uma cronologia clara.",
-        "exemplos": [
-          "Enquanto caminhava pelas ruas estreitas de Tokyo, eu não pude deixar de notar a mistura fascinante de tradição e modernidade que permeia a cidade.",
-          "Quando cheguei em Paris, fui diretamente ao museu do Louvre para ver a Mona Lisa.",
-          "Depois que terminei meus estudos, viajei para a Itália para aprofundar meus conhecimentos sobre a arte renascentista."
+      "licao": {
+        "numero": 1,
+        "titulo": "Hello! Greetings",
+        "gramatica": "Personal pronouns: I, you, he/she",
+        "vocabulario": [
+          "hello",
+          "good morning",
+          "thank you",
+          "please",
+          "goodbye"
         ],
-        "dica": "Para memorizar o uso de subordinadas temporais, tente criar frases que relate eventos que ocorrem em diferentes momentos, como \"enquanto eu estudo, meu irmão assiste TV\"."
+        "nivel": "A0"
       },
-      "vocabulario": [],
+      "gramatica": {
+        "titulo": "",
+        "explicacao": "Os pronomes pessoais são usados para nos referirmos a nós mesmos e às outras pessoas. Eles ajudam a evitar repetir o nome de alguém. Nesta lição, aprenderemos sobre os pronomes \"I\", \"you\" e \"he/she\". São usados para substituir nomes.",
+        "tabela": [
+          "Pronome | Forma | Exemplo",
+          "I | eu | I am happy",
+          "you | você | you are my friend",
+          "he | ele | he is my brother",
+          "she | ela | she is my sister"
+        ],
+        "exemplos": [
+          "Hello, I am happy",
+          "Good morning, you are my friend",
+          "He is my brother, thank you"
+        ],
+        "dica": "Tente substituir os nomes pelas palavras \"I\", \"you\", \"he\" e \"she\" para melhorar a fluidez."
+      },
+      "exercicios": [
+        {
+          "tipo": "lacuna",
+          "enunciado": "Complete: Hello, ___ am happy.",
+          "resposta": "I"
+        },
+        {
+          "tipo": "multipla_escolha",
+          "enunciado": "Qual é a tradução de \"good morning\"?",
+          "opcoes": [
+            "A) boa noite",
+            "B) bom dia",
+            "C) boa tarde"
+          ],
+          "resposta": "B"
+        },
+        {
+          "tipo": "lacuna",
+          "enunciado": "Complete: Good morning, ___ are my friend.",
+          "resposta": "you"
+        },
+        {
+          "tipo": "verdadeiro_falso",
+          "enunciado": "\"He is my brother\" significa \"Ela é minha irmã\". Verdadeiro ou Falso?",
+          "resposta": "Falso — \"He is my brother\" significa \"Ele é meu irmão\""
+        },
+        {
+          "tipo": "traducao",
+          "enunciado": "Traduza para inglês: \"Obrigado, por favor.\"",
+          "resposta": "Thank you, please."
+        }
+      ],
+      "dialogo": {
+        "titulo": "Saudações Simples",
+        "falas": [
+          "Hello: Hello!",
+          "Alex: Good morning!",
+          "Hello: Thank you!",
+          "Alex: Please come!",
+          "Hello: Goodbye!",
+          "Alex: Goodbye!"
+        ],
+        "traducao": "Olá!\nBom dia!\nObrigado!\nPor favor, venha!\nTchau!\nTchau!"
+      },
       "audio_file": "en_historia.mp3"
     }
   ]
