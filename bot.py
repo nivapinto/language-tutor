@@ -485,12 +485,32 @@ def processar(msg_data):
 
 # ── loop principal ────────────────────────────────────────────────────────────
 
+def _gerar_se_necessario():
+    """Gera a aula do dia se ainda não foi gerada hoje."""
+    try:
+        aula_path = BASE_DIR / "aula_atual.json"
+        if aula_path.exists():
+            data = json.loads(aula_path.read_text(encoding="utf-8")).get("data", "")
+            if data == datetime.date.today().isoformat():
+                print("  Aula de hoje já existe, pulando geração.")
+                return
+        print("  Aula de hoje não encontrada — gerando agora...")
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("gerar_aula", BASE_DIR / "gerar_aula.py")
+        mod  = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        mod.main()
+    except Exception as e:
+        print(f"  ⚠ Não foi possível gerar aula: {e}")
+
+
 def main():
-    print("Language Tutor Bot — restaurando estado do GitHub...")
+    print("Language Tutor Bot — iniciando...")
     try:
         restaurar_estado()
     except Exception as e:
         print(f"  ⚠ Não foi possível restaurar do GitHub: {e}")
+    threading.Thread(target=_gerar_se_necessario, daemon=True).start()
     print("Language Tutor Bot — ouvindo... (Ctrl+C para parar)")
     offset = None
     while True:

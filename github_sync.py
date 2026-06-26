@@ -6,6 +6,7 @@ mesmo em servidores sem disco persistente (ex: Koyeb free tier).
 
 import os, base64, json, requests
 from pathlib import Path
+from typing import Optional
 
 GITHUB_TOKEN  = os.environ.get("GITHUB_TOKEN", "")
 GITHUB_REPO   = "nivapinto/language-tutor"
@@ -18,7 +19,7 @@ _HEADERS = lambda: {
 }
 
 
-def _get_sha(path_in_repo: str) -> str | None:
+def _get_sha(path_in_repo: str) -> Optional[str]:
     r = requests.get(
         f"https://api.github.com/repos/{GITHUB_REPO}/contents/{path_in_repo}",
         headers=_HEADERS(), params={"ref": GITHUB_BRANCH}, timeout=10,
@@ -26,7 +27,7 @@ def _get_sha(path_in_repo: str) -> str | None:
     return r.json().get("sha") if r.ok else None
 
 
-def push_file(path_in_repo: str, content_bytes: bytes, message: str = "sync") -> bool:
+def push_file(path_in_repo: str, content_bytes: bytes, message: str = "sync") -> bool:  # type: ignore
     """Envia um arquivo para o GitHub. Retorna True se bem-sucedido."""
     sha = _get_sha(path_in_repo)
     payload = {
@@ -43,7 +44,7 @@ def push_file(path_in_repo: str, content_bytes: bytes, message: str = "sync") ->
     return r.ok
 
 
-def pull_file(path_in_repo: str) -> bytes | None:
+def pull_file(path_in_repo: str) -> Optional[bytes]:
     """Baixa um arquivo do GitHub. Retorna bytes ou None."""
     r = requests.get(
         f"https://api.github.com/repos/{GITHUB_REPO}/contents/{path_in_repo}",
