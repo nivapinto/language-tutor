@@ -1,0 +1,6 @@
+.env
+.DS_Store
+__pycache__/
+*.pyc
+Language Tutor_files/
+.claude/settings.local.json

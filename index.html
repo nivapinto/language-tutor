@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Tutor — 26 de June de 2026</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;padding:2rem 1rem}
+    header{text-align:center;margin-bottom:2.5rem}
+    header h1{font-size:2rem;color:#f8fafc;letter-spacing:-.02em}
+    header p{color:#94a3b8;margin-top:.4rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem;max-width:1100px;margin:0 auto}
+    .card{background:#1e293b;border:1px solid #334155;border-radius:16px;padding:1.5rem;display:flex;flex-direction:column;gap:1rem}
+    .card-header{display:flex;align-items:center;gap:.6rem}
+    .flag{font-size:1.6rem}
+    .card-header h2{font-size:1.2rem;color:#f1f5f9;flex:1}
+    .level-badge{background:#0f172a;border:1px solid #475569;border-radius:999px;padding:.2rem .6rem;font-size:.7rem;color:#94a3b8}
+    .story-text .para{color:#cbd5e1;line-height:1.75;margin-bottom:.8rem}
+    .story-text .para:last-child{margin-bottom:0}
+    .controls{display:flex;gap:.75rem;flex-wrap:wrap}
+    .btn{flex:1;padding:.6rem 1rem;border:none;border-radius:8px;font-size:.9rem;font-weight:600;cursor:pointer;transition:opacity .15s,transform .1s}
+    .btn:active{transform:scale(.97)}
+    .btn-audio{background:#6366f1;color:#fff}
+    .btn-trans{background:#0f172a;color:#94a3b8;border:1px solid #334155}
+    .btn-audio:hover{opacity:.88}
+    .btn-trans:hover{background:#1e293b;color:#e2e8f0}
+    .translation{background:#0f172a;border-left:3px solid #6366f1;border-radius:0 8px 8px 0;padding:1rem 1.2rem}
+    .translation h3{font-size:.8rem;letter-spacing:.08em;color:#6366f1;text-transform:uppercase;margin-bottom:.6rem}
+    .translation p{color:#94a3b8;line-height:1.7;margin-bottom:.6rem}
+    .translation p:last-child{margin-bottom:0}
+    footer{text-align:center;margin-top:3rem;color:#475569;font-size:.8rem}
+  </style>
+</head>
+<body>
+<header><h1>🌍 Language Tutor</h1><p>Histórias do dia — 26 de June de 2026</p></header>
+<main class="grid">
+  <div class="card">
+    <div class="card-header">
+      <span class="flag">🇫🇷</span>
+      <h2>Français</h2>
+      <span class="level-badge">A1-A2</span>
+    </div>
+    <div class="story-text">
+        <p class="para">Je m'appelle Marie et je vis à Paris. J'aime cette ville parce qu'elle est très belle et il y a beaucoup de choses à voir. Je passe souvent mon temps libre à visiter les musées et les parcs. Le Louvre est mon musée préféré, j'y vais au moins une fois par mois.</p>
+        <p class="para">Je travaille comme serveuse dans un petit café près de la Seine. J'aime ce travail parce que je peux rencontrer des personnes de différents pays et apprendre quelques mots de leurs langues. Les Clients sont très sympathiques et ils m'ont même invité à visiter leur pays un jour. J'aimerais voyager un jour pour découvrir de nouvelles cultures et goûter de nouvelles cuisines.</p>
+        <p class="para">Le week-end dernier, j'ai décidé de préparer un repas traditionnel français pour mes amis. J'ai fait des crêpes avec de la confiture et du fromage, et nous avons bu du vin français. Nous avons passé une soirée très agréable ensemble, en parlant et en riant. J'adore les moments comme celui-là, où je peux partager ma culture avec les gens que j'aime.</p>
+    </div>
+    <div class="controls">
+      <button class="btn btn-audio" onclick="toggleAudio('fr', this)">▶ Ouvir história</button>
+      <button class="btn btn-trans" onclick="toggleTranslation('fr')">🌐 Ver tradução</button>
+    </div>
+    <audio id="audio-fr" src="fr_historia.mp3" preload="none"></audio>
+    <div class="translation" id="trans-fr" hidden>
+      <h3>Tradução</h3><p>Me chamo Marie e moro em Paris. Eu amo essa cidade porque ela é muito bonita e há muitas coisas para ver. Eu passo muito do meu tempo livre visitando museus e parques. O Louvre é meu museu favorito, eu vou lá pelo menos uma vez por mês.</p><p>Eu trabalho como garçonete em um pequeno café perto do Sena. Eu amo esse trabalho porque posso conhecer pessoas de diferentes países e aprender algumas palavras de seus idiomas. Os clientes são muito simpáticos e eles me convidaram para visitar seu país um dia. Eu gostaria de viajar um dia para descobrir novas culturas e experimentar novas culinárias.</p><p>No fim de semana passado, eu decidi preparar uma refeição tradicional francesa para meus amigos. Eu fiz crepes com geleia e queijo, e bebemos vinho francês. Nós passamos uma noite muito agradável juntos, conversando e rindo. Eu adoro momentos como esse, onde posso compartilhar minha cultura com as pessoas que eu amo.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="flag">🇪🇸</span>
+      <h2>Español</h2>
+      <span class="level-badge">B1-B2</span>
+    </div>
+    <div class="story-text">
+        <p class="para">Era um domingo à tarde e decidimos visitar o mercado local para comprar alguns ingredientes frescos para o jantar. Meu amigo, que é um grande fã de comida mexicana, queria preparar tacos autênticos e precisava de alguns ingredientes específicos. Encontramos uma barraca que vendia tudo o que precisávamos, desde tortilhas frescas até molhos picantes. O cheiro dos alimentos frescos e as cores vibrantes do mercado criaram um ambiente animado e alegre.</p>
+        <p class="para">Enquanto caminhávamos pelo mercado, notamos uma grande variedade de produtos e artesanato local. Havia lojas que vendiam roupas coloridas, joias feitas à mão e objetos decorativos para a casa. Meu amigo comprou um suéter feito de lã natural e eu adquiri um belo colar de contas coloridas. O mercado era um lugar onde a cultura e a tradição se misturavam com a modernidade e a criatividade.</p>
+        <p class="para">Depois de passar algumas horas no mercado, decidimos sentar-nos em um café para descansar e degustar alguns dos alimentos que tínhamos comprado. Pedimos um café forte e alguns pastéis frescos, e meu amigo começou a preparar os ingredientes para os tacos. A combinação dos sabores e cheiros foi incrível, e nós dois concordamos que aquela havia sido uma das melhores tardes que passamos juntos. O mercado não apenas nos proporcionou ingredientes frescos, mas também uma experiência rica e cheia de cultura.</p>
+    </div>
+    <div class="controls">
+      <button class="btn btn-audio" onclick="toggleAudio('es', this)">▶ Ouvir história</button>
+      <button class="btn btn-trans" onclick="toggleTranslation('es')">🌐 Ver tradução</button>
+    </div>
+    <audio id="audio-es" src="es_historia.mp3" preload="none"></audio>
+    <div class="translation" id="trans-es" hidden>
+      <h3>Tradução</h3><p>Era um domingo à tarde e decidimos visitar o mercado local para comprar alguns ingredientes frescos para o jantar. Meu amigo, que é um grande fã de comida mexicana, queria preparar tacos autênticos e precisava de alguns ingredientes específicos. Encontramos uma barraca que vendia tudo o que precisávamos, desde tortilhas frescas até molhos picantes. O cheiro dos alimentos frescos e as cores vibrantes do mercado criaram um ambiente animado e alegre.</p><p>Enquanto caminhávamos pelo mercado, notamos uma grande variedade de produtos e artesanato local. Havia lojas que vendiam roupas coloridas, joias feitas à mão e objetos decorativos para a casa. Meu amigo comprou um suéter feito de lã natural e eu adquiri um belo colar de contas coloridas. O mercado era um lugar onde a cultura e a tradição se misturavam com a modernidade e a criatividade.</p><p>Depois de passar algumas horas no mercado, decidimos sentar-nos em um café para descansar e degustar alguns dos alimentos que tínhamos comprado. Pedimos um café forte e alguns pastéis frescos, e meu amigo começou a preparar os ingredientes para os tacos. A combinação dos sabores e cheiros foi incrível, e nós dois concordamos que aquela havia sido uma das melhores tardes que passamos juntos. O mercado não apenas nos proporcionou ingredientes frescos, mas também uma experiência rica e cheia de cultura.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="flag">🇬🇧</span>
+      <h2>English</h2>
+      <span class="level-badge">C1</span>
+    </div>
+    <div class="story-text">
+        <p class="para">As I sat in the small café, sipping my coffee and watching the world go by, I couldn't help but think about the incredible journey that had brought me to this moment. I had been traveling for months, immersing myself in the local culture and trying all the delicious foods that each place had to offer. From the spicy curries of India to the rich pasta dishes of Italy, my taste buds had been on a wild adventure. The smell of freshly baked croissants wafting from the café's kitchen was the perfect addition to my morning.</p>
+        <p class="para">The sun was shining brightly as I walked out of the café and into the bustling streets of the city, taking in the vibrant sights and sounds of the local market. Vendors were calling out to passersby, trying to entice them with their fresh produce and handmade crafts. I wandered through the stalls, admiring the colorful fabrics and intricate patterns on display, and sampling the various street foods that were on offer. The smell of exotic spices and fresh fruit filled the air, creating a truly intoxicating atmosphere.</p>
+        <p class="para">As I continued on my way, I stumbled upon a small restaurant that specialized in traditional cuisine from the region, and I couldn't resist the temptation to try some of the local specialties. The food was absolutely delicious, with each dish more flavorful and aromatic than the last. The combination of tender meats, fresh herbs, and rich sauces was a true revelation, and I left the restaurant feeling satisfied and content. The experience was a wonderful culmination of my travels, and a perfect reminder of the beauty of exploring new cultures and trying new things.</p>
+    </div>
+    <div class="controls">
+      <button class="btn btn-audio" onclick="toggleAudio('en', this)">▶ Ouvir história</button>
+      <button class="btn btn-trans" onclick="toggleTranslation('en')">🌐 Ver tradução</button>
+    </div>
+    <audio id="audio-en" src="en_historia.mp3" preload="none"></audio>
+    <div class="translation" id="trans-en" hidden>
+      <h3>Tradução</h3><p>Enquanto estava sentado no pequeno café, tomando meu café e observando o mundo passar, não pude deixar de pensar na incrível jornada que me havia trazido a esse momento. Eu havia estado viajando por meses, me imergindo na cultura local e experimentando todos os deliciosos pratos que cada lugar tinha a oferecer. Desde os currys apimentados da Índia até os ricos pratos de macarrão da Itália, meu paladar havia estado em uma aventura selvagem. O cheiro de croissants fresquemente assados vindo da cozinha do café era o complemento perfeito para a minha manhã.</p><p>O sol brilhava intensamente enquanto eu saía do café e entrava nas movimentadas ruas da cidade, absorvendo as vibrantes cenas e sons do mercado local. Vendedores estavam chamando os transeuntes, tentando atrair them com seus produtos frescos e artesanais. Eu vaguei pelas barracas, admirando os tecidos coloridos e os padrões intricados em exposição, e experimentando os vários alimentos de rua que estavam à disposição. O cheiro de especiarias exóticas e frutas frescas enchia o ar, criando uma atmosfera verdadeiramente intoxicante.</p><p>À medida que continuava em meu caminho, eu tropecei em um pequeno restaurante que se especializava em culinária tradicional da região, e não pude resistir à tentação de experimentar alguns dos pratos locais. A comida era absolutamente deliciosa, com cada prato mais saboroso e aromático que o último. A combinação de carnes macias, ervas frescas e molhos ricos foi uma verdadeira revelação, e eu saí do restaurante me sentindo satisfeito e contente. A experiência foi uma maravilhosa culminação de minhas viagens, e um lembrete perfeito da beleza de explorar novas culturas e experimentar coisas novas.</p>
+    </div>
+  </div>
+</main>
+<footer>Gerado automaticamente por Language Tutor · 26 de June de 2026</footer>
+<script>
+  function toggleAudio(lang,btn){
+    const audio=document.getElementById('audio-'+lang);
+    if(audio.paused){
+      document.querySelectorAll('audio').forEach(a=>a.pause());
+      document.querySelectorAll('.btn-audio').forEach(b=>b.textContent='▶ Ouvir história');
+      audio.play();btn.textContent='⏸ Pausar';
+    }else{audio.pause();btn.textContent='▶ Ouvir história';}
+    audio.onended=()=>{btn.textContent='▶ Ouvir história';};
+  }
+  function toggleTranslation(lang){
+    const el=document.getElementById('trans-'+lang);el.hidden=!el.hidden;
+  }
+</script>
+</body></html>

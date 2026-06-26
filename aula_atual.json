@@ -1,0 +1,44 @@
+{
+  "data": "2026-06-26",
+  "stories": [
+    {
+      "code": "fr",
+      "label": "Français",
+      "flag": "🇫🇷",
+      "level": "iniciante (A1-A2)",
+      "paragraphs": [
+        "Je m'appelle Marie et je vis à Paris. J'aime cette ville parce qu'elle est très belle et il y a beaucoup de choses à voir. Je passe souvent mon temps libre à visiter les musées et les parcs. Le Louvre est mon musée préféré, j'y vais au moins une fois par mois.",
+        "Je travaille comme serveuse dans un petit café près de la Seine. J'aime ce travail parce que je peux rencontrer des personnes de différents pays et apprendre quelques mots de leurs langues. Les Clients sont très sympathiques et ils m'ont même invité à visiter leur pays un jour. J'aimerais voyager un jour pour découvrir de nouvelles cultures et goûter de nouvelles cuisines.",
+        "Le week-end dernier, j'ai décidé de préparer un repas traditionnel français pour mes amis. J'ai fait des crêpes avec de la confiture et du fromage, et nous avons bu du vin français. Nous avons passé une soirée très agréable ensemble, en parlant et en riant. J'adore les moments comme celui-là, où je peux partager ma culture avec les gens que j'aime."
+      ],
+      "translation": "Me chamo Marie e moro em Paris. Eu amo essa cidade porque ela é muito bonita e há muitas coisas para ver. Eu passo muito do meu tempo livre visitando museus e parques. O Louvre é meu museu favorito, eu vou lá pelo menos uma vez por mês.\n\nEu trabalho como garçonete em um pequeno café perto do Sena. Eu amo esse trabalho porque posso conhecer pessoas de diferentes países e aprender algumas palavras de seus idiomas. Os clientes são muito simpáticos e eles me convidaram para visitar seu país um dia. Eu gostaria de viajar um dia para descobrir novas culturas e experimentar novas culinárias.\n\nNo fim de semana passado, eu decidi preparar uma refeição tradicional francesa para meus amigos. Eu fiz crepes com geleia e queijo, e bebemos vinho francês. Nós passamos uma noite muito agradável juntos, conversando e rindo. Eu adoro momentos como esse, onde posso compartilhar minha cultura com as pessoas que eu amo.",
+      "audio_file": "fr_historia.mp3"
+    },
+    {
+      "code": "es",
+      "label": "Español",
+      "flag": "🇪🇸",
+      "level": "intermediário (B1-B2)",
+      "paragraphs": [
+        "Era um domingo à tarde e decidimos visitar o mercado local para comprar alguns ingredientes frescos para o jantar. Meu amigo, que é um grande fã de comida mexicana, queria preparar tacos autênticos e precisava de alguns ingredientes específicos. Encontramos uma barraca que vendia tudo o que precisávamos, desde tortilhas frescas até molhos picantes. O cheiro dos alimentos frescos e as cores vibrantes do mercado criaram um ambiente animado e alegre.",
+        "Enquanto caminhávamos pelo mercado, notamos uma grande variedade de produtos e artesanato local. Havia lojas que vendiam roupas coloridas, joias feitas à mão e objetos decorativos para a casa. Meu amigo comprou um suéter feito de lã natural e eu adquiri um belo colar de contas coloridas. O mercado era um lugar onde a cultura e a tradição se misturavam com a modernidade e a criatividade.",
+        "Depois de passar algumas horas no mercado, decidimos sentar-nos em um café para descansar e degustar alguns dos alimentos que tínhamos comprado. Pedimos um café forte e alguns pastéis frescos, e meu amigo começou a preparar os ingredientes para os tacos. A combinação dos sabores e cheiros foi incrível, e nós dois concordamos que aquela havia sido uma das melhores tardes que passamos juntos. O mercado não apenas nos proporcionou ingredientes frescos, mas também uma experiência rica e cheia de cultura."
+      ],
+      "translation": "Era um domingo à tarde e decidimos visitar o mercado local para comprar alguns ingredientes frescos para o jantar. Meu amigo, que é um grande fã de comida mexicana, queria preparar tacos autênticos e precisava de alguns ingredientes específicos. Encontramos uma barraca que vendia tudo o que precisávamos, desde tortilhas frescas até molhos picantes. O cheiro dos alimentos frescos e as cores vibrantes do mercado criaram um ambiente animado e alegre.\n\nEnquanto caminhávamos pelo mercado, notamos uma grande variedade de produtos e artesanato local. Havia lojas que vendiam roupas coloridas, joias feitas à mão e objetos decorativos para a casa. Meu amigo comprou um suéter feito de lã natural e eu adquiri um belo colar de contas coloridas. O mercado era um lugar onde a cultura e a tradição se misturavam com a modernidade e a criatividade.\n\nDepois de passar algumas horas no mercado, decidimos sentar-nos em um café para descansar e degustar alguns dos alimentos que tínhamos comprado. Pedimos um café forte e alguns pastéis frescos, e meu amigo começou a preparar os ingredientes para os tacos. A combinação dos sabores e cheiros foi incrível, e nós dois concordamos que aquela havia sido uma das melhores tardes que passamos juntos. O mercado não apenas nos proporcionou ingredientes frescos, mas também uma experiência rica e cheia de cultura.",
+      "audio_file": "es_historia.mp3"
+    },
+    {
+      "code": "en",
+      "label": "English",
+      "flag": "🇬🇧",
+      "level": "avançado conversacional (C1)",
+      "paragraphs": [
+        "As I sat in the small café, sipping my coffee and watching the world go by, I couldn't help but think about the incredible journey that had brought me to this moment. I had been traveling for months, immersing myself in the local culture and trying all the delicious foods that each place had to offer. From the spicy curries of India to the rich pasta dishes of Italy, my taste buds had been on a wild adventure. The smell of freshly baked croissants wafting from the café's kitchen was the perfect addition to my morning.",
+        "The sun was shining brightly as I walked out of the café and into the bustling streets of the city, taking in the vibrant sights and sounds of the local market. Vendors were calling out to passersby, trying to entice them with their fresh produce and handmade crafts. I wandered through the stalls, admiring the colorful fabrics and intricate patterns on display, and sampling the various street foods that were on offer. The smell of exotic spices and fresh fruit filled the air, creating a truly intoxicating atmosphere.",
+        "As I continued on my way, I stumbled upon a small restaurant that specialized in traditional cuisine from the region, and I couldn't resist the temptation to try some of the local specialties. The food was absolutely delicious, with each dish more flavorful and aromatic than the last. The combination of tender meats, fresh herbs, and rich sauces was a true revelation, and I left the restaurant feeling satisfied and content. The experience was a wonderful culmination of my travels, and a perfect reminder of the beauty of exploring new cultures and trying new things."
+      ],
+      "translation": "Enquanto estava sentado no pequeno café, tomando meu café e observando o mundo passar, não pude deixar de pensar na incrível jornada que me havia trazido a esse momento. Eu havia estado viajando por meses, me imergindo na cultura local e experimentando todos os deliciosos pratos que cada lugar tinha a oferecer. Desde os currys apimentados da Índia até os ricos pratos de macarrão da Itália, meu paladar havia estado em uma aventura selvagem. O cheiro de croissants fresquemente assados vindo da cozinha do café era o complemento perfeito para a minha manhã.\n\nO sol brilhava intensamente enquanto eu saía do café e entrava nas movimentadas ruas da cidade, absorvendo as vibrantes cenas e sons do mercado local. Vendedores estavam chamando os transeuntes, tentando atrair them com seus produtos frescos e artesanais. Eu vaguei pelas barracas, admirando os tecidos coloridos e os padrões intricados em exposição, e experimentando os vários alimentos de rua que estavam à disposição. O cheiro de especiarias exóticas e frutas frescas enchia o ar, criando uma atmosfera verdadeiramente intoxicante.\n\nÀ medida que continuava em meu caminho, eu tropecei em um pequeno restaurante que se especializava em culinária tradicional da região, e não pude resistir à tentação de experimentar alguns dos pratos locais. A comida era absolutamente deliciosa, com cada prato mais saboroso e aromático que o último. A combinação de carnes macias, ervas frescas e molhos ricos foi uma verdadeira revelação, e eu saí do restaurante me sentindo satisfeito e contente. A experiência foi uma maravilhosa culminação de minhas viagens, e um lembrete perfeito da beleza de explorar novas culturas e experimentar coisas novas.",
+      "audio_file": "en_historia.mp3"
+    }
+  ]
+}
