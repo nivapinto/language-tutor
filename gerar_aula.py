@@ -234,17 +234,58 @@ Regras:
 Após a história, coloque a tradução completa em português separada por: ---TRADUCAO---
 """, tokens=900)
 
-    if "---TRADUCAO---" in raw:
-        orig, trad = raw.split("---TRADUCAO---", 1)
+    # Separa história da tradução — tenta vários separadores que o modelo pode usar
+    separadores = ["---TRADUCAO---", "---Tradução---", "---TRADUCTION---",
+                   "**Tradução**", "**Translation**", "Tradução:", "Translation:"]
+    orig, trad = raw, ""
+    for sep in separadores:
+        if sep in raw:
+            orig, trad = raw.split(sep, 1)
+            break
     else:
-        orig, trad = raw, ""
+        # Fallback: se o texto contém português misturado, tenta cortar na primeira linha em PT
+        linhas = raw.split("\n")
+        corte = len(linhas)
+        for i, l in enumerate(linhas):
+            # Linha em português depois de conteúdo no idioma-alvo = início da tradução
+            if i > 3 and any(pt in l.lower() for pt in ["tradução", "traduc", "em português", "portuguese"]):
+                corte = i
+                break
+        orig = "\n".join(linhas[:corte])
+        trad = "\n".join(linhas[corte:])
 
-    paragrafos = [p.strip() for p in orig.strip().split("\n\n") if p.strip()]
+    # Remove linhas que parecem cabeçalhos, rótulos ou instruções do modelo
+    def limpar(texto):
+        linhas_limpas = []
+        for l in texto.splitlines():
+            ls = l.strip()
+            if not ls:
+                continue
+            # Descarta linhas que são claramente rótulos/metadados
+            if ls.endswith(":") and len(ls) < 30:
+                continue
+            if ls.startswith(("**", "##", "Paragraphe", "Párrafo", "Paragraph",
+                               "Histoire", "Historia", "Story", "---")):
+                continue
+            linhas_limpas.append(ls)
+        return "\n".join(linhas_limpas)
+
+    orig_limpo = limpar(orig)
+    paragrafos = [p.strip() for p in orig_limpo.split("\n\n") if p.strip()]
+    # Se a divisão por \n\n não funcionou, agrupa por blocos de 3-4 linhas
+    if len(paragrafos) == 1:
+        linhas = [l for l in orig_limpo.splitlines() if l.strip()]
+        paragrafos = []
+        for i in range(0, len(linhas), 3):
+            bloco = " ".join(linhas[i:i+3])
+            if bloco:
+                paragrafos.append(bloco)
+
     return {
         "titulo": tema.capitalize(),
         "paragrafos": paragrafos,
         "texto_completo": "\n\n".join(paragrafos),
-        "traducao": trad.strip(),
+        "traducao": limpar(trad).strip(),
     }
 
 

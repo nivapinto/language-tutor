@@ -344,13 +344,27 @@ Regras:
 Após a história, coloque a tradução em português separada por: ---TRADUCAO---
 """, tokens=700)
 
-                    if "---TRADUCAO---" in raw:
-                        orig, trad = raw.split("---TRADUCAO---", 1)
-                    else:
-                        orig, trad = raw, ""
-                    paragrafos = [p.strip() for p in orig.strip().split("\n\n") if p.strip()]
+                    seps = ["---TRADUCAO---","---Tradução---","Tradução:","Translation:"]
+                    orig, trad = raw, ""
+                    for sep in seps:
+                        if sep in raw:
+                            orig, trad = raw.split(sep, 1); break
+                    def _limpar(t):
+                        out = []
+                        for l in t.splitlines():
+                            ls = l.strip()
+                            if not ls: continue
+                            if ls.endswith(":") and len(ls)<30: continue
+                            if ls.startswith(("**","##","Paragraphe","Párrafo","Paragraph","---")): continue
+                            out.append(ls)
+                        return "\n".join(out)
+                    orig = _limpar(orig)
+                    paragrafos = [p.strip() for p in orig.split("\n\n") if p.strip()]
+                    if len(paragrafos) == 1:
+                        linhas = [l for l in orig.splitlines() if l.strip()]
+                        paragrafos = [" ".join(linhas[i:i+3]) for i in range(0,len(linhas),3) if linhas[i:i+3]]
                     hist = {"titulo": tema.capitalize(), "paragrafos": paragrafos,
-                            "texto_completo": "\n\n".join(paragrafos), "traducao": trad.strip()}
+                            "texto_completo": "\n\n".join(paragrafos), "traducao": _limpar(trad).strip()}
 
                     audio_path = BASE_DIR / f"{lang_code}_historia.mp3"
                     ga.gerar_audio(hist["texto_completo"], lang_code, audio_path)
