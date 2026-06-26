@@ -204,88 +204,65 @@ def gerar_historia(lang: dict, licao: dict) -> dict:
     tema = random.choice(TEMAS)
     hoje = datetime.date.today().strftime("%d/%m/%Y")
 
-    lingua_nome = {"fr": "FRANCÊS", "es": "ESPANHOL", "en": "INGLÊS"}.get(lang["code"], lang["lingua"].upper())
-    gramatica_nova   = licao.get("gramatica_nova", licao.get("gramatica", ""))
-    gramatica_cumul  = licao.get("gramatica_cumulativa", [])
-    temas_sugeridos  = licao.get("temas_historia", [tema])
-    tema_escolhido   = random.choice(temas_sugeridos) if temas_sugeridos else tema
+    lingua_nome    = {"fr": "FRANCÊS", "es": "ESPANHOL", "en": "INGLÊS"}.get(lang["code"], lang["lingua"].upper())
+    gramatica_nova = licao.get("gramatica_nova", licao.get("gramatica", ""))
+    gramatica_cumul = licao.get("gramatica_cumulativa", [])
+    temas_sugeridos = licao.get("temas_historia", [tema])
+    tema_escolhido  = random.choice(temas_sugeridos) if temas_sugeridos else tema
+    ctx_cumul = (f"\nEstruturas já conhecidas (use naturalmente): {'; '.join(gramatica_cumul[-4:])}"
+                 if gramatica_cumul else "")
 
-    ctx_cumul = ""
-    if gramatica_cumul:
-        ctx_cumul = f"\nEstruturas já conhecidas pelo aluno (use naturalmente na história): {'; '.join(gramatica_cumul[-4:])}"
-
-    raw = groq(SYS_PROF, f"""
-ATENÇÃO: a história INTEIRA deve ser escrita em {lingua_nome} — nunca em português.
-Somente a tradução ao final deve estar em português.
-
-Escreva uma história narrativa em {lang['lingua']} para um aluno no nível {licao['nivel']}.
+    # Chamada 1: apenas a história — zero tradução, zero rótulos
+    historia_raw = groq(SYS_PROF, f"""
+Escreva APENAS a história em {lingua_nome}. Nenhuma tradução, nenhum rótulo, nenhum comentário.
 
 Tema: {tema_escolhido}
-Vocabulário desta lição (inclua naturalmente): {', '.join(licao['vocabulario'])}
-Estrutura gramatical NOVA desta lição (use pelo menos 2x na história): {gramatica_nova}{ctx_cumul}
+Nível: {licao['nivel']}
+Vocabulário (use naturalmente): {', '.join(licao['vocabulario'])}
+Gramática nova desta lição (use 2x): {gramatica_nova}{ctx_cumul}
 
-Regras:
-- 3 parágrafos com 3-4 frases cada, TODO o texto em {lang['lingua']}
-- Narrativa real e envolvente, com início, meio e fim
-- A complexidade linguística deve ser adequada ao nível {licao['nivel']}
-- Use a gramática nova de forma natural, não forçada
-- NÃO inclua título, numeração ou instruções
+Formato de saída — exatamente 3 parágrafos separados por linha em branco:
+<parágrafo 1>
 
-Após a história, coloque a tradução completa em português separada por: ---TRADUCAO---
-""", tokens=900)
+<parágrafo 2>
 
-    # Separa história da tradução — tenta vários separadores que o modelo pode usar
-    separadores = ["---TRADUCAO---", "---Tradução---", "---TRADUCTION---",
-                   "**Tradução**", "**Translation**", "Tradução:", "Translation:"]
-    orig, trad = raw, ""
-    for sep in separadores:
-        if sep in raw:
-            orig, trad = raw.split(sep, 1)
-            break
-    else:
-        # Fallback: se o texto contém português misturado, tenta cortar na primeira linha em PT
-        linhas = raw.split("\n")
-        corte = len(linhas)
-        for i, l in enumerate(linhas):
-            # Linha em português depois de conteúdo no idioma-alvo = início da tradução
-            if i > 3 and any(pt in l.lower() for pt in ["tradução", "traduc", "em português", "portuguese"]):
-                corte = i
-                break
-        orig = "\n".join(linhas[:corte])
-        trad = "\n".join(linhas[corte:])
+<parágrafo 3>
 
-    # Remove linhas que parecem cabeçalhos, rótulos ou instruções do modelo
-    def limpar(texto):
-        linhas_limpas = []
+Nada mais. Só os 3 parágrafos em {lingua_nome}.
+""", tokens=600)
+
+    # Chamada 2: apenas a tradução
+    traducao_raw = groq(SYS_PROF, f"""
+Traduza o texto abaixo para português. Só a tradução, sem comentários.
+
+{historia_raw}
+""", tokens=600)
+
+    # Monta parágrafos — remove qualquer linha que não seja conteúdo
+    def so_conteudo(texto):
+        resultado = []
         for l in texto.splitlines():
             ls = l.strip()
-            if not ls:
+            if not ls: continue
+            if ls.startswith(("**", "##", "---", "Paragraphe", "Párrafo", "Paragraph",
+                               "Histoire:", "Historia:", "Story:")):
                 continue
-            # Descarta linhas que são claramente rótulos/metadados
-            if ls.endswith(":") and len(ls) < 30:
-                continue
-            if ls.startswith(("**", "##", "Paragraphe", "Párrafo", "Paragraph",
-                               "Histoire", "Historia", "Story", "---")):
-                continue
-            linhas_limpas.append(ls)
-        return "\n".join(linhas_limpas)
+            if ls.endswith(":") and len(ls) < 25: continue
+            resultado.append(ls)
+        return resultado
 
-    orig_limpo = limpar(orig)
-    paragrafos = [p.strip() for p in orig_limpo.split("\n\n") if p.strip()]
-    # Se a divisão por \n\n não funcionou, agrupa por blocos de 3-4 linhas
-    if len(paragrafos) == 1:
-        linhas = [l for l in orig_limpo.splitlines() if l.strip()]
-        paragrafos = []
-        for i in range(0, len(linhas), 3):
-            bloco = " ".join(linhas[i:i+3])
-            if bloco:
-                paragrafos.append(bloco)
+    linhas = so_conteudo(historia_raw)
+    # Reconstrói parágrafos: divide por linha em branco ou agrupa de 3 em 3
+    raw_paras = historia_raw.strip().split("\n\n")
+    paragrafos = [" ".join(so_conteudo(p)) for p in raw_paras if so_conteudo(p)]
+    if not paragrafos:
+        paragrafos = [" ".join(linhas[i:i+3]) for i in range(0, len(linhas), 3) if linhas[i:i+3]]
 
     return {
-        "titulo": tema.capitalize(),
+        "titulo": tema_escolhido.capitalize(),
         "paragrafos": paragrafos,
         "texto_completo": "\n\n".join(paragrafos),
-        "traducao": limpar(trad).strip(),
+        "traducao": " ".join(so_conteudo(traducao_raw)),
     }
 
 
