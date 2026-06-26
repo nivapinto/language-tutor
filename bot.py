@@ -287,12 +287,91 @@ def handle_callback(chat_id, data, cb_id):
             except Exception:
                 pass
 
-        respostas = {
-            "facil":   f"😴 Registrado! As próximas aulas de {NOMES[lang_code]} vão ser mais desafiadoras. Lição {num+1} na próxima vez. 🚀",
-            "ok":      f"👍 Ótimo! Nível ideal. Lição {num} concluída — próxima vez vem a Lição {num+1}. Continua assim! 💪",
-            "dificil": f"😰 Anotado! Vou deixar os próximos textos de {NOMES[lang_code]} um pouco mais acessíveis. Não desiste! 🙌",
-        }
-        msg(chat_id, respostas.get(fb_tipo, "Feedback salvo!"))
+        if fb_tipo == "dificil":
+            tg_post("sendMessage", {
+                "chat_id": chat_id,
+                "text": f"😰 Anotado! Essa lição estava difícil demais.\n\nQuer que eu gere uma nova versão mais fácil agora?",
+                "reply_markup": json.dumps({"inline_keyboard": [[
+                    {"text": "✅ Sim, gerar mais fácil", "callback_data": f"refazer_facil_{lang_code}"},
+                    {"text": "❌ Não, só registrar",     "callback_data": f"refazer_nao_{lang_code}"},
+                ]]}),
+            })
+        elif fb_tipo == "facil":
+            msg(chat_id, f"😴 Registrado! Próximas aulas de {NOMES[lang_code]} serão mais desafiadoras. Lição {num+1} na próxima vez. 🚀")
+        else:
+            msg(chat_id, f"👍 Ótimo! Nível ideal. Lição {num} concluída — próxima vez vem a Lição {num+1}. Continua assim! 💪")
+
+    # ── Refazer aula mais fácil ───────────────────────────────────────────────
+    elif acao == "refazer":
+        opcao     = lang_code.split("_", 1)[0]   # facil | nao
+        lang_code = lang_code.split("_", 1)[1]   # fr | es | en
+        if opcao == "nao":
+            msg(chat_id, "Ok! Feedback salvo. A próxima aula virá mais fácil. 💪")
+        else:
+            msg(chat_id, f"⏳ Gerando uma versão mais fácil de {NOMES[lang_code]}...")
+            def _refazer():
+                try:
+                    sys.path.insert(0, str(BASE_DIR))
+                    ga   = importlib.import_module("gerar_aula"); importlib.reload(ga)
+                    lang = next(l for l in ga.LANGS if l["code"] == lang_code)
+                    licao = ga.licao_do_dia(lang_code)
+                    # Injeta instrução de simplificar no prompt
+                    licao_facil = dict(licao)
+                    licao_facil["_dica_dificuldade"] = "mais_facil"
+
+                    # Gera história com override de dificuldade
+                    import random
+                    tema = random.choice(ga.TEMAS)
+                    lingua_nome = {"fr": "FRANCÊS", "es": "ESPANHOL", "en": "INGLÊS"}.get(lang_code, lang["lingua"].upper())
+                    raw = ga.groq(ga.SYS_PROF, f"""
+ATENÇÃO: a história INTEIRA deve ser escrita em {lingua_nome} — nunca em português.
+
+O aluno achou a última história MUITO DIFÍCIL. Escreva uma versão MAIS SIMPLES e MAIS CURTA.
+
+Regras:
+- Nível: {licao['nivel']} mas com linguagem ainda mais básica e acessível
+- Frases MUITO curtas (máximo 8 palavras por frase)
+- Vocabulário ultra simples — use as palavras da lição: {', '.join(licao['vocabulario'])}
+- Tema: {tema}
+- 3 parágrafos com 2-3 frases cada
+- TODO o texto em {lang['lingua']}
+- NÃO inclua título ou instruções
+
+Após a história, coloque a tradução em português separada por: ---TRADUCAO---
+""", tokens=700)
+
+                    if "---TRADUCAO---" in raw:
+                        orig, trad = raw.split("---TRADUCAO---", 1)
+                    else:
+                        orig, trad = raw, ""
+                    paragrafos = [p.strip() for p in orig.strip().split("\n\n") if p.strip()]
+                    hist = {"titulo": tema.capitalize(), "paragrafos": paragrafos,
+                            "texto_completo": "\n\n".join(paragrafos), "traducao": trad.strip()}
+
+                    audio_path = BASE_DIR / f"{lang_code}_historia.mp3"
+                    ga.gerar_audio(hist["texto_completo"], lang_code, audio_path)
+
+                    aula_cache[f"{chat_id}_{lang_code}"] = {"licao": licao, "historia": hist, "lang": lang}
+
+                    texto = "\n\n".join(hist["paragrafos"])
+                    msg(chat_id, f"{lang['flag']} *Versão mais fácil* — {lang['label']} Lição {licao['numero']}\n\n{texto}")
+                    with open(audio_path, "rb") as f:
+                        tg_post("sendAudio", {"chat_id": chat_id,
+                            "title": f"{lang['label']} — mais fácil", "performer": "Language Tutor"},
+                            files={"audio": f})
+                    tg_post("sendMessage", {"chat_id": chat_id, "text": "O que quer fazer?",
+                        "reply_markup": json.dumps({"inline_keyboard": [
+                            [{"text": "🌐 Tradução", "callback_data": f"trad_{lang_code}"},
+                             {"text": "📝 Vocabulário", "callback_data": f"vocab_{lang_code}"}],
+                            [{"text": "😴 Fácil demais", "callback_data": f"fb_facil_{lang_code}"},
+                             {"text": "👍 Na medida",    "callback_data": f"fb_ok_{lang_code}"},
+                             {"text": "😰 Difícil demais","callback_data": f"fb_dificil_{lang_code}"}],
+                            [{"text": "💬 Conversar", "callback_data": f"conv_{lang_code}"},
+                             {"text": "🎯 Avaliar nível", "callback_data": f"avaliar_{lang_code}"}],
+                        ]})})
+                except Exception as e:
+                    msg(chat_id, f"Não consegui gerar a versão mais fácil. ({e})", parse_mode="")
+            threading.Thread(target=_refazer, daemon=True).start()
 
     # ── Avaliação de nível ────────────────────────────────────────────────────
     elif acao == "avaliar":
