@@ -1,5 +1,5 @@
 {
-  "data": "2026-06-26",
+  "data": "2026-06-27",
   "aulas": [
     {
       "code": "fr",
@@ -7,75 +7,93 @@
       "flag": "🇫🇷",
       "licao": {
         "numero": 1,
-        "titulo": "Bonjour ! Les salutations",
-        "gramatica": "Pronomes pessoais: je, tu, il/elle",
+        "tipo": "gramatica",
+        "titulo": "Pronúncia e alfabeto",
+        "gramatica_nova": "Alphabet et sons — voyelles nasales, liaison, h aspiré",
+        "gramatica_cumulativa": [],
         "vocabulario": [
           "bonjour",
           "bonsoir",
-          "merci",
-          "s'il vous plaît",
-          "au revoir"
+          "salut",
+          "au revoir",
+          "bonne nuit",
+          "à bientôt"
         ],
-        "nivel": "A0"
+        "temas_historia": [
+          "apresentações e rotina diária",
+          "família e casa"
+        ],
+        "nivel": "A1",
+        "nivel_titulo": "Primeiros passos"
       },
       "gramatica": {
-        "titulo": "",
-        "explicacao": "Os pronomes pessoais são usados para substituir nomes de pessoas. Em francês, temos \"je\", \"tu\" e \"il/elle\" para falar sobre si mesmo, alguém conhecido e outra pessoa, respectivamente. Esses pronomes são fundamentais para começar a falar francês. Vamos aprender como usá-los corretamente.",
+        "titulo": "Introdução às vogais nasais em francês",
+        "explicacao": "As vogais nasais em francês são sons produzidos com a saída do ar pelas fossas nasais, e não apenas pela boca. Elas são representadas pelas letras \"an\", \"en\", \"in\", \"on\" e \"un\" no final das palavras. É importante reconhecer esses sons para uma pronúncia correta. A liaisons e o \"h\" aspirado também são fundamentais para a pronúncia.",
         "tabela": [
           "Pronome | Forma | Exemplo",
-          "je | eu | Je m'appelle",
-          "tu | você | Tu es mon ami",
-          "il | ele | Il est étudiant",
-          "elle | ela | Elle est étudiante"
+          "an | som nasal | bonjour",
+          "en | som nasal | bonsoir",
+          "in | som nasal | salut",
+          "on | som nasal | bon",
+          "un | som nasal | bonbon"
         ],
         "exemplos": [
-          "Je suis étudiant, bonjour.",
-          "Tu es mon ami, merci.",
-          "Il est étudiant, au revoir."
+          "Bonjour, comment ça va?",
+          "Je vous souhaite une bonne nuit.",
+          "À bientôt, à demain."
         ],
-        "dica": "Para memorizar, tente substituir seu nome por \"je\" quando falar sobre si mesmo, e use \"tu\" para amigos e \"il\" ou \"elle\" para outras pessoas."
+        "exemplos_pt": [
+          "Olá, como você está?",
+          "Desejo uma boa noite a você.",
+          "Até logo, até amanhã."
+        ],
+        "dica": "Para memorizar as vogais nasais, é útil ouvir e repetir as palavras várias vezes, prestando atenção especial à pronúncia correta."
       },
       "exercicios": [
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: ___ suis étudiant. (eu)",
+          "enunciado": "Complete: ___ m'appelle Marie. (eu)",
           "resposta": "Je"
         },
         {
           "tipo": "multipla_escolha",
-          "enunciado": "Qual é a tradução de \"merci\"?",
+          "enunciado": "Qual é a tradução de \"salut\"?",
           "opcoes": [
-            "A) por favor",
-            "B) obrigado",
-            "C) bom dia"
+            "A) boa tarde",
+            "B) bom dia",
+            "C) olá"
           ],
-          "resposta": "B"
+          "resposta": "C"
         },
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: Tu ___ mon ami. (ser)",
-          "resposta": "es"
+          "enunciado": "Complete: Je ___ vous souhaite une bonne nuit.",
+          "resposta": "vous"
         },
         {
           "tipo": "verdadeiro_falso",
-          "enunciado": "\"Au revoir\" significa \"boa noite\". Verdadeiro ou Falso?",
-          "resposta": "Falso — \"Au revoir\" significa \"até logo\" ou \"tchau\""
+          "enunciado": "\"Au revoir\" significa \"até logo\". Verdadeiro ou Falso?",
+          "resposta": "Verdadeiro"
         },
         {
           "tipo": "traducao",
-          "enunciado": "Traduza para francês: \"Good evening, thank you.\"",
-          "resposta": "Bonsoir, merci."
+          "enunciado": "Traduza para francês: \"Goodbye, see you soon.\"",
+          "resposta": "Au revoir, à bientôt."
         }
       ],
       "historia": {
-        "titulo": "Um atleta que superou um obstáculo",
+        "titulo": "Família e casa",
         "paragrafos": [
-          "Le jour est arrivé pour la course. Un athlète, nommé Jacques, se prépare. Il dit bonjour à ses amis. Il est prêt.",
-          "Jacques a eu un accident il y a quelques mois. Il a cassé sa jambe. Mais il n'a pas abandonné. Il a travaillé dur et maintenant il est de retour. Il dit merci à son entraîneur.",
-          "Jacques a gagné la course. Il est très heureux. Il dit bonsoir à tout le monde. Il demande s'il vous plaît à son entraîneur de le laisser célébrer. Puis il dit au revoir et rentre chez lui."
+          "Bonjour salut. Bonsoir à bientôt. Bonjour bonsoir.",
+          "Bonsoir à bientôt. Salut bonne nuit. Au revoir bonjour"
         ],
-        "texto_completo": "Le jour est arrivé pour la course. Un athlète, nommé Jacques, se prépare. Il dit bonjour à ses amis. Il est prêt.\n\nJacques a eu un accident il y a quelques mois. Il a cassé sa jambe. Mais il n'a pas abandonné. Il a travaillé dur et maintenant il est de retour. Il dit merci à son entraîneur.\n\nJacques a gagné la course. Il est très heureux. Il dit bonsoir à tout le monde. Il demande s'il vous plaît à son entraîneur de le laisser célébrer. Puis il dit au revoir et rentre chez lui.",
-        "traducao": "O dia chegou para a corrida. Um atleta, chamado Jacques, se prepara. Ele diz olá aos seus amigos. Ele está pronto.\n\nJacques teve um acidente há alguns meses. Ele quebrou a perna. Mas ele não desistiu. Ele trabalhou duro e agora ele está de volta. Ele diz obrigado ao seu treinador.\n\nJacques ganhou a corrida. Ele está muito feliz. Ele diz boa noite a todos. Ele pede por favor ao seu treinador para deixá-lo comemorar. Então ele diz tchau e volta para casa."
+        "paragrafos_pt": [
+          "Olá, salve. Boa noite, até logo. Olá, boa noite.",
+          "Boa noite, até logo. Salve, boa noite. Tchau, olá."
+        ],
+        "texto_completo": "Bonjour salut. Bonsoir à bientôt. Bonjour bonsoir.\n\nBonsoir à bientôt. Salut bonne nuit. Au revoir bonjour",
+        "traducao": "[1] Olá, salve. Boa noite, até logo. Olá, boa noite. [2] Boa noite, até logo. Salve, boa noite. Tchau, olá.",
+        "nivel": "A1"
       },
       "audio_file": "fr_historia.mp3"
     },
@@ -85,75 +103,93 @@
       "flag": "🇪🇸",
       "licao": {
         "numero": 1,
-        "titulo": "¡Hola! Los saludos",
-        "gramatica": "Pronombres personales: yo, tú, él/ella",
+        "tipo": "gramatica",
+        "titulo": "Pronúncia e alfabeto",
+        "gramatica_nova": "Alfabeto y pronunciación",
+        "gramatica_cumulativa": [],
         "vocabulario": [
           "hola",
           "buenos días",
-          "gracias",
-          "por favor",
-          "adiós"
+          "buenas tardes",
+          "buenas noches",
+          "adiós",
+          "hasta luego"
         ],
-        "nivel": "A0"
+        "temas_historia": [
+          "apresentações e rotina diária",
+          "família e casa"
+        ],
+        "nivel": "A1",
+        "nivel_titulo": "Primeros pasos"
       },
       "gramatica": {
-        "titulo": "Pronomes Pessoais Básicos",
-        "explicacao": "Em espanhol, usamos pronomes pessoais para nos referir a pessoas. Os pronomes \"yo\", \"tú\", \"él\" e \"ella\" são usados para falar de si mesmo, de alguém com quem estamos falando e de outras pessoas. É importante saber quando usar cada um desses pronomes. Vamos aprender a usar esses pronomes de forma simples.",
+        "titulo": "Alfabeto e Pronúncia Básica em Espanhol",
+        "explicacao": "O alfabeto espanhol é composto por 27 letras, com algumas letras adicionais em comparação com o português. A pronúncia dessas letras é fundamental para uma comunicação eficaz. É importante lembrar que a pronúncia em espanhol pode variar ligeiramente de um país para outro. O estudo do alfabeto e da pronúncia básica é o primeiro passo para aprender espanhol.",
         "tabela": [
-          "Pronome | Forma | Exemplo",
-          "yo | Eu | Yo como una manzana",
-          "tú | Você | Tú comes una manzana",
-          "él | Ele | Él come una manzana",
-          "ella | Ela | Ella come una manzana"
+          "Letra | Som | Exemplo",
+          "a | á | casa",
+          "e | é | elefante",
+          "i | í | iglesia",
+          "o | ó | oso",
+          "u | ú | universo"
         ],
         "exemplos": [
-          "Yo digo hola.",
-          "Tú dices buenos días.",
-          "Él dice adiós."
+          "Hola, buenos días",
+          "Buenos días, ¿cómo estás?",
+          "Adiós, hasta luego"
         ],
-        "dica": "Para lembrar, \"yo\" é eu, \"tú\" é você e \"él\" ou \"ella\" são para outras pessoas."
+        "exemplos_pt": [
+          "Olá, bons dias",
+          "Bons dias, como você está?",
+          "Tchau, até logo"
+        ],
+        "dica": "Para memorizar o alfabeto espanhol, tente associar cada letra a uma palavra que você já conhece em português."
       },
       "exercicios": [
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: Yo ______ hola.",
-          "resposta": "digo"
+          "enunciado": "Complete: Hola, ___ días.",
+          "resposta": "buenos"
         },
         {
           "tipo": "multipla_escolha",
-          "enunciado": "Qual é a tradução de \"gracias\"?",
+          "enunciado": "Qual é a saudação adequada para se despedir?",
           "opcoes": [
-            "A) por favor",
-            "B) obrigado",
-            "C) bom dia"
+            "A) Hola",
+            "B) Buenos días",
+            "C) Adiós"
           ],
-          "resposta": "B"
+          "resposta": "C"
         },
         {
           "tipo": "lacuna",
-          "enunciado": "Él ______ adiós.",
-          "resposta": "dice"
+          "enunciado": "Complete: Buenos ___ , ¿cómo estás?",
+          "resposta": "días"
         },
         {
           "tipo": "verdadeiro_falso",
-          "enunciado": "\"Tú dices hola\" significa que você está falando com alguém. Verdadeiro ou Falso?",
-          "resposta": "Verdadeiro"
+          "enunciado": "\"Buenas noches\" é uma saudação para o final da tarde. Verdadeiro ou Falso?",
+          "resposta": "Falso — \"Buenas noches\" é uma saudação para a noite"
         },
         {
           "tipo": "traducao",
-          "enunciado": "Traduza para espanhol: \"Obrigado, por favor.\"",
-          "resposta": "Gracias, por favor."
+          "enunciado": "Traduza para espanhol: \"Goodbye, see you later\".",
+          "resposta": "Adiós, hasta luego"
         }
       ],
       "historia": {
-        "titulo": "Um dia na vida de uma pessoa comum em outro país",
+        "titulo": "Família e casa",
         "paragrafos": [
-          "Hola, es sábado. Hoy es el 26 de junio de 2026. Me llamo María y vivo en Madrid. Me despierto temprano y digo buenos días a mi familia.",
-          "Voy al parque con mi perro. Allí veo a mis amigos y les digo hola. Nos sentamos en un banco y hablamos. Un señor nos ofrece un bollo y decimos gracias.",
-          "Luego, voy al mercado y compro frutas. Le doy las gracias al vendedor y le digo por favor, ¿cuánto cuesta? Pago y digo adiós. Regreso a casa cansada pero contenta."
+          "hola buenos días hola buenos días buenas tardes hola buenas tardes",
+          "buenas noches adiós hasta luego buenas noches adiós hasta luego"
         ],
-        "texto_completo": "Hola, es sábado. Hoy es el 26 de junio de 2026. Me llamo María y vivo en Madrid. Me despierto temprano y digo buenos días a mi familia.\n\nVoy al parque con mi perro. Allí veo a mis amigos y les digo hola. Nos sentamos en un banco y hablamos. Un señor nos ofrece un bollo y decimos gracias.\n\nLuego, voy al mercado y compro frutas. Le doy las gracias al vendedor y le digo por favor, ¿cuánto cuesta? Pago y digo adiós. Regreso a casa cansada pero contenta.",
-        "traducao": "Olá, é sábado. Hoje é 26 de junho de 2026. Me chamo María e moro em Madri. Acordo cedo e digo bom dia à minha família.\n\nVou ao parque com o meu cão. Lá vejo meus amigos e lhes digo olá. Nós nos sentamos em um banco e conversamos. Um senhor nos oferece um bolo e dizemos obrigado.\n\nDepois, vou ao mercado e compro frutas. Dou as graças ao vendedor e lhe digo por favor, quanto custa? Eu pago e digo tchau. Volto para casa cansada mas contente."
+        "paragrafos_pt": [
+          "olá, bons dias, olá, bons dias, boas tardes, olá, boas tardes",
+          "boas noites, adeus, até logo, boas noites, adeus, até logo"
+        ],
+        "texto_completo": "hola buenos días hola buenos días buenas tardes hola buenas tardes\n\nbuenas noches adiós hasta luego buenas noches adiós hasta luego",
+        "traducao": "[1] olá, bons dias, olá, bons dias, boas tardes, olá, boas tardes [2] boas noites, adeus, até logo, boas noites, adeus, até logo",
+        "nivel": "A1"
       },
       "audio_file": "es_historia.mp3"
     },
@@ -163,75 +199,93 @@
       "flag": "🇬🇧",
       "licao": {
         "numero": 1,
-        "titulo": "Hello! Greetings",
-        "gramatica": "Personal pronouns: I, you, he/she",
+        "tipo": "gramatica",
+        "titulo": "Present perfect",
+        "gramatica_nova": "Present perfect — formation and basic uses",
+        "gramatica_cumulativa": [],
         "vocabulario": [
-          "hello",
-          "good morning",
-          "thank you",
-          "please",
-          "goodbye"
+          "passport",
+          "luggage",
+          "reservation",
+          "accommodation",
+          "destination",
+          "customs"
         ],
-        "nivel": "A0"
+        "temas_historia": [
+          "uma experiência marcante",
+          "um problema a resolver"
+        ],
+        "nivel": "B1",
+        "nivel_titulo": "Intermediate"
       },
       "gramatica": {
-        "titulo": "Pronomes Pessoais",
-        "explicacao": "Os pronomes pessoais são usados para se referir a pessoas. Eles são importantes para comunicar de forma clara. Nesta lição, vamos aprender sobre os pronomes I, you e he/she. Esses pronomes são fundamentais para começar a falar em inglês.",
+        "titulo": "Present Perfect - Formação e Usos Básicos",
+        "explicacao": "O present perfect é um tempo verbal que expressa ações que começaram no passado e continuam até o presente ou têm um efeito no presente. É formado com o verbo have/has mais o particípio passado do verbo principal. O particípio passado de verbos regulares é formado adicionando -ed ao verbo.",
         "tabela": [
-          "Pronome | Forma | Exemplo",
-          "I | Eu | I say hello",
-          "you | Você | You say goodbye",
-          "he | Ele | He says thank you",
-          "she | Ela | She says please"
+          "I | have | I have eaten",
+          "you | have | you have eaten",
+          "he/she/it | has | he has eaten",
+          "we | have | we have eaten",
+          "you | have | you have eaten",
+          "they | have | they have eaten"
         ],
         "exemplos": [
-          "I say hello.",
-          "You say goodbye.",
-          "He says thank you."
+          "I have lost my passport",
+          "They have arrived at their destination",
+          "We have made a reservation"
         ],
-        "dica": "Tente substituir os pronomes em frases simples para memorizar melhor, como \"I say\" por \"Eu digo\"."
+        "exemplos_pt": [
+          "Eu perdi meu passaporte",
+          "Eles chegaram ao seu destino",
+          "Nós fizemos uma reserva"
+        ],
+        "dica": "Lembre-se de que o present perfect é usado para falar sobre ações que têm um vínculo com o presente, então tente lembrar a frase \"Eu fiz algo e isso tem um efeito agora\"."
       },
       "exercicios": [
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: I ___ hello.",
-          "resposta": "say"
+          "enunciado": "Complete: I ___ my luggage at the airport. (perder)",
+          "resposta": "have lost"
         },
         {
           "tipo": "multipla_escolha",
-          "enunciado": "Qual é a tradução de \"hello\"?",
+          "enunciado": "Qual é a forma correta de dizer \"Eles chegaram ao seu destino\" usando o present perfect?",
           "opcoes": [
-            "A) obrigado",
-            "B) por favor",
-            "C) olá"
+            "A) They go to their destination",
+            "B) They have gone to their destination",
+            "C) They have arrived at their destination"
           ],
           "resposta": "C"
         },
         {
           "tipo": "lacuna",
-          "enunciado": "You ___ goodbye.",
-          "resposta": "say"
+          "enunciado": "Complete: We ___ a reservation at the hotel. (fazer)",
+          "resposta": "have made"
         },
         {
           "tipo": "verdadeiro_falso",
-          "enunciado": "\"He says thank you\" é uma frase que usa o pronome \"he\". Verdadeiro ou Falso?",
-          "resposta": "Verdadeiro"
+          "enunciado": "\"I have customs\" significa \"Eu tenho alfândega\". Verdadeiro ou Falso?",
+          "resposta": "Falso — \"I have customs\" não é uma frase comum, mas poderia significar \"Eu tenho costumes\" ou \"Eu tenho impostos alfandegários\", dependendo do contexto."
         },
         {
           "tipo": "traducao",
-          "enunciado": "Traduza para inglês: \"Obrigado, por favor.\"",
-          "resposta": "Thank you, please."
+          "enunciado": "Traduza para inglês: \"Eu perdi minha passagem\".",
+          "resposta": "I have lost my passport"
         }
       ],
       "historia": {
-        "titulo": "Um mercado de rua cheio de vida",
+        "titulo": "Um problema a resolver",
         "paragrafos": [
-          "Ontem foi um dia bom. Eu fui ao mercado de rua. Eu disse hello ao vendedor. Ele disse good morning.",
-          "Eu comprei frutas e legumes. O vendedor disse please, pago aqui. Eu disse thank you e paguei. Eu peguei minhas coisas e disse goodbye.",
-          "Eu como as frutas agora. Elas são deliciosas. Eu vou ao mercado de rua novamente amanhã. Eu vou dizer hello ao vendedor novamente."
+          "I have passport. I have luggage. I have reservation.",
+          "I go to destination. I show passport at customs. I have accommodation."
         ],
-        "texto_completo": "Ontem foi um dia bom. Eu fui ao mercado de rua. Eu disse hello ao vendedor. Ele disse good morning.\n\nEu comprei frutas e legumes. O vendedor disse please, pago aqui. Eu disse thank you e paguei. Eu peguei minhas coisas e disse goodbye.\n\nEu como as frutas agora. Elas são deliciosas. Eu vou ao mercado de rua novamente amanhã. Eu vou dizer hello ao vendedor novamente.",
-        "traducao": "Ontem foi um dia bom. Eu fui ao mercado de rua. Eu disse olá ao vendedor. Ele disse bom dia.\n\nEu comprei frutas e legumes. O vendedor disse por favor, pague aqui. Eu disse obrigado e paguei. Eu peguei minhas coisas e disse tchau.\n\nEu como as frutas agora. Elas são deliciosas. Eu vou ao mercado de rua novamente amanhã. Eu vou dizer olá ao vendedor novamente."
+        "paragrafos_pt": [
+          "Eu tenho passaporte. Eu tenho bagagem. Eu tenho reserva.",
+          "Eu vou para o destino. Eu mostro o passaporte na alfândega. Eu tenho acomodações."
+        ],
+        "texto_completo": "I have passport. I have luggage. I have reservation.\n\nI go to destination. I show passport at customs. I have accommodation.",
+        "traducao": "[1] Eu tenho passaporte. Eu tenho bagagem. Eu tenho reserva. [2] Eu vou para o destino. Eu mostro o passaporte na alfândega. Eu tenho acomodações.",
+        "nivel": "B1"
       },
       "audio_file": "en_historia.mp3"
     }
