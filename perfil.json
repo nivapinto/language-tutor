@@ -1,23 +1,29 @@
 {
   "fr": {
-    "nivel_atual": "A0",
+    "nivel_atual": "A1",
     "descricao": "Iniciante absoluto — francês do zero",
     "dificuldade_preferida": "normal",
     "avaliacoes": [],
     "pontos_de_melhoria": [],
-    "feedback_historia": []
+    "feedback_historia": [
+      {
+        "data": "2026-06-26",
+        "licao": 1,
+        "feedback": "ok"
+      }
+    ]
   },
   "es": {
-    "nivel_atual": "B1",
-    "descricao": "Intermediário — espanhol",
+    "nivel_atual": "A1",
+    "descricao": "Iniciante — espanhol do zero (currículo expandido A1→C2)",
     "dificuldade_preferida": "normal",
     "avaliacoes": [],
     "pontos_de_melhoria": [],
     "feedback_historia": []
   },
   "en": {
-    "nivel_atual": "C1",
-    "descricao": "Avançado conversacional — inglês",
+    "nivel_atual": "B1",
+    "descricao": "Intermediário — inglês a partir de B1 (currículo expandido B1→C2)",
     "dificuldade_preferida": "normal",
     "avaliacoes": [],
     "pontos_de_melhoria": [],
