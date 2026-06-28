@@ -1,5 +1,5 @@
 {
-  "data": "2026-06-27",
+  "data": "2026-06-28",
   "aulas": [
     {
       "code": "fr",
@@ -8,91 +8,96 @@
       "licao": {
         "numero": 1,
         "tipo": "gramatica",
-        "titulo": "Pronúncia e alfabeto",
-        "gramatica_nova": "Alphabet et sons — voyelles nasales, liaison, h aspiré",
+        "titulo": "L'alphabet et la prononciation française",
+        "gramatica_nova": "Alphabet français, sons spéciaux (é/è/ê, ou/u, an/en/in/on), liaisons, lettres muettes",
         "gramatica_cumulativa": [],
         "vocabulario": [
-          "bonjour",
-          "bonsoir",
-          "salut",
-          "au revoir",
-          "bonne nuit",
-          "à bientôt"
+          "café",
+          "école",
+          "rue",
+          "boulangerie",
+          "fenêtre",
+          "hôtel",
+          "eau",
+          "feu",
+          "nuit",
+          "ciel"
         ],
         "temas_historia": [
-          "apresentações e rotina diária",
-          "família e casa"
+          "présentations",
+          "premiers contacts"
         ],
         "nivel": "A1",
-        "nivel_titulo": "Primeiros passos"
+        "nivel_titulo": "Premiers pas"
       },
       "gramatica": {
-        "titulo": "Introdução às vogais nasais em francês",
-        "explicacao": "As vogais nasais em francês são sons produzidos com a saída do ar pelas fossas nasais, e não apenas pela boca. Elas são representadas pelas letras \"an\", \"en\", \"in\", \"on\" e \"un\" no final das palavras. É importante reconhecer esses sons para uma pronúncia correta. A liaisons e o \"h\" aspirado também são fundamentais para a pronúncia.",
+        "titulo": "Introdução ao Alphabet Français",
+        "explicacao": "O alfabeto francês é composto por 26 letras, sendo que algumas letras têm sons especiais, como é/è/ê, ou/u, an/en/in/on. É importante aprender a pronúncia correta desses sons para uma comunicação eficaz. Além disso, é fundamental entender as liaisons e as letras mudas no francês.",
         "tabela": [
-          "Pronome | Forma | Exemplo",
-          "an | som nasal | bonjour",
-          "en | som nasal | bonsoir",
-          "in | som nasal | salut",
-          "on | som nasal | bon",
-          "un | som nasal | bonbon"
+          "Lettre | Son | Exemplo",
+          "é | /e/ | café",
+          "è | /ɛ/ | fenêtre",
+          "ê | /ɛ/ | boulangerie",
+          "ou | /u/ | rue",
+          "an | /ɑ̃/ | hôtel",
+          "en | /ɑ̃/ | école"
         ],
         "exemplos": [
-          "Bonjour, comment ça va?",
-          "Je vous souhaite une bonne nuit.",
-          "À bientôt, à demain."
+          "Je vais à l'école.",
+          "Le café est dans la rue.",
+          "L'hôtel est près de la fenêtre."
         ],
         "exemplos_pt": [
-          "Olá, como você está?",
-          "Desejo uma boa noite a você.",
-          "Até logo, até amanhã."
+          "Eu vou para a escola.",
+          "O café está na rua.",
+          "O hotel está perto da janela."
         ],
-        "dica": "Para memorizar as vogais nasais, é útil ouvir e repetir as palavras várias vezes, prestando atenção especial à pronúncia correta."
+        "dica": "Para memorizar os sons especiais, é útil praticar a pronúncia das palavras todas as vezes que as ler."
       },
       "exercicios": [
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: ___ m'appelle Marie. (eu)",
-          "resposta": "Je"
+          "enunciado": "Complete: Je ___________ à l'école. (eu)",
+          "resposta": "vais"
         },
         {
           "tipo": "multipla_escolha",
-          "enunciado": "Qual é a tradução de \"salut\"?",
+          "enunciado": "Qual é a letra que representa o som \"u\" closed no alfabeto francês?",
           "opcoes": [
-            "A) boa tarde",
-            "B) bom dia",
-            "C) olá"
+            "A) ou",
+            "B) u",
+            "C) eu"
           ],
-          "resposta": "C"
+          "resposta": "B"
         },
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: Je ___ vous souhaite une bonne nuit.",
-          "resposta": "vous"
+          "enunciado": "Complete: Le ___________ est dans la rue. (café)",
+          "resposta": "café"
         },
         {
           "tipo": "verdadeiro_falso",
-          "enunciado": "\"Au revoir\" significa \"até logo\". Verdadeiro ou Falso?",
+          "enunciado": "A palavra \"hôtel\" tem uma \"h\" muda no início. Verdadeiro ou Falso?",
           "resposta": "Verdadeiro"
         },
         {
           "tipo": "traducao",
-          "enunciado": "Traduza para francês: \"Goodbye, see you soon.\"",
-          "resposta": "Au revoir, à bientôt."
+          "enunciado": "Traduza para francês: \"A escola está perto do hotel.\"",
+          "resposta": "L'école est près de l'hôtel."
         }
       ],
       "historia": {
-        "titulo": "Família e casa",
+        "titulo": "Premiers contacts",
         "paragrafos": [
-          "Bonjour salut. Bonsoir à bientôt. Bonjour bonsoir.",
-          "Bonsoir à bientôt. Salut bonne nuit. Au revoir bonjour"
+          "café · école · fenêtre hôtel · rue · boulangerie",
+          "eau · nuit · ciel · feu"
         ],
         "paragrafos_pt": [
-          "Olá, salve. Boa noite, até logo. Olá, boa noite.",
-          "Boa noite, até logo. Salve, boa noite. Tchau, olá."
+          "café · escola · janela · hotel · rua · padaria",
+          "água · noite · céu · fogo"
         ],
-        "texto_completo": "Bonjour salut. Bonsoir à bientôt. Bonjour bonsoir.\n\nBonsoir à bientôt. Salut bonne nuit. Au revoir bonjour",
-        "traducao": "[1] Olá, salve. Boa noite, até logo. Olá, boa noite. [2] Boa noite, até logo. Salve, boa noite. Tchau, olá.",
+        "texto_completo": "café · école · fenêtre hôtel · rue · boulangerie\n\neau · nuit · ciel · feu",
+        "traducao": "[1] café · escola · janela · hotel · rua · padaria [2] água · noite · céu · fogo",
         "nivel": "A1"
       },
       "audio_file": "fr_historia.mp3"
@@ -104,91 +109,95 @@
       "licao": {
         "numero": 1,
         "tipo": "gramatica",
-        "titulo": "Pronúncia e alfabeto",
-        "gramatica_nova": "Alfabeto y pronunciación",
+        "titulo": "Nombres y adjetivos: concordancia de género y número",
+        "gramatica_nova": "Nombres y adjetivos: concordancia de género (masculino/femenino) y número (singular/plural)",
         "gramatica_cumulativa": [],
         "vocabulario": [
-          "hola",
-          "buenos días",
-          "buenas tardes",
-          "buenas noches",
-          "adiós",
-          "hasta luego"
+          "libro",
+          "película",
+          "chico",
+          "chica",
+          "amigo",
+          "simpático",
+          "interesante",
+          "nuevo",
+          "pequeño",
+          "español"
         ],
         "temas_historia": [
-          "apresentações e rotina diária",
-          "família e casa"
+          "descripciones",
+          "presentaciones"
         ],
         "nivel": "A1",
         "nivel_titulo": "Primeros pasos"
       },
       "gramatica": {
-        "titulo": "Alfabeto e Pronúncia Básica em Espanhol",
-        "explicacao": "O alfabeto espanhol é composto por 27 letras, com algumas letras adicionais em comparação com o português. A pronúncia dessas letras é fundamental para uma comunicação eficaz. É importante lembrar que a pronúncia em espanhol pode variar ligeiramente de um país para outro. O estudo do alfabeto e da pronúncia básica é o primeiro passo para aprender espanhol.",
+        "titulo": "Concordancia de Género y Número em Nombres y Adjetivos",
+        "explicacao": "Em espanhol, os nomes e adjetivos devem concordar em gênero (masculino ou feminino) e número (singular ou plural). Isso significa que o adjetivo deve ter a mesma forma que o nome ao qual se refere. A concordância é fundamental para uma comunicação clara e eficaz. É importante lembrar que os adjetivos mudam de forma de acordo com o gênero e o número do nome.",
         "tabela": [
-          "Letra | Som | Exemplo",
-          "a | á | casa",
-          "e | é | elefante",
-          "i | í | iglesia",
-          "o | ó | oso",
-          "u | ú | universo"
+          "Masculino Singular | libro | Un libro interesante",
+          "Feminino Singular | película | Una película interesante",
+          "Masculino Plural | amigos | Amigos simpáticos",
+          "Feminino Plural | chicas | Chicas nuevas",
+          "Masculino Singular | chico | Un chico pequeño",
+          "Feminino Singular | chica | Una chica española"
         ],
         "exemplos": [
-          "Hola, buenos días",
-          "Buenos días, ¿cómo estás?",
-          "Adiós, hasta luego"
+          "El libro es interesante",
+          "La película es nueva",
+          "El chico es simpático"
         ],
         "exemplos_pt": [
-          "Olá, bons dias",
-          "Bons dias, como você está?",
-          "Tchau, até logo"
+          "O livro é interessante",
+          "O filme é novo",
+          "O menino é simpático"
         ],
-        "dica": "Para memorizar o alfabeto espanhol, tente associar cada letra a uma palavra que você já conhece em português."
+        "dica": "Para memorizar, tente criar frases associando nomes e adjetivos que você já conhece, como \"un libro interesante\" ou \"una chica simpática\", e repita-as frequentemente."
       },
       "exercicios": [
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: Hola, ___ días.",
-          "resposta": "buenos"
+          "enunciado": "Complete: El ___ es interesante. (livro)",
+          "resposta": "libro"
         },
         {
           "tipo": "multipla_escolha",
-          "enunciado": "Qual é a saudação adequada para se despedir?",
+          "enunciado": "Qual é o gênero do adjetivo \"nuevo\" quando se refere a \"película\"?",
           "opcoes": [
-            "A) Hola",
-            "B) Buenos días",
-            "C) Adiós"
+            "A) Masculino",
+            "B) Feminino",
+            "C) Neutro"
           ],
-          "resposta": "C"
+          "resposta": "B"
         },
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: Buenos ___ , ¿cómo estás?",
-          "resposta": "días"
+          "enunciado": "La ___ es simpática. (amiga)",
+          "resposta": "amiga"
         },
         {
           "tipo": "verdadeiro_falso",
-          "enunciado": "\"Buenas noches\" é uma saudação para o final da tarde. Verdadeiro ou Falso?",
-          "resposta": "Falso — \"Buenas noches\" é uma saudação para a noite"
+          "enunciado": "\"El chico es interesante\" é uma frase que demonstra concordância de gênero. Verdadeiro ou Falso?",
+          "resposta": "Falso — A frase demonstra concordância de gênero, mas \"interesante\" é um adjetivo que concorda com o substantivo \"chico\" em gênero (masculino), mas a frase correta seria \"El chico es simpático\" para demonstrar concordância de gênero em relação ao adjetivo \"simpático\"."
         },
         {
           "tipo": "traducao",
-          "enunciado": "Traduza para espanhol: \"Goodbye, see you later\".",
-          "resposta": "Adiós, hasta luego"
+          "enunciado": "Traduza para espanhol: \"The small book is new.\"",
+          "resposta": "El libro pequeño es nuevo."
         }
       ],
       "historia": {
-        "titulo": "Família e casa",
+        "titulo": "Presentaciones",
         "paragrafos": [
-          "hola buenos días hola buenos días buenas tardes hola buenas tardes",
-          "buenas noches adiós hasta luego buenas noches adiós hasta luego"
+          "Un chico nuevo es simpático. Un libro es interesante. Un chico es amigo.",
+          "Unos chicos nuevos son simpáticos. Una chica es interesante. Unos libros son nuevos."
         ],
         "paragrafos_pt": [
-          "olá, bons dias, olá, bons dias, boas tardes, olá, boas tardes",
-          "boas noites, adeus, até logo, boas noites, adeus, até logo"
+          "Um garoto novo é simpático. Um livro é interessante. Um garoto é amigo.",
+          "Uns garotos novos são simpáticos. Uma garota é interessante. Uns livros são novos."
         ],
-        "texto_completo": "hola buenos días hola buenos días buenas tardes hola buenas tardes\n\nbuenas noches adiós hasta luego buenas noches adiós hasta luego",
-        "traducao": "[1] olá, bons dias, olá, bons dias, boas tardes, olá, boas tardes [2] boas noites, adeus, até logo, boas noites, adeus, até logo",
+        "texto_completo": "Un chico nuevo es simpático. Un libro es interesante. Un chico es amigo.\n\nUnos chicos nuevos son simpáticos. Una chica es interesante. Unos libros son nuevos.",
+        "traducao": "[1] Um garoto novo é simpático. Um livro é interessante. Um garoto é amigo. [2] Uns garotos novos são simpáticos. Uma garota é interessante. Uns livros são novos.",
         "nivel": "A1"
       },
       "audio_file": "es_historia.mp3"
@@ -200,92 +209,95 @@
       "licao": {
         "numero": 1,
         "tipo": "gramatica",
-        "titulo": "Present perfect",
-        "gramatica_nova": "Present perfect — formation and basic uses",
+        "titulo": "am/is/are — present simple of 'to be'",
+        "gramatica_nova": "Present simple: to be (am/is/are) — affirmative, negative, questions",
         "gramatica_cumulativa": [],
         "vocabulario": [
-          "passport",
-          "luggage",
-          "reservation",
-          "accommodation",
-          "destination",
-          "customs"
+          "tall",
+          "young",
+          "happy",
+          "tired",
+          "ready",
+          "cold",
+          "hot",
+          "free",
+          "busy",
+          "late"
         ],
         "temas_historia": [
-          "uma experiência marcante",
-          "um problema a resolver"
+          "introductions",
+          "describing people"
         ],
-        "nivel": "B1",
-        "nivel_titulo": "Intermediate"
+        "nivel": "A1",
+        "nivel_titulo": "Present & Past Basics"
       },
       "gramatica": {
-        "titulo": "Present Perfect - Formação e Usos Básicos",
-        "explicacao": "O present perfect é um tempo verbal que expressa ações que começaram no passado e continuam até o presente ou têm um efeito no presente. É formado com o verbo have/has mais o particípio passado do verbo principal. O particípio passado de verbos regulares é formado adicionando -ed ao verbo.",
+        "titulo": "",
+        "explicacao": "O presente simples do verbo \"to be\" é usado para descrever fatos permanentes ou estado atual. A forma do verbo varia de acordo com o sujeito da frase: I (eu) - am, you (você) - are, he/she/it (ele/ela) - is, we/they (nós/eles) - are. É importante conhecer as formas para construir frases corretas.",
         "tabela": [
-          "I | have | I have eaten",
-          "you | have | you have eaten",
-          "he/she/it | has | he has eaten",
-          "we | have | we have eaten",
-          "you | have | you have eaten",
-          "they | have | they have eaten"
+          "I | am | I am happy",
+          "you | are | you are tired",
+          "he/she/it | is | he is late",
+          "we | are | we are young",
+          "they | are | they are free"
         ],
         "exemplos": [
-          "I have lost my passport",
-          "They have arrived at their destination",
-          "We have made a reservation"
+          "I am tall",
+          "She is cold",
+          "They are busy"
         ],
         "exemplos_pt": [
-          "Eu perdi meu passaporte",
-          "Eles chegaram ao seu destino",
-          "Nós fizemos uma reserva"
+          "Eu sou alto",
+          "Ela está com frio",
+          "Eles estão ocupados"
         ],
-        "dica": "Lembre-se de que o present perfect é usado para falar sobre ações que têm um vínculo com o presente, então tente lembrar a frase \"Eu fiz algo e isso tem um efeito agora\"."
+        "dica": "Para lembrar as formas do verbo \"to be\" no presente simples, é útil criar frases pessoais, como \"I am\" para falar sobre si mesmo."
       },
       "exercicios": [
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: I ___ my luggage at the airport. (perder)",
-          "resposta": "have lost"
+          "enunciado": "Complete: I ___ tall. (eu)",
+          "resposta": "am"
         },
         {
           "tipo": "multipla_escolha",
-          "enunciado": "Qual é a forma correta de dizer \"Eles chegaram ao seu destino\" usando o present perfect?",
+          "enunciado": "Qual é a forma correta de dizer \"Ela está cansada\" em inglês?",
           "opcoes": [
-            "A) They go to their destination",
-            "B) They have gone to their destination",
-            "C) They have arrived at their destination"
+            "A) She am tired",
+            "B) She is tired",
+            "C) She are tired"
           ],
-          "resposta": "C"
+          "resposta": "B"
         },
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: We ___ a reservation at the hotel. (fazer)",
-          "resposta": "have made"
+          "enunciado": "Complete: They ___ busy now. (eles)",
+          "resposta": "are"
         },
         {
           "tipo": "verdadeiro_falso",
-          "enunciado": "\"I have customs\" significa \"Eu tenho alfândega\". Verdadeiro ou Falso?",
-          "resposta": "Falso — \"I have customs\" não é uma frase comum, mas poderia significar \"Eu tenho costumes\" ou \"Eu tenho impostos alfandegários\", dependendo do contexto."
+          "enunciado": "A frase \"I am young\" significa \"Eu sou jovem\". Verdadeiro ou Falso?",
+          "resposta": "Verdadeiro"
         },
         {
           "tipo": "traducao",
-          "enunciado": "Traduza para inglês: \"Eu perdi minha passagem\".",
-          "resposta": "I have lost my passport"
+          "enunciado": "Traduza para inglês: \"Eu estou feliz\".",
+          "resposta": "I am happy"
         }
       ],
       "historia": {
-        "titulo": "Um problema a resolver",
+        "titulo": "Introductions",
         "paragrafos": [
-          "I have passport. I have luggage. I have reservation.",
-          "I go to destination. I show passport at customs. I have accommodation."
+          "I am tall. You are young. He is happy. She is tired. We are ready. They are free.",
+          "I am not busy. You are not late. He is not cold. She is not hot. We are not tired. They are happy."
         ],
         "paragrafos_pt": [
-          "Eu tenho passaporte. Eu tenho bagagem. Eu tenho reserva.",
-          "Eu vou para o destino. Eu mostro o passaporte na alfândega. Eu tenho acomodações."
+          "Eu sou alto. Você é jovem. Ele é feliz. Ela está cansada. Nós estamos prontos. Eles são livres.",
+          "Eu não estou ocupado. Você não está atrasado. Ele não está frio. Ela não está quente. Nós não estamos cansados. Eles são felizes."
         ],
-        "texto_completo": "I have passport. I have luggage. I have reservation.\n\nI go to destination. I show passport at customs. I have accommodation.",
-        "traducao": "[1] Eu tenho passaporte. Eu tenho bagagem. Eu tenho reserva. [2] Eu vou para o destino. Eu mostro o passaporte na alfândega. Eu tenho acomodações.",
-        "nivel": "B1"
+        "texto_completo": "I am tall. You are young. He is happy. She is tired. We are ready. They are free.\n\nI am not busy. You are not late. He is not cold. She is not hot. We are not tired. They are happy.",
+        "traducao": "[1] Eu sou alto. Você é jovem. Ele é feliz. Ela está cansada. Nós estamos prontos. Eles são livres. [2] Eu não estou ocupado. Você não está atrasado. Ele não está frio. Ela não está quente. Nós não estamos cansados. Eles são felizes.",
+        "nivel": "A1"
       },
       "audio_file": "en_historia.mp3"
     }
