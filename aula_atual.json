@@ -1,5 +1,5 @@
 {
-  "data": "2026-06-28",
+  "data": "2026-06-30",
   "aulas": [
     {
       "code": "fr",
@@ -7,97 +7,91 @@
       "flag": "🇫🇷",
       "licao": {
         "numero": 1,
-        "tipo": "gramatica",
-        "titulo": "L'alphabet et la prononciation française",
+        "tipo": "pronuncia",
+        "titulo": "Sons do francês — l'alphabet et la prononciation",
         "gramatica_nova": "Alphabet français, sons spéciaux (é/è/ê, ou/u, an/en/in/on), liaisons, lettres muettes",
         "gramatica_cumulativa": [],
         "vocabulario": [
           "café",
           "école",
           "rue",
-          "boulangerie",
           "fenêtre",
-          "hôtel",
           "eau",
-          "feu",
-          "nuit",
-          "ciel"
+          "nuit"
         ],
         "temas_historia": [
-          "présentations",
           "premiers contacts"
         ],
         "nivel": "A1",
         "nivel_titulo": "Premiers pas"
       },
       "gramatica": {
-        "titulo": "Introdução ao Alphabet Français",
-        "explicacao": "O alfabeto francês é composto por 26 letras, sendo que algumas letras têm sons especiais, como é/è/ê, ou/u, an/en/in/on. É importante aprender a pronúncia correta desses sons para uma comunicação eficaz. Além disso, é fundamental entender as liaisons e as letras mudas no francês.",
+        "titulo": "",
+        "explicacao": "A pronúncia e ortografia em francês podem ser desafiadoras devido aos sons especiais e às letras mudas. É importante aprender a pronúncia correta das letras e combinações de letras como é, è, ê, ou, u, an, en, in e on. A língua francesa também apresenta liasons, que são encontros de sons entre palavras. Aprender esses conceitos básicos ajudará a melhorar a pronúncia e a compreensão.",
         "tabela": [
-          "Lettre | Son | Exemplo",
-          "é | /e/ | café",
-          "è | /ɛ/ | fenêtre",
-          "ê | /ɛ/ | boulangerie",
-          "ou | /u/ | rue",
-          "an | /ɑ̃/ | hôtel",
-          "en | /ɑ̃/ | école"
+          "é | Pronuncia-se como \"e\" fechado | café",
+          "è | Pronuncia-se como \"e\" aberto | fenêtre",
+          "ê | Pronuncia-se como \"e\" aberto | école",
+          "ou | Pronuncia-se como \"u\" | rue",
+          "u | Pronuncia-se como \"u\" | eau",
+          "an | Pronuncia-se como \"ã\" | nuit"
         ],
         "exemplos": [
           "Je vais à l'école.",
-          "Le café est dans la rue.",
-          "L'hôtel est près de la fenêtre."
+          "La fenêtre est ouverte.",
+          "Je bois de l'eau."
         ],
         "exemplos_pt": [
           "Eu vou para a escola.",
-          "O café está na rua.",
-          "O hotel está perto da janela."
+          "A janela está aberta.",
+          "Eu bebo água."
         ],
-        "dica": "Para memorizar os sons especiais, é útil praticar a pronúncia das palavras todas as vezes que as ler."
+        "dica": "Uma dica para lembrar a pronúncia das vogais é repetir as palavras várias vezes, prestando atenção nos sons produzidos."
       },
       "exercicios": [
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: Je ___________ à l'école. (eu)",
-          "resposta": "vais"
+          "enunciado": "Complete: ___ vais à l'école. (eu)",
+          "resposta": "Je"
         },
         {
           "tipo": "multipla_escolha",
-          "enunciado": "Qual é a letra que representa o som \"u\" closed no alfabeto francês?",
+          "enunciado": "Qual é a razão para a utilização de \"de l'\" em \"Je bois de l'eau\"?",
           "opcoes": [
-            "A) ou",
-            "B) u",
-            "C) eu"
+            "A) porque é um artigo definido",
+            "B) porque \"eau\" começa com uma consoante",
+            "C) porque \"eau\" é um substantivo masculino incontável"
           ],
-          "resposta": "B"
+          "resposta": "C"
         },
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: Le ___________ est dans la rue. (café)",
-          "resposta": "café"
+          "enunciado": "Complete: La fenêtre est ___ . (aberta)",
+          "resposta": "ouverte"
         },
         {
           "tipo": "verdadeiro_falso",
-          "enunciado": "A palavra \"hôtel\" tem uma \"h\" muda no início. Verdadeiro ou Falso?",
+          "enunciado": "A letra \"e\" no final da palavra \"café\" é uma letra muda. Verdadeiro ou Falso?",
           "resposta": "Verdadeiro"
         },
         {
           "tipo": "traducao",
-          "enunciado": "Traduza para francês: \"A escola está perto do hotel.\"",
-          "resposta": "L'école est près de l'hôtel."
+          "enunciado": "Traduza para francês: \"Eu vou à escola de manhã.\"",
+          "resposta": "Je vais à l'école le matin."
         }
       ],
       "historia": {
         "titulo": "Premiers contacts",
         "paragrafos": [
-          "café · école · fenêtre hôtel · rue · boulangerie",
-          "eau · nuit · ciel · feu"
+          "café · école · rue fenêtre · eau · nuit",
+          "eau · rue · café · école nuit · fenêtre · école · eau"
         ],
         "paragrafos_pt": [
-          "café · escola · janela · hotel · rua · padaria",
-          "água · noite · céu · fogo"
+          "café · escola · rua janela · água · noite",
+          "água · rua · café · escola noite · janela · escola · água"
         ],
-        "texto_completo": "café · école · fenêtre hôtel · rue · boulangerie\n\neau · nuit · ciel · feu",
-        "traducao": "[1] café · escola · janela · hotel · rua · padaria [2] água · noite · céu · fogo",
+        "texto_completo": "café · école · rue fenêtre · eau · nuit\n\neau · rue · café · école nuit · fenêtre · école · eau",
+        "traducao": "[1] café · escola · rua janela · água · noite [2] água · rua · café · escola noite · janela · escola · água",
         "nivel": "A1"
       },
       "audio_file": "fr_historia.mp3"
@@ -108,96 +102,92 @@
       "flag": "🇪🇸",
       "licao": {
         "numero": 1,
-        "tipo": "gramatica",
-        "titulo": "Nombres y adjetivos: concordancia de género y número",
-        "gramatica_nova": "Nombres y adjetivos: concordancia de género (masculino/femenino) y número (singular/plural)",
+        "tipo": "pronuncia",
+        "titulo": "Sons do espanhol — vogais, rr, ñ, j",
+        "gramatica_nova": "Vogais abertas (a/e/i/o/u), consoantes especiais: rr [vibrante], ñ [nh], j [jota], ll [lh]",
         "gramatica_cumulativa": [],
         "vocabulario": [
-          "libro",
-          "película",
-          "chico",
-          "chica",
-          "amigo",
-          "simpático",
-          "interesante",
-          "nuevo",
-          "pequeño",
-          "español"
+          "café",
+          "señor",
+          "calle",
+          "rojo",
+          "lluvia",
+          "año"
         ],
         "temas_historia": [
-          "descripciones",
-          "presentaciones"
+          "primeiros contatos"
         ],
         "nivel": "A1",
         "nivel_titulo": "Primeros pasos"
       },
       "gramatica": {
-        "titulo": "Concordancia de Género y Número em Nombres y Adjetivos",
-        "explicacao": "Em espanhol, os nomes e adjetivos devem concordar em gênero (masculino ou feminino) e número (singular ou plural). Isso significa que o adjetivo deve ter a mesma forma que o nome ao qual se refere. A concordância é fundamental para uma comunicação clara e eficaz. É importante lembrar que os adjetivos mudam de forma de acordo com o gênero e o número do nome.",
+        "titulo": "Pronúncia das Vogais Abertas e Consoantes Especiais",
+        "explicacao": "As vogais abertas em espanhol são pronunciadas de maneira mais aberta e clara do que em português. As consoantes especiais como rr, ñ, j e ll têm pronúncias específicas que devem ser treinadas. A pronúncia correta é fundamental para uma comunicação eficaz em espanhol. É importante praticar a pronúncia regularmente para melhorar a fluência.",
         "tabela": [
-          "Masculino Singular | libro | Un libro interesante",
-          "Feminino Singular | película | Una película interesante",
-          "Masculino Plural | amigos | Amigos simpáticos",
-          "Feminino Plural | chicas | Chicas nuevas",
-          "Masculino Singular | chico | Un chico pequeño",
-          "Feminino Singular | chica | Una chica española"
+          "Pronome | Forma | Exemplo",
+          "rr | vibrante | carro",
+          "ñ | nh | señor",
+          "j | jota | jardín",
+          "ll | lh | lluvia",
+          "a | á | café",
+          "e | é | calle"
         ],
         "exemplos": [
-          "El libro es interesante",
-          "La película es nueva",
-          "El chico es simpático"
+          "Me llamo señor",
+          "La calle es roja",
+          "Llueve en el año"
         ],
         "exemplos_pt": [
-          "O livro é interessante",
-          "O filme é novo",
-          "O menino é simpático"
+          "Meu nome é senhor",
+          "A rua é vermelha",
+          "Chove no ano"
         ],
-        "dica": "Para memorizar, tente criar frases associando nomes e adjetivos que você já conhece, como \"un libro interesante\" ou \"una chica simpática\", e repita-as frequentemente."
+        "dica": "Para lembrar da pronúncia das consoantes especiais, é útil ouvir e imitar falantes nativos de espanhol."
       },
       "exercicios": [
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: El ___ es interesante. (livro)",
-          "resposta": "libro"
+          "enunciado": "Complete: Me ___ señor. (eu)",
+          "resposta": "llamo"
         },
         {
           "tipo": "multipla_escolha",
-          "enunciado": "Qual é o gênero do adjetivo \"nuevo\" quando se refere a \"película\"?",
+          "enunciado": "Qual é a pronúncia da letra \"ñ\" em espanhol?",
           "opcoes": [
-            "A) Masculino",
-            "B) Feminino",
-            "C) Neutro"
+            "A) como um \"n\" simples",
+            "B) como um \"nh\"",
+            "C) como um \"m\""
           ],
           "resposta": "B"
         },
         {
           "tipo": "lacuna",
-          "enunciado": "La ___ es simpática. (amiga)",
-          "resposta": "amiga"
+          "enunciado": "La ___ es roja. (rua)",
+          "resposta": "calle"
         },
         {
           "tipo": "verdadeiro_falso",
-          "enunciado": "\"El chico es interesante\" é uma frase que demonstra concordância de gênero. Verdadeiro ou Falso?",
-          "resposta": "Falso — A frase demonstra concordância de gênero, mas \"interesante\" é um adjetivo que concorda com o substantivo \"chico\" em gênero (masculino), mas a frase correta seria \"El chico es simpático\" para demonstrar concordância de gênero em relação ao adjetivo \"simpático\"."
+          "enunciado": "A palavra \"lluvia\" significa \"ano\" em espanhol. Verdadeiro ou Falso?",
+          "resposta": "Falso — \"lluvia\" significa \"chuva\" e \"año\" significa \"ano\""
         },
         {
           "tipo": "traducao",
-          "enunciado": "Traduza para espanhol: \"The small book is new.\"",
-          "resposta": "El libro pequeño es nuevo."
+          "enunciado": "Traduza para espanhol: \"The street is red.\"",
+          "resposta": "La calle es roja."
         }
       ],
       "historia": {
-        "titulo": "Presentaciones",
+        "titulo": "Primeiros contatos",
         "paragrafos": [
-          "Un chico nuevo es simpático. Un libro es interesante. Un chico es amigo.",
-          "Unos chicos nuevos son simpáticos. Una chica es interesante. Unos libros son nuevos."
+          "café · rojo · año lluvia · señor · calle",
+          "calle · señor · café lluvia · rojo · año"
         ],
         "paragrafos_pt": [
-          "Um garoto novo é simpático. Um livro é interessante. Um garoto é amigo.",
-          "Uns garotos novos são simpáticos. Uma garota é interessante. Uns livros são novos."
+          "café · vermelho · ano chuva · senhor · rua",
+          "rua · senhor · café chuva · vermelho · ano"
         ],
-        "texto_completo": "Un chico nuevo es simpático. Un libro es interesante. Un chico es amigo.\n\nUnos chicos nuevos son simpáticos. Una chica es interesante. Unos libros son nuevos.",
-        "traducao": "[1] Um garoto novo é simpático. Um livro é interessante. Um garoto é amigo. [2] Uns garotos novos são simpáticos. Uma garota é interessante. Uns livros são novos.",
+        "texto_completo": "café · rojo · año lluvia · señor · calle\n\ncalle · señor · café lluvia · rojo · año",
+        "traducao": "[1] café · vermelho · ano chuva · senhor · rua [2] rua · senhor · café chuva · vermelho · ano",
         "nivel": "A1"
       },
       "audio_file": "es_historia.mp3"
@@ -208,95 +198,91 @@
       "flag": "🇬🇧",
       "licao": {
         "numero": 1,
-        "tipo": "gramatica",
-        "titulo": "am/is/are — present simple of 'to be'",
-        "gramatica_nova": "Present simple: to be (am/is/are) — affirmative, negative, questions",
+        "tipo": "vocabulario",
+        "titulo": "Saudações — hello, thank you...",
+        "gramatica_nova": "",
         "gramatica_cumulativa": [],
         "vocabulario": [
-          "tall",
-          "young",
-          "happy",
-          "tired",
-          "ready",
-          "cold",
-          "hot",
-          "free",
-          "busy",
-          "late"
+          "hello",
+          "goodbye",
+          "yes",
+          "no",
+          "please",
+          "thank you"
         ],
         "temas_historia": [
-          "introductions",
-          "describing people"
+          "meeting people",
+          "politeness"
         ],
         "nivel": "A1",
         "nivel_titulo": "Present & Past Basics"
       },
       "gramatica": {
-        "titulo": "",
-        "explicacao": "O presente simples do verbo \"to be\" é usado para descrever fatos permanentes ou estado atual. A forma do verbo varia de acordo com o sujeito da frase: I (eu) - am, you (você) - are, he/she/it (ele/ela) - is, we/they (nós/eles) - are. É importante conhecer as formas para construir frases corretas.",
+        "titulo": "Introdução a Saudações e Respostas Básicas",
+        "explicacao": "Nesta lição, vamos aprender vocabulário básico para saudações e respostas. As palavras-chave incluem cumprimentos e despedidas, além de formas de concordar ou discordar. É fundamental conhecer essas palavras para iniciar conversas em inglês.",
         "tabela": [
-          "I | am | I am happy",
-          "you | are | you are tired",
-          "he/she/it | is | he is late",
-          "we | are | we are young",
-          "they | are | they are free"
+          "Pronome | Forma | Exemplo",
+          "- | hello | hello",
+          "- | goodbye | goodbye",
+          "- | yes | yes",
+          "- | no | no"
         ],
         "exemplos": [
-          "I am tall",
-          "She is cold",
-          "They are busy"
+          "Hello, how are you?",
+          "Yes, please.",
+          "Thank you, goodbye."
         ],
         "exemplos_pt": [
-          "Eu sou alto",
-          "Ela está com frio",
-          "Eles estão ocupados"
+          "Olá, como você está?",
+          "Sim, por favor.",
+          "Obrigado, adeus."
         ],
-        "dica": "Para lembrar as formas do verbo \"to be\" no presente simples, é útil criar frases pessoais, como \"I am\" para falar sobre si mesmo."
+        "dica": "Repita as palavras \"hello\", \"yes\" e \"thank you\" várias vezes para memorizá-las facilmente."
       },
       "exercicios": [
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: I ___ tall. (eu)",
-          "resposta": "am"
+          "enunciado": "Complete: Hello, ___ are you?",
+          "resposta": "how"
         },
         {
           "tipo": "multipla_escolha",
-          "enunciado": "Qual é a forma correta de dizer \"Ela está cansada\" em inglês?",
+          "enunciado": "Qual é a tradução de \"hello\"?",
           "opcoes": [
-            "A) She am tired",
-            "B) She is tired",
-            "C) She are tired"
+            "A) tchau",
+            "B) obrigado",
+            "C) olá"
           ],
-          "resposta": "B"
+          "resposta": "C"
         },
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: They ___ busy now. (eles)",
-          "resposta": "are"
+          "enunciado": "Complete: ___ you, goodbye.",
+          "resposta": "Thank"
         },
         {
           "tipo": "verdadeiro_falso",
-          "enunciado": "A frase \"I am young\" significa \"Eu sou jovem\". Verdadeiro ou Falso?",
+          "enunciado": "\"Yes\" significa \"sim\" em inglês. Verdadeiro ou Falso?",
           "resposta": "Verdadeiro"
         },
         {
           "tipo": "traducao",
-          "enunciado": "Traduza para inglês: \"Eu estou feliz\".",
-          "resposta": "I am happy"
+          "enunciado": "Traduza para inglês: \"Obrigado, por favor.\"",
+          "resposta": "Thank you, please."
         }
       ],
       "historia": {
-        "titulo": "Introductions",
+        "titulo": "Politeness",
         "paragrafos": [
-          "I am tall. You are young. He is happy. She is tired. We are ready. They are free.",
-          "I am not busy. You are not late. He is not cold. She is not hot. We are not tired. They are happy."
+          "Hello, yes. Please, thank you. Hello, no.",
+          "Hello, please. Thank you, goodbye. Yes, no."
         ],
         "paragrafos_pt": [
-          "Eu sou alto. Você é jovem. Ele é feliz. Ela está cansada. Nós estamos prontos. Eles são livres.",
-          "Eu não estou ocupado. Você não está atrasado. Ele não está frio. Ela não está quente. Nós não estamos cansados. Eles são felizes."
+          "Olá, sim. Por favor, obrigado. Olá, não.",
+          "Olá, por favor. Obrigado, tchau. Sim, não."
         ],
-        "texto_completo": "I am tall. You are young. He is happy. She is tired. We are ready. They are free.\n\nI am not busy. You are not late. He is not cold. She is not hot. We are not tired. They are happy.",
-        "traducao": "[1] Eu sou alto. Você é jovem. Ele é feliz. Ela está cansada. Nós estamos prontos. Eles são livres. [2] Eu não estou ocupado. Você não está atrasado. Ele não está frio. Ela não está quente. Nós não estamos cansados. Eles são felizes.",
+        "texto_completo": "Hello, yes. Please, thank you. Hello, no.\n\nHello, please. Thank you, goodbye. Yes, no.",
+        "traducao": "[1] Olá, sim. Por favor, obrigado. Olá, não. [2] Olá, por favor. Obrigado, tchau. Sim, não.",
         "nivel": "A1"
       },
       "audio_file": "en_historia.mp3"
