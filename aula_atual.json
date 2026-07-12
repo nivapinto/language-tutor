@@ -1,5 +1,5 @@
 {
-  "data": "2026-07-03",
+  "data": "2026-07-11",
   "aulas": [
     {
       "code": "fr",
@@ -26,72 +26,72 @@
         "nivel_titulo": "Premiers pas"
       },
       "gramatica": {
-        "titulo": "Sons Especiais em Francês",
-        "explicacao": "Em francês, existem sons especiais que são formados por letras específicas, como é, è, ê, ou, u, an, en, in e on. Esses sons são importantes para a pronúncia correta das palavras. Além disso, é fundamental entender como esses sons se comportam em diferentes contextos. A práticaregular é essencial para dominar esses sons.",
+        "titulo": "Sons Especiais no Alfabeto Francês",
+        "explicacao": "O alfabeto francês inclui sons especiais como é, è, ê, ou, u, que podem ser confusos para os iniciantes. É importante entender a pronúncia correta desses sons para uma comunicação eficaz. A pronúncia de sons especiais no francês é fundamental para a compreensão e expressão corretas. Além disso, é necessário prestar atenção às letras mudas e às ligações entre palavras.",
         "tabela": [
-          "é | som aberto e fechado | café",
-          "è | som aberto | fenêtre",
-          "ê | som aberto e alongado | école",
-          "ou | som de \"u\" alongado | rue",
-          "u | som de \"u\" fechado | nuit",
-          "an | som de \"ã\" | eau"
+          "é | som fechado de e | café",
+          "è | som mais aberto de e | père",
+          "ê | som mais fechado de e | fenêtre",
+          "ou | som de u fechado | vous",
+          "u | som de u aberto | rue",
+          "eau | som de \"o\" | eau"
         ],
         "exemplos": [
           "Je vais à l'école.",
-          "Le café est chaud.",
-          "La fenêtre est ouverte."
+          "La fenêtre est ouverte.",
+          "L'eau est claire."
         ],
         "exemplos_pt": [
-          "Estou indo para a escola.",
-          "O café está quente.",
-          "A janela está aberta."
+          "Eu vou à escola.",
+          "A janela está aberta.",
+          "A água é clara."
         ],
-        "dica": "Para memorizar os sons especiais, tente praticar a pronúncia das palavras várias vezes e observe como a pronúncia muda com a alteração das letras."
+        "dica": "Para memorizar os sons especiais, é útil ouvir e repetir as palavras várias vezes, prestando atenção à pronúncia correta."
       },
       "exercicios": [
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: Je vais à l'___ pour étudier. (escola)",
-          "resposta": "école"
+          "enunciado": "Complete: ___ vais à l'école. (eu)",
+          "resposta": "Je"
         },
         {
           "tipo": "multipla_escolha",
-          "enunciado": "Qual é a grafia correta da palavra \"água\" em francês?",
+          "enunciado": "Qual é a letra especial que representa o som \"aberto\" na palavra \"père\"?",
           "opcoes": [
-            "A) eau",
-            "B) au",
-            "C) oau"
+            "A) é",
+            "B) è",
+            "C) ê"
           ],
-          "resposta": "A"
+          "resposta": "B"
         },
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: La fenêtre est ___ ouverte. (aberta)",
-          "resposta": "tout à fait"
+          "enunciado": "La fenêtre est ___ . (aberta)",
+          "resposta": "ouverte"
         },
         {
           "tipo": "verdadeiro_falso",
-          "enunciado": "\"Le café est chaud\" significa \"O café está frio\". Verdadeiro ou Falso?",
-          "resposta": "Falso — \"Le café est chaud\" significa \"O café está quente\""
+          "enunciado": "A palavra \"eau\" é pronunciada com o som \"ó\" fechado. Verdadeiro ou Falso?",
+          "resposta": "Falso — A palavra \"eau\" é pronunciada com o som \"ó\" aberto."
         },
         {
           "tipo": "traducao",
-          "enunciado": "Traduza para francês: \"The window is open.\"",
-          "resposta": "La fenêtre est ouverte."
+          "enunciado": "Traduza para francês: \"A água é clara.\"",
+          "resposta": "L'eau est claire."
         }
       ],
       "historia": {
         "titulo": "Premiers contacts",
         "paragrafos": [
-          "café · école · eau rue · fenêtre · nuit",
-          "école · eau · café rue · fenêtre · nuit"
+          "café · rue · école nuit · eau · fenêtre",
+          "école · rue · café eau · fenêtre · nuit"
         ],
         "paragrafos_pt": [
-          "café · escola · água rua · janela · noite",
-          "escola · água · café rua · janela · noite"
+          "café · rua · escola noite · água · janela",
+          "escola · rua · café água · janela · noite"
         ],
-        "texto_completo": "café · école · eau rue · fenêtre · nuit\n\nécole · eau · café rue · fenêtre · nuit",
-        "traducao": "[1] café · escola · água rua · janela · noite [2] escola · água · café rua · janela · noite",
+        "texto_completo": "café · rue · école nuit · eau · fenêtre\n\nécole · rue · café eau · fenêtre · nuit",
+        "traducao": "[1] café · rua · escola noite · água · janela [2] escola · rua · café água · janela · noite",
         "nivel": "A1"
       },
       "audio_file": "fr_historia.mp3"
@@ -121,77 +121,73 @@
         "nivel_titulo": "Primeros pasos"
       },
       "gramatica": {
-        "titulo": "Pronúncia de Vogais Abertas e Consoantes Especiais em Espanhol",
-        "explicacao": "As vogais abertas em espanhol são pronunciadas com uma abertura mais ampla da boca. As consoantes especiais rr, ñ, j e ll têm pronúncias únicas que devem ser memorizadas. A pronúncia correta é fundamental para uma comunicação eficaz em espanhol. Com prática, você dominará esses sons.",
+        "titulo": "Pronúncia das Vogais e Consoantes Especiais",
+        "explicacao": "As vogais abertas em espanhol são pronunciadas de forma clara e distinta. As consoantes especiais rr, ñ, j e ll têm sons únicos que devem ser pronounceados corretamente. A rr é pronunciada com uma vibração forte, enquanto a ñ tem um som de \"nh\". A j é pronunciada como um \"j\" forte e a ll como um \"lh\".",
         "tabela": [
-          "| Letra | Pronúncia | Exemplo |",
-          "| --- | --- | --- |",
-          "| a | Aberta | café |",
-          "| e | Aberta | señor |",
-          "| i | Fechada | lluvia |",
-          "| o | Aberta | rojo |",
-          "| u | Fechada | año |",
-          "| rr | Vibrante | calle |",
-          "| ñ | nh | año |",
-          "| j | jota | jornal |",
-          "| ll | lh | lluvia |"
+          "Pronome | Forma | Exemplo",
+          "a | aberta | casa",
+          "e | aberta | calle",
+          "i | aberta | café",
+          "o | aberta | rojo",
+          "u | aberta | lluvia",
+          "ñ | nh | señor"
         ],
         "exemplos": [
-          "El señor bebe café.",
-          "La calle está mojada por la lluvia.",
-          "El año nuevo es rojo."
+          "La señorita come en el café.",
+          "La calle es roja.",
+          "El año tiene lluvia."
         ],
         "exemplos_pt": [
-          "O senhor bebe café.",
-          "A rua está molhada pela chuva.",
-          "O ano novo é vermelho."
+          "A senhorita come no café.",
+          "A rua é vermelha.",
+          "O ano tem chuva."
         ],
-        "dica": "Pratique a pronúncia diariamente, mesmo que por apenas alguns minutos, para melhorar sua fluência em espanhol."
+        "dica": "Pratique a pronúncia das vogais e consoantes especiais todos os dias para melhorar sua fluência em espanhol."
       },
       "exercicios": [
         {
           "tipo": "lacuna",
-          "enunciado": "El señor bebe ___ en la calle.",
-          "resposta": "café"
+          "enunciado": "Complete: La ___ come en el café. (senhorita)",
+          "resposta": "señorita"
         },
         {
           "tipo": "multipla_escolha",
-          "enunciado": "Qual é a tradução de \"la lluvia\"?",
+          "enunciado": "Qual é a tradução de \"lluvia\"?",
           "opcoes": [
-            "A) ano",
-            "B) ruas",
-            "C) chuva"
+            "A) sol",
+            "B) chuva",
+            "C) neve"
           ],
-          "resposta": "C"
+          "resposta": "B"
         },
         {
           "tipo": "lacuna",
-          "enunciado": "La calle está mojada por la ___.",
-          "resposta": "lluvia"
+          "enunciado": "La calle es ___ .",
+          "resposta": "roja"
         },
         {
           "tipo": "verdadeiro_falso",
-          "enunciado": "A palavra \"año\" é pronunciada com o som de \"ñ\" como em \"nh\". Verdadeiro ou Falso?",
-          "resposta": "Verdadeiro"
+          "enunciado": "\"El año tiene lluvia\" significa que o ano é seco. Verdadeiro ou Falso?",
+          "resposta": "Falso — \"El año tiene lluvia\" significa que o ano tem chuva."
         },
         {
           "tipo": "traducao",
-          "enunciado": "Traduza para português: \"El año nuevo es rojo.\"",
-          "resposta": "O ano novo é vermelho."
+          "enunciado": "Traduza para espanhol: \"A rua é vermelha.\"",
+          "resposta": "La calle es roja."
         }
       ],
       "historia": {
         "titulo": "Primeiros contatos",
         "paragrafos": [
-          "café · año · señor lluvia · rojo · calle",
-          "señor · café · lluvia calle · año · rojo"
+          "café · lluvia · calle rojo · año · señor",
+          "lluvia · rojo · señor · café calle · año"
         ],
         "paragrafos_pt": [
-          "café · ano · senhor chuva · vermelho · rua",
-          "senhor · café · chuva rua · ano · vermelho"
+          "café · chuva · rua vermelha · ano · senhor",
+          "chuva · vermelho · senhor · café rua · ano"
         ],
-        "texto_completo": "café · año · señor lluvia · rojo · calle\n\nseñor · café · lluvia calle · año · rojo",
-        "traducao": "[1] café · ano · senhor chuva · vermelho · rua [2] senhor · café · chuva rua · ano · vermelho",
+        "texto_completo": "café · lluvia · calle rojo · año · señor\n\nlluvia · rojo · señor · café calle · año",
+        "traducao": "[1] café · chuva · rua vermelha · ano · senhor [2] chuva · vermelho · senhor · café rua · ano",
         "nivel": "A1"
       },
       "audio_file": "es_historia.mp3"
@@ -222,28 +218,28 @@
         "nivel_titulo": "Present & Past Basics"
       },
       "gramatica": {
-        "titulo": "Saudações e Respostas Básicas",
-        "explicacao": "Nesta lição, vamos aprender algumas palavras e frases básicas para saudar e responder em inglês. O vocabulário inclui palavras como \"hello\", \"goodbye\", \"yes\", \"no\", \"please\" e \"thank you\". Essas palavras são fundamentais para se comunicar em situções cotidianas. Elas ajudam a estabelecer um relacionamento amigável com os outros.",
+        "titulo": "Saudações Básicas",
+        "explicacao": "Nesta lição, vamos aprender algumas saudações básicas em inglês, como cumprimentar e se despedir. Vamos entender como usar palavras como \"hello\", \"goodbye\", \"yes\", \"no\", \"please\" e \"thank you\" em contexto. É fundamental lembrar que a entonação e o momento de uso dessas palavras são cruciais para uma comunicação eficaz.",
         "tabela": [
-          "Palavra | Significado | Exemplo",
-          "hello | Olá | Hello, how are you?",
-          "goodbye | Tchau | Goodbye, see you later!",
-          "yes | Sim | Yes, I like it.",
-          "no | Não | No, I don't like it.",
-          "please | Por favor | Please, help me.",
-          "thank you | Obrigado/Obrigada | Thank you, it's nice."
+          "Pronome | Forma | Exemplo",
+          "- | hello | Hello, how are you?",
+          "- | goodbye | Goodbye, see you later!",
+          "- | yes | Yes, I like it.",
+          "- | no | No, I don't like it.",
+          "- | please | Please, give me water.",
+          "- | thank you | Thank you, that's very kind."
         ],
         "exemplos": [
           "Hello, how are you?",
-          "Yes, please.",
-          "Thank you, goodbye!"
+          "Goodbye, see you later!",
+          "Thank you, please."
         ],
         "exemplos_pt": [
           "Olá, como você está?",
-          "Sim, por favor.",
-          "Obrigado/Obrigada, tchau!"
+          "Tchau, vejo você mais tarde!",
+          "Obrigado, por favor."
         ],
-        "dica": "Repita as palavras e frases todos os dias para memorizá-las melhor."
+        "dica": "Para lembrar dessas saudações, tente usar cada uma delas em uma situação do dia a dia, como ao encontrar alguém ou pedir algo."
       },
       "exercicios": [
         {
@@ -256,39 +252,39 @@
           "enunciado": "Qual é a tradução de \"yes\"?",
           "opcoes": [
             "A) não",
-            "B) por favor",
-            "C) sim"
+            "B) sim",
+            "C) por favor"
           ],
-          "resposta": "C"
+          "resposta": "B"
         },
         {
           "tipo": "lacuna",
-          "enunciado": "Complete: Goodbye, ___ you!",
-          "resposta": "thank"
+          "enunciado": "Goodbye, ___ you later!",
+          "resposta": "see"
         },
         {
           "tipo": "verdadeiro_falso",
-          "enunciado": "\"No\" significa \"sim\" em inglês. Verdadeiro ou Falso?",
-          "resposta": "Falso — \"No\" significa \"não\" em inglês"
+          "enunciado": "\"Goodbye\" significa \"olá\". Verdadeiro ou Falso?",
+          "resposta": "Falso — \"Goodbye\" significa \"tchau\" ou \"adeus\""
         },
         {
           "tipo": "traducao",
-          "enunciado": "Traduza para inglês: \"Obrigado, por favor.\"",
-          "resposta": "Thank you, please"
+          "enunciado": "Traduza para inglês: \"Por favor, obrigado.\"",
+          "resposta": "Please, thank you"
         }
       ],
       "historia": {
-        "titulo": "Meeting people",
+        "titulo": "Politeness",
         "paragrafos": [
-          "Hello yes please. Hello no. Yes thank you.",
-          "Hello please. Goodbye yes. Thank you goodbye"
+          "Hello, yes please. Thank you, yes. Hello, no.",
+          "Goodbye, please. Thank you, yes. Goodbye, no."
         ],
         "paragrafos_pt": [
-          "Olá, sim por favor. Olá, não. Sim, obrigado.",
-          "Olá, por favor. Tchau, sim. Obrigado, tchau"
+          "Olá, sim por favor. Obrigado, sim. Olá, não.",
+          "Tchau, por favor. Obrigado, sim. Tchau, não."
         ],
-        "texto_completo": "Hello yes please. Hello no. Yes thank you.\n\nHello please. Goodbye yes. Thank you goodbye",
-        "traducao": "[1] Olá, sim por favor. Olá, não. Sim, obrigado. [2] Olá, por favor. Tchau, sim. Obrigado, tchau",
+        "texto_completo": "Hello, yes please. Thank you, yes. Hello, no.\n\nGoodbye, please. Thank you, yes. Goodbye, no.",
+        "traducao": "[1] Olá, sim por favor. Obrigado, sim. Olá, não. [2] Tchau, por favor. Obrigado, sim. Tchau, não.",
         "nivel": "A1"
       },
       "audio_file": "en_historia.mp3"
