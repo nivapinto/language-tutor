@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Language Tutor — 28/07/2026</title>
+  <title>Language Tutor — 30/07/2026</title>
   <style>
     :root {
       --bg: #0f172a; --surface: #1e293b; --border: #334155;
@@ -61,7 +61,7 @@
 <body>
 <header>
   <h1>🌍 Language Tutor</h1>
-  <p>Aula do dia — 28/07/2026</p>
+  <p>Aula do dia — 30/07/2026</p>
 </header>
 <main>
 <div class="lang-block" id="block-fr">
@@ -83,25 +83,25 @@
   <!-- HISTÓRIA + ÁUDIO -->
   <div id="fr-hist" class="panel active">
     <audio controls src="fr_historia.mp3" style="width:100%;margin-bottom:1rem"></audio>
-    <div class="story-block"><p class="story-para">café · école · eau rue · fenêtre · nuit</p><p class="story-para">école · café · eau · rue fenêtre · nuit</p></div>
+    <div class="story-block"><p class="story-para">café · école · nuit rue · fenêtre · eau</p><p class="story-para">école · café · rue nuit · fenêtre · eau</p></div>
     <button class="btn-trad" onclick="toggleEl('trad-fr')">🌐 Ver tradução</button>
     <div class="trad-box" id="trad-fr" hidden>
       <p class="section-label">Tradução</p>
-      <p class="trad-text">[1] café · escola · água rua · janela · noite [2] escola · café · água · rua janela · noite</p>
+      <p class="trad-text">[1] café · escola · noite rua · janela · água [2] escola · café · rua noite · janela · água</p>
     </div>
   </div>
 
   <!-- GRAMÁTICA -->
   <div id="fr-gram" class="panel">
     <div class="rule-box">
-      <h4 class="rule-title">Pronúncia de sons especiais no alfabeto francês</h4>
-      <p class="rule-exp">O alfabeto francês possui sons especiais que devem ser pronunciados corretamente para uma comunicação eficaz. Os sons "é", "è" e "ê" têm pronúncias diferentes, assim como "ou" e "u". Além disso, as letras "an", "en", "in" e "on" também têm pronúncias específicas. A compreensão desses sons é fundamental para a pronúncia correta do francês.</p>
+      <h4 class="rule-title">Sons Especiais no Alphabet Francês</h4>
+      <p class="rule-exp">O alfabeto francês inclui sons especiais como é/è/ê, ou/u, que são importantes para a pronúncia correta. Esses sons são formados por combinações de letras que têm um som único. Além disso, é fundamental lembrar que as letras "e" e "u" podem ter diferentes sons dependendo do contexto. Outro ponto importante são as letras mudas, que não são pronunciadas.</p>
     </div>
-    <table class="gram-table"><tbody><tr><td>Pronome</td><td>Forma</td><td>Exemplo</td></tr><tr><td>é</td><td>Pronúncia aberta</td><td>café</td></tr><tr><td>è</td><td>Pronúncia fechada</td><td>fenêtre</td></tr><tr><td>ê</td><td>Pronúncia meio aberta</td><td>rue</td></tr><tr><td>ou</td><td>Pronúncia de "u" fechado</td><td>eau</td></tr><tr><td>u</td><td>Pronúncia de "u" aberto</td><td>nuit</td></tr></tbody></table>
+    <table class="gram-table"><tbody><tr><td>Pronome</td><td>Forma</td><td>Exemplo</td></tr><tr><td>é</td><td>é</td><td>café</td></tr><tr><td>è</td><td>è</td><td>fenêtre</td></tr><tr><td>ê</td><td>ê</td><td>rue</td></tr><tr><td>ou</td><td>u</td><td>eau</td></tr><tr><td>an</td><td>an</td><td>nuit</td></tr><tr><td>en</td><td>en</td><td>école</td></tr></tbody></table>
     <div class="examples-block">
-      <p class="section-label">Exemplos</p><div class="example"><span class="ex-num">1</span>Je vais à l'école.</div><div class="example"><span class="ex-num">2</span>La rue est près du café.</div><div class="example"><span class="ex-num">3</span>L'eau est nécessaire pour la nuit.</div>
+      <p class="section-label">Exemplos</p><div class="example"><span class="ex-num">1</span>Je vais à l'école</div><div class="example"><span class="ex-num">2</span>Le café est sur la table</div><div class="example"><span class="ex-num">3</span>La fenêtre est ouverte</div>
     </div>
-    <div class="tip-box">💡 Para lembrar da pronúncia correta, pratique a leitura de palavras com sons especiais regularmente.</div>
+    <div class="tip-box">💡 Para lembrar dos sons especiais, é útil praticar a pronúncia regularmente e ouvir falantes nativos para melhorar a entonação.</div>
   </div>
 
   <!-- EXERCÍCIOS -->
@@ -110,33 +110,33 @@
     
 <div class="exercise">
   <div class="ex-header"><span class="ex-n">1</span><span class="ex-badge">Preencha</span></div>
-  <p class="ex-text">Complete: ___ vais à l'école. (eu)</p>
+  <p class="ex-text">Complete: Je ______ à l'école demain. (eu vou)</p>
   <button class="btn-gabarito" onclick="toggleEl('resp-fr-0')">Ver resposta</button>
-  <div class="resposta" id="resp-fr-0" hidden>✅ Je</div>
+  <div class="resposta" id="resp-fr-0" hidden>✅ vais</div>
 </div>
 <div class="exercise">
   <div class="ex-header"><span class="ex-n">2</span><span class="ex-badge">Escolha</span></div>
-  <p class="ex-text">Qual é a tradução de "école"?</p><div class="opcoes"><span class="opcao">A) escola</span><span class="opcao">B) café</span><span class="opcao">C) rua</span></div>
+  <p class="ex-text">Qual é a letra correta para o som "é" fechado em francês?</p><div class="opcoes"><span class="opcao">A) e</span><span class="opcao">B) é</span><span class="opcao">C) è</span></div>
   <button class="btn-gabarito" onclick="toggleEl('resp-fr-1')">Ver resposta</button>
-  <div class="resposta" id="resp-fr-1" hidden>✅ A</div>
+  <div class="resposta" id="resp-fr-1" hidden>✅ B</div>
 </div>
 <div class="exercise">
   <div class="ex-header"><span class="ex-n">3</span><span class="ex-badge">Preencha</span></div>
-  <p class="ex-text">La rue est près du ___ .</p>
+  <p class="ex-text">Complete: Le café est sur ______ table. (a)</p>
   <button class="btn-gabarito" onclick="toggleEl('resp-fr-2')">Ver resposta</button>
-  <div class="resposta" id="resp-fr-2" hidden>✅ café</div>
+  <div class="resposta" id="resp-fr-2" hidden>✅ la</div>
 </div>
 <div class="exercise">
   <div class="ex-header"><span class="ex-n">4</span><span class="ex-badge">V ou F</span></div>
-  <p class="ex-text">A palavra "eau" é pronunciada como "e" fechado. Verdadeiro ou Falso?</p>
+  <p class="ex-text">A palavra "eau" se pronuncia como "o" em português. Verdadeiro ou Falso?</p>
   <button class="btn-gabarito" onclick="toggleEl('resp-fr-3')">Ver resposta</button>
-  <div class="resposta" id="resp-fr-3" hidden>✅ Falso — A palavra "eau" é pronunciada como "o"</div>
+  <div class="resposta" id="resp-fr-3" hidden>✅ Verdadeiro</div>
 </div>
 <div class="exercise">
   <div class="ex-header"><span class="ex-n">5</span><span class="ex-badge">Traduza</span></div>
-  <p class="ex-text">Traduza para francês: "The school is near the café."</p>
+  <p class="ex-text">Traduza para francês: "A janela está aberta."</p>
   <button class="btn-gabarito" onclick="toggleEl('resp-fr-4')">Ver resposta</button>
-  <div class="resposta" id="resp-fr-4" hidden>✅ L'école est près du café.</div>
+  <div class="resposta" id="resp-fr-4" hidden>✅ La fenêtre est ouverte.</div>
 </div>
   </div>
 </div>
@@ -160,25 +160,25 @@
   <!-- HISTÓRIA + ÁUDIO -->
   <div id="es-hist" class="panel active">
     <audio controls src="es_historia.mp3" style="width:100%;margin-bottom:1rem"></audio>
-    <div class="story-block"><p class="story-para">café · calle · lluvia señor · rojo · año</p><p class="story-para">lluvia · calle · señor rojo · café · año</p></div>
+    <div class="story-block"><p class="story-para">café · señor · año lluvia · rojo · calle</p><p class="story-para">señor · calle · lluvia café · rojo · año</p></div>
     <button class="btn-trad" onclick="toggleEl('trad-es')">🌐 Ver tradução</button>
     <div class="trad-box" id="trad-es" hidden>
       <p class="section-label">Tradução</p>
-      <p class="trad-text">[1] café · rua · chuva senhor · vermelho · ano [2] chuva · rua · senhor vermelho · café · ano</p>
+      <p class="trad-text">[1] café · senhor · ano chuva · vermelho · rua [2] senhor · rua · chuva café · vermelho · ano</p>
     </div>
   </div>
 
   <!-- GRAMÁTICA -->
   <div id="es-gram" class="panel">
     <div class="rule-box">
-      <h4 class="rule-title">Pronúncia de Vogais e Consoantes Especiais</h4>
-      <p class="rule-exp">No espanhol, as vogais abertas têm uma pronúncia específica, como a em "calle" e e em "señor". Já as consoantes especiais rr, ñ, j e ll têm sons únicos, como o som vibrante de rr em "rojo" e o som de nh em "lluvia" e "año" não, mas em "señor" sim. É importante praticar a pronúncia desses sons para melhorar a fluência em espanhol.</p>
+      <h4 class="rule-title">Vogais Abertas e Consoantes Especiais em Espanhol</h4>
+      <p class="rule-exp">As vogais abertas e consoantes especiais são fundamentais no espanhol. A pronúncia correta das letras "a", "e", "i", "o", "u", "rr", "ñ", "j" e "ll" é essencial para uma comunicação eficaz. É importante aprender a diferença entre esses sons para evitar erros comuns. A prática regular ajudará a melhorar a pronúncia.</p>
     </div>
-    <table class="gram-table"><tbody><tr><td>Pronome</td><td>Forma</td><td>Exemplo</td></tr><tr><td>a</td><td>aberta</td><td>café</td></tr><tr><td>e</td><td>aberta</td><td>señor</td></tr><tr><td>i</td><td>fechada</td><td></td></tr><tr><td>o</td><td>aberta</td><td>rojo</td></tr><tr><td>u</td><td>fechada</td><td>lluvia</td></tr></tbody></table>
+    <table class="gram-table"><tbody><tr><td>Pronome</td><td>Forma</td><td>Exemplo</td></tr><tr><td>a</td><td>vogal aberta</td><td>casa</td></tr><tr><td>e</td><td>vogal aberta</td><td>café</td></tr><tr><td>i</td><td>vogal aberta</td><td>calle</td></tr><tr><td>o</td><td>vogal aberta</td><td>rojo</td></tr><tr><td>ñ</td><td>nh</td><td>señor</td></tr><tr><td>ll</td><td>lh</td><td>lluvia</td></tr></tbody></table>
     <div class="examples-block">
-      <p class="section-label">Exemplos</p><div class="example"><span class="ex-num">1</span>La calle es roja.</div><div class="example"><span class="ex-num">2</span>El señor bebe café.</div><div class="example"><span class="ex-num">3</span>Esta lluvia es muy fuerte.</div>
+      <p class="section-label">Exemplos</p><div class="example"><span class="ex-num">1</span>El señor bebe café.</div><div class="example"><span class="ex-num">2</span>La calle es roja.</div><div class="example"><span class="ex-num">3</span>Llueve mucho en este año.</div>
     </div>
-    <div class="tip-box">💡 Pratique a pronúncia das vogais e consoantes especiais todos os dias, ouvindo e repetindo as palavras para melhorar a sua fluência em espanhol.</div>
+    <div class="tip-box">💡 Para lembrar a pronúncia da letra "ll", pense no som de "lh" em português, como em "folha".</div>
   </div>
 
   <!-- EXERCÍCIOS -->
@@ -187,33 +187,33 @@
     
 <div class="exercise">
   <div class="ex-header"><span class="ex-n">1</span><span class="ex-badge">Preencha</span></div>
-  <p class="ex-text">Complete: La ___ es roja. (calle)</p>
+  <p class="ex-text">El señor bebe ___ en la calle. (café)</p>
   <button class="btn-gabarito" onclick="toggleEl('resp-es-0')">Ver resposta</button>
-  <div class="resposta" id="resp-es-0" hidden>✅ calle</div>
+  <div class="resposta" id="resp-es-0" hidden>✅ café</div>
 </div>
 <div class="exercise">
   <div class="ex-header"><span class="ex-n">2</span><span class="ex-badge">Escolha</span></div>
-  <p class="ex-text">Qual é a tradução de "lluvia"?</p><div class="opcoes"><span class="opcao">A) chuva</span><span class="opcao">B) sol</span><span class="opcao">C) vento</span></div>
+  <p class="ex-text">Qual é a tradução de "lluvia"?</p><div class="opcoes"><span class="opcao">A) sol</span><span class="opcao">B) chuva</span><span class="opcao">C) neve</span></div>
   <button class="btn-gabarito" onclick="toggleEl('resp-es-1')">Ver resposta</button>
-  <div class="resposta" id="resp-es-1" hidden>✅ A</div>
+  <div class="resposta" id="resp-es-1" hidden>✅ B</div>
 </div>
 <div class="exercise">
   <div class="ex-header"><span class="ex-n">3</span><span class="ex-badge">Preencha</span></div>
-  <p class="ex-text">El señor bebe ___ en la mañana. (café)</p>
+  <p class="ex-text">La ___ es roja. (calle)</p>
   <button class="btn-gabarito" onclick="toggleEl('resp-es-2')">Ver resposta</button>
-  <div class="resposta" id="resp-es-2" hidden>✅ café</div>
+  <div class="resposta" id="resp-es-2" hidden>✅ calle</div>
 </div>
 <div class="exercise">
   <div class="ex-header"><span class="ex-n">4</span><span class="ex-badge">V ou F</span></div>
-  <p class="ex-text">"La calle es azul" é uma frase verdadeira se a calle for descrita como roja. Verdadeiro ou Falso?</p>
+  <p class="ex-text">"Llueve mucho en este año" significa "Não chove muito neste ano". Verdadeiro ou Falso?</p>
   <button class="btn-gabarito" onclick="toggleEl('resp-es-3')">Ver resposta</button>
-  <div class="resposta" id="resp-es-3" hidden>✅ Falso — A frase verdadeira seria "La calle es roja"</div>
+  <div class="resposta" id="resp-es-3" hidden>✅ Falso — "Llueve mucho en este año" significa "Chove muito neste ano"</div>
 </div>
 <div class="exercise">
   <div class="ex-header"><span class="ex-n">5</span><span class="ex-badge">Traduza</span></div>
-  <p class="ex-text">Traduza para espanhol: "O senhor está bebendo café."</p>
+  <p class="ex-text">Traduza para espanhol: "The street is very red."</p>
   <button class="btn-gabarito" onclick="toggleEl('resp-es-4')">Ver resposta</button>
-  <div class="resposta" id="resp-es-4" hidden>✅ El señor está bebiendo café</div>
+  <div class="resposta" id="resp-es-4" hidden>✅ La calle es muy roja.</div>
 </div>
   </div>
 </div>
@@ -237,25 +237,25 @@
   <!-- HISTÓRIA + ÁUDIO -->
   <div id="en-hist" class="panel active">
     <audio controls src="en_historia.mp3" style="width:100%;margin-bottom:1rem"></audio>
-    <div class="story-block"><p class="story-para">Hello, yes. Please, thank you. Yes, hello.</p><p class="story-para">Hello, no. Goodbye, please. Thank you, goodbye.</p></div>
+    <div class="story-block"><p class="story-para">Hello, yes. Hello, please. Thank you.</p><p class="story-para">Hello, no. Goodbye, thank you. Goodbye, yes.</p></div>
     <button class="btn-trad" onclick="toggleEl('trad-en')">🌐 Ver tradução</button>
     <div class="trad-box" id="trad-en" hidden>
       <p class="section-label">Tradução</p>
-      <p class="trad-text">[1] Olá, sim. Por favor, obrigado. Sim, olá. [2] Olá, não. Tchau, por favor. Obrigado, tchau.</p>
+      <p class="trad-text">[1] Olá, sim. Olá, por favor. Obrigado. [2] Olá, não. Tchau, obrigado. Tchau, sim.</p>
     </div>
   </div>
 
   <!-- GRAMÁTICA -->
   <div id="en-gram" class="panel">
     <div class="rule-box">
-      <h4 class="rule-title">Saudações Básicas</h4>
-      <p class="rule-exp">Nesta lição, você aprenderá as saudações básicas em inglês, como cumprimentar e se despedir. Isso inclui palavras como hello, goodbye, yes, no, please e thank you. Essas palavras são fundamentais para interações diárias em inglês. Elas ajudam a estabelecer uma comunicação básica e educada.</p>
+      <h4 class="rule-title">Saudações e Respostas Básicas</h4>
+      <p class="rule-exp">Nesta lição, vamos aprender sobre vocabulário básico para saudações e respostas. É importante conhecer palavras como "hello" e "goodbye" para interagir com os outros. Além disso, aprender a dizer "yes", "no", "please" e "thank you" é fundamental para uma comunicação eficaz. Isso ajudará a tornar as interações mais cortês e agradáveis.</p>
     </div>
-    <table class="gram-table"><tbody><tr><td>Pronome</td><td>Forma</td><td>Exemplo</td></tr><tr><td>-</td><td>hello</td><td></td></tr><tr><td>-</td><td>goodbye</td><td></td></tr><tr><td>-</td><td>yes</td><td></td></tr><tr><td>-</td><td>no</td><td></td></tr><tr><td>-</td><td>please</td><td></td></tr><tr><td>-</td><td>thank you</td><td></td></tr></tbody></table>
+    <table class="gram-table"><tbody><tr><td>Pronome</td><td>Forma</td><td>Exemplo</td></tr><tr><td>-</td><td>hello</td><td>Hello, how are you?</td></tr><tr><td>-</td><td>goodbye</td><td>Goodbye, see you later!</td></tr><tr><td>-</td><td>yes</td><td>Yes, I like it.</td></tr><tr><td>-</td><td>no</td><td>No, I don't like it.</td></tr><tr><td>-</td><td>please</td><td>Please, give me the book.</td></tr><tr><td>-</td><td>thank you</td><td>Thank you, that's very kind.</td></tr></tbody></table>
     <div class="examples-block">
-      <p class="section-label">Exemplos</p><div class="example"><span class="ex-num">1</span>Hello, how are you?</div><div class="example"><span class="ex-num">2</span>Thank you, goodbye!</div><div class="example"><span class="ex-num">3</span>Yes, please!</div>
+      <p class="section-label">Exemplos</p><div class="example"><span class="ex-num">1</span>Hello, how are you?</div><div class="example"><span class="ex-num">2</span>Yes, please.</div><div class="example"><span class="ex-num">3</span>Thank you, goodbye.</div>
     </div>
-    <div class="tip-box">💡 É importante lembrar que "please" e "thank you" são usados frequentemente juntos para mostrar educação e respeito.</div>
+    <div class="tip-box">💡 Para lembrar dessas palavras, tente usá-las em frases curtas todos os dias, como uma rotina.</div>
   </div>
 
   <!-- EXERCÍCIOS -->
@@ -282,20 +282,20 @@
 </div>
 <div class="exercise">
   <div class="ex-header"><span class="ex-n">4</span><span class="ex-badge">V ou F</span></div>
-  <p class="ex-text">"Yes, please" é uma forma de dizer "não, obrigado". Verdadeiro ou Falso?</p>
+  <p class="ex-text">"Please" é usado para agradecer. Verdadeiro ou Falso?</p>
   <button class="btn-gabarito" onclick="toggleEl('resp-en-3')">Ver resposta</button>
-  <div class="resposta" id="resp-en-3" hidden>✅ Falso — "Yes, please" é uma forma de dizer "sim, por favor"</div>
+  <div class="resposta" id="resp-en-3" hidden>✅ Falso — "Please" é usado para fazer um pedido</div>
 </div>
 <div class="exercise">
   <div class="ex-header"><span class="ex-n">5</span><span class="ex-badge">Traduza</span></div>
-  <p class="ex-text">Traduza para inglês: "Obrigado, adeus."</p>
+  <p class="ex-text">Traduza para inglês: "Obrigado, até logo."</p>
   <button class="btn-gabarito" onclick="toggleEl('resp-en-4')">Ver resposta</button>
-  <div class="resposta" id="resp-en-4" hidden>✅ Thank you, goodbye</div>
+  <div class="resposta" id="resp-en-4" hidden>✅ Thank you, goodbye.</div>
 </div>
   </div>
 </div>
 </main>
-<footer>Language Tutor · 28/07/2026 · nivapinto.github.io/language-tutor</footer>
+<footer>Language Tutor · 30/07/2026 · nivapinto.github.io/language-tutor</footer>
 <script>
 function tab(lang, panel, btn) {
   ['gram','ex','dial'].forEach(p => document.getElementById(lang+'-'+p).classList.remove('active'));
